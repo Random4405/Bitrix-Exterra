@@ -58,6 +58,7 @@ header {
 /* FOOTER */
 footer {
   background:transparent url('/images/bg-wall.jpg') left top repeat-x;
+  padding-top: 70px;
 }
 
 .footer-contacts {
@@ -91,7 +92,44 @@ footer {
 }
 
 /* FORM */
-.mfeedback form {
-  display: flex;
-  justify-content: center;
+
+.form-wrapper {
+  background:transparent url('/images/feedback-bg.png') no-repeat;
+  background-size: cover;
+}
+
+.mfeedback {
+  margin-bottom: 120px;
+  form {
+    display: flex;
+    justify-content: center;
+    .mf-name, .mf-email, .mf-phone, [type="submit"] {
+      flex-basis: 25%;
+      input {
+        width: 92%;
+        border: 1px solid white;
+        background: rgba(255, 255, 255, 0.67);
+        height: 46px;
+        padding-left: 15px;
+        color: #230e0d;
+        font-family: Arial;
+        font-size: 18px;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+    }
+    [type="submit"] {
+      background: #87270d;
+      border: none;
+      color: white;
+      font-family: Arial;
+      font-size: 18px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+  }
+  h1 {
+    margin: 96px 0 53px 0;
+    color: black;
+  }
 }
