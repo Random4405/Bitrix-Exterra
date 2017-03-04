@@ -77,6 +77,7 @@ $this->setFrameMode(true);
 				<?=$arProperty["DISPLAY_VALUE"];?>
 			<?endif?>
 			</small><br />
+			<div class="custom-news-button"><a href="<?echo $arItem["DETAIL_PAGE_URL"]?>">Читать...</a></div>
 		<?endforeach;?>
 	</p>
 <?endforeach;?>
