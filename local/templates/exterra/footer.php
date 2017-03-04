@@ -2,6 +2,20 @@
 IncludeTemplateLangFile(__FILE__);
 ?>
 
+<div class="container">
+    <div class="row">
+        <h1 class="title">Реализованные объекты</h1>
+    </div>
+</div>
+<div class="slick">
+  <div><img src="/images/realize/1photo.jpg" alt=""></div>
+  <div><img src="/images/realize/2photo.jpg" alt=""></div>
+  <div><img src="/images/realize/3photo.jpg" alt=""></div>
+  <div><img src="/images/realize/4photo.jpg" alt=""></div>
+  <div><img src="/images/realize/5photo.jpg" alt=""></div>
+  <div><img src="/images/realize/6photo.jpg" alt=""></div>
+</div>
+
 <div class="sell">
   <div class="container">
     <div class="row">
@@ -175,5 +189,18 @@ IncludeTemplateLangFile(__FILE__);
     </div>
   </div>
 </footer>
+<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+<script>
+    $(document).ready(function(){
+      $('.slick').slick({
+          infinite: true,
+          centerMode: true,
+          slidesToShow: 3,
+          autoplay: true,
+          autoplaySpeed: 2000,
+          variableWidth: true,
+      });
+    });
+</script>
 </body>
 </html>

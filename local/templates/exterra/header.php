@@ -7,9 +7,13 @@ IncludeTemplateLangFile(__FILE__);
 <head>
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <?$APPLICATION->SetAdditionalCSS("/bitrix/css/main/bootstrap.css");?>
+  <?CJSCore::Init(array("jquery"));?>
   <?$APPLICATION->ShowHead();?>
   <link href="<?=SITE_TEMPLATE_PATH?>/common.css" type="text/css" rel="stylesheet" />
   <link href="<?=SITE_TEMPLATE_PATH?>/colors.css" type="text/css" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+  <!-- Add the slick-theme.css if you want default styling -->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css"/>
   <title><?$APPLICATION->ShowTitle()?></title>
 </head>
 <body>

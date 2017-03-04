@@ -13,7 +13,7 @@ h1 {
   font-family: Arial;
   font-size: 36px;
   font-weight: 700;
-  line-height: 14px;
+  line-height: 34px;
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 30px;
@@ -194,3 +194,66 @@ footer {
 }
 
 /* END NEWS */
+
+/* SLIDER */
+
+.title {
+  /* чтобы линии не выходили за ширину блока заголовка */
+  overflow: hidden;
+}
+.title:before,
+.title:after {
+  content: '';
+
+  /* делаем линию строчно-блочной */
+  display: inline-block;
+
+  /* выравниваем вертикально по середине */
+  vertical-align: middle;
+
+  /* не позволяем ширине превысить 100% (будет добавлен бордюр) */
+  box-sizing: border-box;
+
+  /* установка ширины в 100% делает линию равной ширине тега заголовка
+  ** благодаря этому линия заполнит все свободное пространство
+  ** слева и справа от текста
+  */
+  width: 100%;
+  height: 1px;
+  background: #4e4e4e;
+
+  /* добавляем к линии левый и правый бордюр цветом основного фона заголовка
+  ** благодаря этому создается нужный отступ между линиями и текстом
+  */
+  border: solid #FFF;
+  border-width: 0 10px;
+}
+.title:before {
+  /* смещаем левую линию влево отрицательным отступом, равным 100% ширины
+  ** благодаря этому линия встает слева от текста
+  */
+  margin-left: -100%;
+}
+.title:after {
+  /* смещаем правую линию вправо отрицательным отступом, равным 100% ширины
+  ** благодаря этому линия встает справа от текста
+  */
+  margin-right: -100%;
+}
+
+.slick {
+  min-height: 220px;
+  margin-bottom: 70px;
+  img {
+    opacity: 0.5;
+    transition: all 300ms ease;
+    padding: 2%;
+    max-width: 420px;
+  }
+  .slick-center {
+    img {
+      opacity: 1 !important;
+      transform: scale(1.08);
+    }
+  }
+}
