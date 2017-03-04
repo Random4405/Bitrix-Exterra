@@ -63,13 +63,16 @@ IncludeTemplateLangFile(__FILE__);
       <div class="row">
         <div class="plates">
           <ul>
-            <li><img src="/images/icons/Icon-1.jpg" alt="" /></li>
-            <li><img src="/images/icons/Icon-2.jpg" alt="" /></li>
-            <li><img src="/images/icons/Icon-3.jpg" alt="" /></li>
-            <li><img src="/images/icons/Icon-4.jpg" alt="" /></li>
-            <li><img src="/images/icons/Icon-5.jpg" alt="" /></li>
+            <li><img class="plate-1" alt="" /></li>
+            <li><img class="plate-2" alt="" /></li>
+            <li><img class="plate-3" alt="" /></li>
+            <li><img class="plate-4" alt="" /></li>
+            <li><img class="plate-5" alt="" /></li>
           </ul>
         </div>
+      </div>
+      <div class="row">
+        <h1 class="title">Популярные товары</h1>
       </div>
     </div>
   </section>

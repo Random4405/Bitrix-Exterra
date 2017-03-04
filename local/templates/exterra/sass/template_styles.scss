@@ -51,8 +51,33 @@ header {
     justify-content: center;
     li {
       list-style-type: none;
+      @for $i from 1 through 5 {
+        img.plate-#{$i} {
+          background: url('/images/icons/Icon-#{$i}.jpg') no-repeat;
+          width: 241px;
+          height: 180px;
+          max-height: 100%;
+          z-index: 1;
+          &:hover {
+            background: url('/images/icons/Icon-#{$i}-press.jpg') no-repeat;
+            z-index: 2;
+          }
+        }
+      }
     }
   }
+}
+
+.bx_catalog_top_home {
+  border-bottom: none;
+}
+
+.bx_catalog_item_images {
+  opacity: 0 !important;
+}
+
+.bx_catalog_item_images_double {
+  opacity: 1 !important;
 }
 
 /* FOOTER */
