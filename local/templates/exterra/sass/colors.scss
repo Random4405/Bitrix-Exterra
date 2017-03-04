@@ -1,0 +1,24 @@
+.header-contacts {
+  background-color: #1f1f1e;
+  ul {
+    li {
+      color: white;
+    }
+  }
+}
+.header-main {
+  .container {
+    .row {
+      ul {
+        li {
+          a {
+            color: #4a4a4a;
+            font-family: Arial;
+            font-size: 18px;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+}
