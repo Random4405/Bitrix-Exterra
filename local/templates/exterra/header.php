@@ -7,9 +7,13 @@ IncludeTemplateLangFile(__FILE__);
 <head>
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <?$APPLICATION->SetAdditionalCSS("/bitrix/css/main/bootstrap.css");?>
+  <?CJSCore::Init(array("jquery"));?>
   <?$APPLICATION->ShowHead();?>
   <link href="<?=SITE_TEMPLATE_PATH?>/common.css" type="text/css" rel="stylesheet" />
   <link href="<?=SITE_TEMPLATE_PATH?>/colors.css" type="text/css" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+  <!-- Add the slick-theme.css if you want default styling -->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css"/>
   <title><?$APPLICATION->ShowTitle()?></title>
 </head>
 <body>
@@ -59,13 +63,16 @@ IncludeTemplateLangFile(__FILE__);
       <div class="row">
         <div class="plates">
           <ul>
-            <li><img src="/images/icons/Icon-1.jpg" alt="" /></li>
-            <li><img src="/images/icons/Icon-2.jpg" alt="" /></li>
-            <li><img src="/images/icons/Icon-3.jpg" alt="" /></li>
-            <li><img src="/images/icons/Icon-4.jpg" alt="" /></li>
-            <li><img src="/images/icons/Icon-5.jpg" alt="" /></li>
+            <li><img class="plate-1" alt="" /></li>
+            <li><img class="plate-2" alt="" /></li>
+            <li><img class="plate-3" alt="" /></li>
+            <li><img class="plate-4" alt="" /></li>
+            <li><img class="plate-5" alt="" /></li>
           </ul>
         </div>
+      </div>
+      <div class="row">
+        <h1 class="title">Популярные товары</h1>
       </div>
     </div>
   </section>
