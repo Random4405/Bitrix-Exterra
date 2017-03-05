@@ -2,7 +2,10 @@ html {
   font-size: 100%;
 }
 
-body { font-size: inherit; }
+body {
+  font-size: inherit;
+  background-color: #f2f2f2;
+}
 
 ul, ol {
   padding-left: 0;
@@ -267,6 +270,8 @@ footer {
 }
 
 .slick {
+  overflow: hidden;
+  max-width: 100%;
   min-height: 220px;
   margin-bottom: 70px;
   img {
