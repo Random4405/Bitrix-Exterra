@@ -158,7 +158,15 @@ IncludeTemplateLangFile(__FILE__);
     <div class="row">
       <h1>Адрес</h1>
       <div class="footer-contacts">
-        <a class="footer-logo clearfix" href="/"><img src="/images/logo-terra.png" alt="" class="img-responsive" /></a>
+        <?$APPLICATION->IncludeComponent(
+            "bitrix:main.include",
+            "",
+            Array(
+                "AREA_FILE_SHOW" => "page",
+                "AREA_FILE_SUFFIX" => "inc_bottom_logo",
+                "EDIT_TEMPLATE" => ""
+            )
+        );?>
         <p>ООО «Экстерра групп»</p>
         <p>Адрес: 350059, г. Краснодар, ул.Уральская, д.114, помещение 3</p>
         <p>Е-mail: info@exterragroup.ru</p>
