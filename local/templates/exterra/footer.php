@@ -21,9 +21,15 @@ IncludeTemplateLangFile(__FILE__);
     <div class="row">
         <div class="sell-wrapper">
           <div class="left-wrapper">
-            <h1>Продажа строительных материалов</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur aliquid quia, et harum maiores voluptates dignissimos vero magni tempore. Eaque totam, et incidunt sit, excepturi aperiam ipsam repellat ad dolores nulla quae placeat iusto consectetur magni repellendus, eos id exercitationem ipsum tempora consequatur quas? Aspernatur harum maxime distinctio recusandae quasi?</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur aliquid quia, et harum maiores voluptates dignissimos vero magni tempore. Eaque totam, et incidunt sit, excepturi aperiam ipsam repellat ad dolores nulla quae placeat iusto consectetur magni repellendus, eos id exercitationem ipsum tempora consequatur quas? Aspernatur harum maxime distinctio recusandae quasi?</p>
+            <?$APPLICATION->IncludeComponent(
+                "bitrix:main.include",
+                "",
+                Array(
+                    "AREA_FILE_SHOW" => "page",
+                    "AREA_FILE_SUFFIX" => "inc_index_about",
+                    "EDIT_TEMPLATE" => ""
+                )
+            );?>
           </div>
           <div class="right-wrapper">
             <?$APPLICATION->IncludeComponent(

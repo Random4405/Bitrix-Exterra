@@ -35,7 +35,15 @@ IncludeTemplateLangFile(__FILE__);
     <div class="header-main">
       <div class="container">
         <div class="row">
-          <div class="logo"><a href="/"><img src="/images/logo-white.png" alt="" class="img-responsive" /></a></div>
+          <?$APPLICATION->IncludeComponent(
+            "bitrix:main.include",
+            "",
+            Array(
+              "AREA_FILE_SHOW" => "page",
+              "AREA_FILE_SUFFIX" => "inc_top_logo",
+              "EDIT_TEMPLATE" => ""
+            )
+          );?>
           <?$APPLICATION->IncludeComponent("bitrix:menu", "top_menu", Array(
           	"ALLOW_MULTI_SELECT" => "N",	// Разрешить несколько активных пунктов одновременно
           		"CHILD_MENU_TYPE" => "left",	// Тип меню для остальных уровней
@@ -73,7 +81,8 @@ IncludeTemplateLangFile(__FILE__);
       </div>
       <div class="row">
         <h1 class="title">Популярные товары</h1>
+        .custom-product-wrapper*4>img.product-main-image+.about-product>h4{Кирпич керамический пустотелый
+AP-Adriatico 240-70}+.cost-wrapper+.status-wrapper
       </div>
     </div>
   </section>
-
