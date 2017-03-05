@@ -2,7 +2,10 @@ html {
   font-size: 100%;
 }
 
-body { font-size: inherit; }
+body {
+  font-size: inherit;
+  background-color: #f2f2f2;
+}
 
 ul, ol {
   padding-left: 0;
@@ -13,7 +16,7 @@ h1 {
   font-family: Arial;
   font-size: 36px;
   font-weight: 700;
-  line-height: 14px;
+  line-height: 34px;
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 30px;
@@ -51,8 +54,33 @@ header {
     justify-content: center;
     li {
       list-style-type: none;
+      @for $i from 1 through 5 {
+        img.plate-#{$i} {
+          background: url('/images/icons/Icon-#{$i}.jpg') no-repeat;
+          width: 241px;
+          height: 180px;
+          max-height: 100%;
+          z-index: 1;
+          &:hover {
+            background: url('/images/icons/Icon-#{$i}-press.jpg') no-repeat;
+            z-index: 2;
+          }
+        }
+      }
     }
   }
+}
+
+.bx_catalog_top_home {
+  border-bottom: none;
+}
+
+.bx_catalog_item_images {
+  opacity: 0 !important;
+}
+
+.bx_catalog_item_images_double {
+  opacity: 1 !important;
 }
 
 /* FOOTER */
@@ -131,5 +159,131 @@ footer {
   h1 {
     margin: 96px 0 53px 0;
     color: black;
+  }
+}
+
+/* END FORM */
+
+/* NEWS */
+
+.sell {
+  background: url('/images/sell-bg.jpg') -260px no-repeat;
+  background-size: cover;
+  .sell-wrapper {
+    display: flex;
+    justify-content: space-between;
+    .left-wrapper {
+      margin-top: 96px;
+      flex-basis: 50%;
+      h1 {
+        line-height: 36px;
+        position: relative;
+        margin-bottom: 70px;
+        &:after {
+          content: '';
+          width: 180px;
+          border-bottom: 1px solid #4e4e4e;
+          position: absolute;
+          left: calc(50% - 90px);
+          bottom: -36px;
+        }
+      }
+      p {
+        color: #4e4e4e;
+      }
+    }
+    .right-wrapper {
+      flex-basis: 400px;
+      .news-list {
+        margin-top: 150px;
+        margin-bottom: 150px;
+      }
+      .preview_picture {
+        margin-right: 10px;
+        margin-bottom: 16px;
+        border: 2px solid white;
+      }
+      .custom-preview {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 5;
+        -webkit-box-orient: vertical;
+        margin-bottom: 10px;
+      }
+      .custom-news-button {
+        float: right;
+        padding: 3px 10px;
+        background-color: #87270d;
+        a { color: white; }
+      }
+    }
+  }
+}
+
+/* END NEWS */
+
+/* SLIDER */
+
+.title {
+  /* чтобы линии не выходили за ширину блока заголовка */
+  overflow: hidden;
+}
+.title:before,
+.title:after {
+  content: '';
+
+  /* делаем линию строчно-блочной */
+  display: inline-block;
+
+  /* выравниваем вертикально по середине */
+  vertical-align: middle;
+
+  /* не позволяем ширине превысить 100% (будет добавлен бордюр) */
+  box-sizing: border-box;
+
+  /* установка ширины в 100% делает линию равной ширине тега заголовка
+  ** благодаря этому линия заполнит все свободное пространство
+  ** слева и справа от текста
+  */
+  width: 100%;
+  height: 1px;
+  background: #4e4e4e;
+
+  /* добавляем к линии левый и правый бордюр цветом основного фона заголовка
+  ** благодаря этому создается нужный отступ между линиями и текстом
+  */
+  border: solid #FFF;
+  border-width: 0 10px;
+}
+.title:before {
+  /* смещаем левую линию влево отрицательным отступом, равным 100% ширины
+  ** благодаря этому линия встает слева от текста
+  */
+  margin-left: -100%;
+}
+.title:after {
+  /* смещаем правую линию вправо отрицательным отступом, равным 100% ширины
+  ** благодаря этому линия встает справа от текста
+  */
+  margin-right: -100%;
+}
+
+.slick {
+  overflow: hidden;
+  max-width: 100%;
+  min-height: 220px;
+  margin-bottom: 70px;
+  img {
+    opacity: 0.5;
+    transition: all 300ms ease;
+    padding: 2%;
+    max-width: 420px;
+  }
+  .slick-center {
+    img {
+      opacity: 1 !important;
+      transform: scale(1.08);
+    }
   }
 }
