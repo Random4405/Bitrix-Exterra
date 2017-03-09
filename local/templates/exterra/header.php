@@ -65,7 +65,7 @@ IncludeTemplateLangFile(__FILE__);
   </header>
   <section class="content">
     <div class="main-img-wrapper">
-      <img src="/images/main-image.png" class="img-responsive" alt="" />
+      <img src="/images/imgpsh_fullsize.jpg" class="img-responsive" alt="" />
     </div>
     <div class="container">
       <div class="row">
