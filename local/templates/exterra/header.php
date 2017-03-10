@@ -36,14 +36,17 @@ IncludeTemplateLangFile(__FILE__);
       <div class="container">
         <div class="row">
           <?$APPLICATION->IncludeComponent(
-            "bitrix:main.include",
-            "",
-            Array(
-              "AREA_FILE_SHOW" => "page",
-              "AREA_FILE_SUFFIX" => "inc_top_logo",
-              "EDIT_TEMPLATE" => ""
-            )
-          );?>
+	"bitrix:main.include", 
+	".default", 
+	array(
+		"AREA_FILE_SHOW" => "sect",
+		"AREA_FILE_SUFFIX" => "inc_top_logo",
+		"EDIT_TEMPLATE" => "",
+		"COMPONENT_TEMPLATE" => ".default",
+		"AREA_FILE_RECURSIVE" => "Y"
+	),
+	false
+);?>
           <?$APPLICATION->IncludeComponent("bitrix:menu", "top_menu", Array(
           	"ALLOW_MULTI_SELECT" => "N",	// Разрешить несколько активных пунктов одновременно
           		"CHILD_MENU_TYPE" => "left",	// Тип меню для остальных уровней
