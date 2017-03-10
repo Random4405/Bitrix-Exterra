@@ -253,7 +253,7 @@ footer {
   /* добавляем к линии левый и правый бордюр цветом основного фона заголовка
   ** благодаря этому создается нужный отступ между линиями и текстом
   */
-  border: solid #FFF;
+  border: solid #f2f2f2;
   border-width: 0 10px;
 }
 .title:before {
@@ -267,6 +267,15 @@ footer {
   ** благодаря этому линия встает справа от текста
   */
   margin-right: -100%;
+}
+
+.title-50px {
+  color: #87270d;
+}
+
+.title-50px:before, .title-50px:after {
+  width: 50px !important;
+  background: #87270d !important;
 }
 
 .slick {
