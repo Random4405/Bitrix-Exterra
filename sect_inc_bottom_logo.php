@@ -1,0 +1,1 @@
+<a class="footer-logo clearfix" href="/"><img src="/images/logo-terra.png" alt="" class="img-responsive"></a>
