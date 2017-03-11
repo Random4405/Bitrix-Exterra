@@ -16,6 +16,12 @@ $arUrlRewrite = array(
 		"CONDITION" => "#^/news/#",
 		"RULE" => "",
 		"ID" => "bitrix:news",
+		"PATH" => "/index.php",
+	),
+	array(
+		"CONDITION" => "#^/news/#",
+		"RULE" => "",
+		"ID" => "bitrix:news",
 		"PATH" => "/local/templates/exterra/footer.php",
 	),
 );

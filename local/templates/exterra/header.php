@@ -36,8 +36,8 @@ IncludeTemplateLangFile(__FILE__);
       <div class="container">
         <div class="row">
           <?$APPLICATION->IncludeComponent(
-	"bitrix:main.include", 
-	".default", 
+	"bitrix:main.include",
+	".default",
 	array(
 		"AREA_FILE_SHOW" => "sect",
 		"AREA_FILE_SUFFIX" => "inc_top_logo",
@@ -66,26 +66,4 @@ IncludeTemplateLangFile(__FILE__);
       </div>
     </div>
   </header>
-  <section class="content">
-    <div class="main-img-wrapper">
-      <img src="/images/imgpsh_fullsize.jpg" class="img-responsive" alt="" />
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="plates">
-          <ul>
-            <li><img class="plate-1" alt="" /></li>
-            <li><img class="plate-2" alt="" /></li>
-            <li><img class="plate-3" alt="" /></li>
-            <li><img class="plate-4" alt="" /></li>
-            <li><img class="plate-5" alt="" /></li>
-          </ul>
-        </div>
-      </div>
-      <div class="row">
-        <h1 class="title">Популярные товары</h1>
-        .custom-product-wrapper*4>img.product-main-image+.about-product>h4{Кирпич керамический пустотелый
-AP-Adriatico 240-70}+.cost-wrapper+.status-wrapper
-      </div>
-    </div>
-  </section>
+
