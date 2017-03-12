@@ -14,11 +14,12 @@ IncludeTemplateLangFile(__FILE__);
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
   <!-- Add the slick-theme.css if you want default styling -->
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css"/>
+  <?$APPLICATION->AddHeadScript("/local/templates/exterra/js/script.js");?>
   <title><?$APPLICATION->ShowTitle()?></title>
 </head>
 <body>
   <div id="panel"><?$APPLICATION->ShowPanel();?></div>
-  <header>
+  <header class="js-header">
     <div class="header-contacts">
       <div class="container">
         <div class="row">
