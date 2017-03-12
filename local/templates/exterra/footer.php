@@ -9,25 +9,6 @@ IncludeTemplateLangFile(__FILE__);
 <footer>
   <div class="container">
     <div class="row">
-      <h1>Адрес</h1>
-      <div class="footer-contacts">
-        <?$APPLICATION->IncludeComponent(
-          "bitrix:main.include",
-          ".default",
-          array(
-            "AREA_FILE_SHOW" => "sect",
-            "AREA_FILE_SUFFIX" => "inc_bottom_logo",
-            "EDIT_TEMPLATE" => "",
-            "COMPONENT_TEMPLATE" => ".default",
-            "AREA_FILE_RECURSIVE" => "Y"
-          ),
-          false
-        );?>
-        <p>ООО «Экстерра групп»</p>
-        <p>Адрес: 350059, г. Краснодар, ул.Уральская, д.114, помещение 3</p>
-        <p>Е-mail: info@exterragroup.ru</p>
-        <p>Телефоны: 8 (920) 474 11 11     8 (920) 474 11 11</p>
-      </div>
       <div class="footer-menu">
         <?$APPLICATION->IncludeComponent(
         	"bitrix:menu",
@@ -48,6 +29,9 @@ IncludeTemplateLangFile(__FILE__);
         	),
         	false
         );?>
+      </div>
+      <div class="footer-contacts">
+        <p>ООО «Экстерра групп».  Адрес: 350059, г. Краснодар, ул.Уральская, д.114, помещение 3.  Е-mail: info@exterragroup.ru  Телефон: 8 (920) 474-11-11</p>
       </div>
     </div>
   </div>
