@@ -327,3 +327,96 @@ footer {
     font-family: Arial;
   }
 }
+
+/* ABOUT COMPANY */
+
+h4 {
+  color: #4e4e4e;
+  font-family: Arial;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: center;
+}
+
+.about-wrapper {
+  display: flex;
+  .l-wrapper {
+    position: relative;
+    top: -10px;
+    flex-basis: 30%;
+    background:transparent url('/images/about-bg.png') left top no-repeat;
+  }
+  .r-wrapper {
+    flex-basis: 60%;
+    padding-left: 15px;
+    h3 {
+      font-family: Arial;
+      font-weight: 400;
+      line-height: 32px;
+      color: #87270d;
+      font-size: 18px;
+      position: relative;
+      &.about-why:hover:before,
+      &.about-how:hover:before,
+      &.about-because:hover:before { background-color: #87270d; color: #f2f2f2 !important; }
+      &.about-why:before,
+      &.about-how:before,
+      &.about-because:before {
+        content: "ЗАБОТА";
+        position: absolute;
+        width: 286px;
+        height: 144px;
+        left: -301px;
+        line-height: 144px;
+        top: 0;
+        background-color: rgba(255, 255, 255, .8);
+        z-index: 10;
+        color: #4e4e4e;
+        font-family: Arial;
+        font-size: 36px;
+        font-weight: 700;
+        text-align: center;
+      }
+      &.about-how:before  { content: "ГАРАНТИЯ"; }
+      &.about-because:before  { content: "КАЧЕСТВО"; }
+    }
+    p {
+      font-family: Arial;
+      font-weight: 400;
+      line-height: 32px;
+      color: #4e4e4e;
+      font-size: 16px;
+    }
+  }
+}
+
+.about-ads-wrapper {
+  background: transparent url(/images/feedback-bg.png) no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  h1 {
+    color: #000;
+    margin-top: 70px;
+  }
+  h2 {
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 32px;
+    margin-bottom: 40px;
+  }
+  .plates {
+    ul {
+      li {
+        :hover { opacity: 0.51 }
+      }
+    }
+  }
+}
+
+/* END ABOUT */
