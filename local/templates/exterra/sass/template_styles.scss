@@ -444,11 +444,17 @@ h4 {
 
 /* END ABOUT */
 /* CONTACTS */
+.bg-white {
+  background-color: white !important;
+}
+
 .contacts-flex-wrapper {
-  background-color: #fff;
   display: flex;
   justify-content: space-between;
   .contacts-left {
+    padding-top: 20px;
+    flex-basis: 30%;
+    margin-right: 15px;
     background-color: #f2f2f2;
     h1.show-room {
       color: #87270d;
@@ -468,6 +474,58 @@ h4 {
     }
   }
   .contacts-right {
+    padding-top: 20px;
+    background-color: #f2f2f2;
+    p {
+      text-align: center;
+    }
+    form {
+      margin-bottom: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      > div {
+        width: 80%;
+        margin-bottom: 15px;
+        input {
+          width: 100%;
+          border: none;
+          padding: 10px 15px;
+        }
+        textarea {
+          border: none;
+          width: 100%;
+          padding: 10px 15px;
+        }
+      }
+      [type="submit"] {
+        background: #87270d;
+        border: none;
+        color: white;
+        font-family: Arial;
+        font-size: 18px;
+        font-weight: 700;
+        text-transform: uppercase;
+        padding: 10px 15px;
+        width: 30%;
+      }
+    }
   }
 }
+.map-placeholder {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  img { max-width: 100% };
+}
+
+.contacts-building {
+  img { width: 100%; }
+}
+
+.constacts-slick {
+  position: relative;
+  top: 12px;
+}
+
 /* END CONTACTS */

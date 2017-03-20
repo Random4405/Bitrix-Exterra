@@ -1,6 +1,4 @@
 <?if(!defined("B_PROLOG_INCLUDED")||B_PROLOG_INCLUDED!==true)die();?>
-<div class="container">
-	<div class="row">
 		<div class="feedback_contacts">
 			<?if(!empty($arResult["ERROR_MESSAGE"]))
 			{
@@ -29,7 +27,7 @@
 			<!-- 			<div class="mf-text">
 							<?=$ext_field?>
 						</div> -->
-						<input type="text" name="custom[<?$i?>]" placeholder="<?=$ext_field?>" value="<?=$arResult["custom_$i"]?>">
+						<input type="text" name="custom[<?$i?>]" placeholder="<?=$ext_field?>:" value="<?=$arResult["custom_$i"]?>">
 					</div>
 					<?endforeach;?>
 				<div class="mf-email">
@@ -54,5 +52,3 @@
 				<input type="submit" name="submit" value="<?=GetMessage("MFT_SUBMIT")?>">
 			</form>
 			</div>
-	</div>
-</div>
