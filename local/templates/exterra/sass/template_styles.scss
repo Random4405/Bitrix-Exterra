@@ -443,3 +443,31 @@ h4 {
 }
 
 /* END ABOUT */
+/* CONTACTS */
+.contacts-flex-wrapper {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  .contacts-left {
+    background-color: #f2f2f2;
+    h1.show-room {
+      color: #87270d;
+      font-family: Arial;
+      font-size: 36px;
+      font-weight: 700;
+      line-height: 16px;
+      text-align: left;
+    }
+    p {
+      color: #4e4e4e;
+      font-family: Arial;
+      font-weight: 400;
+      span { font-size: 18px; }
+      font-size: 16px;
+      line-height: 0.7;
+    }
+  }
+  .contacts-right {
+  }
+}
+/* END CONTACTS */
