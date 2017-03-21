@@ -16,21 +16,21 @@ $aMenuLinks = Array(
 	),
 	Array(
 		"Дилерам", 
-		"/dileram.php", 
+		"/dillers/", 
 		Array(), 
 		Array(), 
 		"" 
 	),
 	Array(
 		"Контакты", 
-		"/kontakty.php", 
+		"/contacts/", 
 		Array(), 
 		Array(), 
 		"" 
 	),
 	Array(
 		"Акции", 
-		"/aktsii.php", 
+		"/promotions/", 
 		Array(), 
 		Array(), 
 		"" 
