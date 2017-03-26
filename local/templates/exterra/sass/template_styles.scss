@@ -529,3 +529,33 @@ h4 {
 }
 
 /* END CONTACTS */
+/* DILLERS */
+
+.dillers-why:hover:before,
+.dillers-how:hover:before,
+.dillers-because:hover:before { background-color: #87270d; color: #f2f2f2 !important; }
+.dillers-why:before,
+.dillers-how:before,
+.dillers-because:before {
+  content: "ИНФОРМАЦИЯ";
+  position: absolute;
+  width: 286px;
+  height: 144px;
+  left: -327px;
+  line-height: 144px;
+  top: 0;
+  background-color: rgba(255, 255, 255, .8);
+  z-index: 10;
+  color: #4e4e4e;
+  font-family: Arial;
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+}
+.dillers-how:before  { content: "ОБУЧЕНИЕ"; }
+.dillers-because:before  { content: "ЗАЩИТА"; }
+.dillers-last {
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+/* END DILLERS */
