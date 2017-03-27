@@ -559,3 +559,37 @@ h4 {
   margin-bottom: 50px;
 }
 /* END DILLERS */
+
+/* MENU */
+ul#horizontal-multilevel-menu {
+  ul {
+    position:absolute;
+    display: none;
+    background: #1f1f1e;
+    width: 20%;
+    left: 0;
+    top: 80px;
+    padding-top: 40px;
+    padding-bottom: 35px;
+  }
+  ul li{
+    padding-top:1px; /* Вводим отступ между li чтобы создать иллюзию разделенных пунктов меню */
+    list-style-image: url(/images/li-marker-2.png);
+    text-transform: none;
+    margin-left: 30px;
+    // float:none;
+  }
+  ul a{
+    white-space:nowrap; /* Останавливаем перенос текста и создаем многострочный выпадающий пункт */
+    display:block;
+    color: #f2f2f2;
+    font-family: Arial;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 20pt;
+  }
+  li:hover ul{ /* Выводим выпадающий пункт при наведении курсора */
+    display: block;
+  }
+}
+/* END MENU */
