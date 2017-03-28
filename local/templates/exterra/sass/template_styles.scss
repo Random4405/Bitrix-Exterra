@@ -383,7 +383,8 @@ h4 {
       position: relative;
       &.about-why:hover:before,
       &.about-how:hover:before,
-      &.about-because:hover:before { background-color: #87270d; color: #f2f2f2 !important; }
+      // &.about-because:hover:before { background-color: #87270d; color: #f2f2f2 !important; }
+      &.about-because:hover:before { color: #87270d !important; }
       &.about-why:before,
       &.about-how:before,
       &.about-because:before {
