@@ -100,6 +100,30 @@ header {
   }
 }
 
+
+.fix-plates {
+  ul {
+    display: flex;
+    justify-content: center;
+    li {
+      list-style-type: none;
+      @for $i from 1 through 4 {
+        div.plate-#{$i} {
+          background: url('/images/about/Icon-#{$i}.png') no-repeat;
+          width: 300px;
+          height: 180px;
+          max-height: 100%;
+          z-index: 1;
+          &:hover {
+            background: url('/images/about/Icon-#{$i}-press.png') no-repeat;
+            z-index: 2;
+          }
+        }
+      }
+    }
+  }
+}
+
 .bx_catalog_top_home {
   border-bottom: none;
 }

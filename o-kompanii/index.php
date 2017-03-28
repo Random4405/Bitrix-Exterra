@@ -66,7 +66,7 @@ $APPLICATION->SetTitle("О компании");
 </div>
 <div class="about-ads-wrapper">
   <h1>В ЛИЦЕ КОМПАНИИ « ЭКСТЕРРА ГРУПП» ВЫ ПОЛУЧАЕТЕ:</h1>
-  <div class="plates">
+  <div class="fix-plates">
     <ul>
       <li><div class="plate-1"></div></li>
       <li><div class="plate-2"></div></li>
