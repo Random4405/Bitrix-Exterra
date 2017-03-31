@@ -60,6 +60,7 @@ IncludeTemplateLangFile(__FILE__);
     $(document).ready(function(){
       $('.slick-main').slick({
           infinite: true,
+          arrows: false,
           autoplay: true,
           autoplaySpeed: 2000,
       });
