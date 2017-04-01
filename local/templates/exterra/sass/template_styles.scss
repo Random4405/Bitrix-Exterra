@@ -263,9 +263,9 @@ footer {
       .custom-preview {
         overflow: hidden;
         text-overflow: ellipsis;
-        display: -webkit-box;
-        -webkit-line-clamp: 5;
-        -webkit-box-orient: vertical;
+        // display: -webkit-box;
+        // -webkit-line-clamp: 5;
+        // -webkit-box-orient: vertical;
         margin-bottom: 10px;
       }
       .custom-news-button {

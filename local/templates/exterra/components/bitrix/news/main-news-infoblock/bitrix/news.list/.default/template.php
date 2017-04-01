@@ -58,7 +58,7 @@ $this->setFrameMode(true);
 			<?endif;?>
 		<?endif;?> -->
 		<?if($arParams["DISPLAY_PREVIEW_TEXT"]!="N" && $arItem["PREVIEW_TEXT"]):?>
-			<div class="custom-preview"><?echo $arItem["PREVIEW_TEXT"];?></div>
+			<div class="custom-preview"><p><?echo $arItem["PREVIEW_TEXT"];?></p></div>
 		<?endif;?>
 		<div class="custom-news-button"><a href="<?echo $arItem["DETAIL_PAGE_URL"]?>">Читать...</a></div>
 		<?if($arParams["DISPLAY_PICTURE"]!="N" && is_array($arItem["PREVIEW_PICTURE"])):?>
