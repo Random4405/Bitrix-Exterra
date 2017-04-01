@@ -6,3 +6,6 @@ $(window).scroll(function(){
   else sticky.removeClass('header-fixed');
 });
 
+jQuery( document ).ready(function( $ ) {
+  $('.custom-preview p').each(function(index, element) {$clamp(element, { clamp: 6, useNativeClamp: false });
+}
