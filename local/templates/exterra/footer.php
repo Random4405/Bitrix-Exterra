@@ -71,6 +71,5 @@ IncludeTemplateLangFile(__FILE__);
     $('.custom-preview p').each(function(index, element) {$clamp(element, { clamp: 6, useNativeClamp: false });
   }
 </script>
-    });
 </body>
 </html>
