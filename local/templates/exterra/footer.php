@@ -66,10 +66,5 @@ IncludeTemplateLangFile(__FILE__);
       });
     });
 </script>
-<script>
-  jQuery( document ).ready(function( $ ) {
-    $('.custom-preview p').each(function(index, element) {$clamp(element, { clamp: 6, useNativeClamp: false });
-  }
-</script>
 </body>
 </html>
