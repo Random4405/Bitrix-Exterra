@@ -12,7 +12,6 @@ IncludeTemplateLangFile(__FILE__);
   <link href="<?=SITE_TEMPLATE_PATH?>/common.css" type="text/css" rel="stylesheet" />
   <link href="<?=SITE_TEMPLATE_PATH?>/colors.css" type="text/css" rel="stylesheet" />
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
-  <!-- Add the slick-theme.css if you want default styling -->
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css"/>
   <?$APPLICATION->AddHeadScript("/local/templates/exterra/js/clamp.min.js");?>
   <?$APPLICATION->AddHeadScript("/local/templates/exterra/js/script.js");?>
