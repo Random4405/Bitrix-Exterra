@@ -621,20 +621,69 @@ ul#horizontal-multilevel-menu {
 /* END MENU */
 
 /* Product page */
-.half-row {
-  display: flex;
+$wrapper-margin: 15px;
+
+.left-wrapper {
+  float: left;
+  width: calc(50% - #{$wrapper-margin/2});
 }
 
-.half-wrapper {
-  flex-basis: 50%;
+.right-wrapper {
+  float: right;
+  width: calc(50% - #{$wrapper-margin/2});
 }
 
 .slick-vertical-wrapper {
-  max-width: 200px;
-  max-height: 50px;
-  overflow: hidden;
+  flex-direction: column;
   img {
-    max-width: 100%;
-    max-height: 100%;
+    height: 70px;
+    width: 300px;
+  }
+}
+
+.slider-for img {
+  width: 100%;
+}
+
+.slider-nav {
+  display: flex !important;
+  flex-direction: column;
+}
+
+.information-wrapper {
+  h4 {
+    text-align: left;
+    font-family: Arial;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #4e4e4e;
+    line-height: .5;
+    & + h4 {
+      color: #87270d;
+      margin-bottom: 32px;
+    }
+  }
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  .cost-green {
+    color: green;
+    font-size: 24px;
+  }
+  table {
+    font-weight: 400;
+    tr {
+      border-bottom: 1px solid #4d4d4d;
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+    td {
+      &:first-child {
+        font-weight: 700;
+        padding-right: 20px;
+      }
+    }
   }
 }
