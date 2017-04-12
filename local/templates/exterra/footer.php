@@ -86,5 +86,8 @@ $(document).ready(function(){
   });
 });
 </script>
+<script>
+$('.slider-product').slick();
+</script>
 </body>
 </html>

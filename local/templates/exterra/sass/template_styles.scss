@@ -623,14 +623,22 @@ ul#horizontal-multilevel-menu {
 /* Product page */
 $wrapper-margin: 15px;
 
+.left-wrapper, .right-wrapper {
+  width: calc(50% - #{$wrapper-margin/2});
+}
+
+.flex-col {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
 .left-wrapper {
   float: left;
-  width: calc(50% - #{$wrapper-margin/2});
 }
 
 .right-wrapper {
   float: right;
-  width: calc(50% - #{$wrapper-margin/2});
 }
 
 .slick-vertical-wrapper {
@@ -687,3 +695,73 @@ $wrapper-margin: 15px;
     }
   }
 }
+
+.slider-product {
+  width: 50%;
+  img {
+    width: 148px;
+    height: 148px;
+  }
+}
+
+button.slick-prev {
+  background: url(/images/slider-arrow-left.png) !important;
+  height: 40px;
+  width: 20px;
+  &:before {
+    content: "";
+  }
+}
+
+button.slick-next {
+  background: url(/images/slider-arrow-right.png) !important;
+  height: 40px;
+  width: 20px;
+  &:before {
+    content: "";
+  }
+}
+
+/*TABS*/
+/* Style the tab */
+div.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+div.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+div.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+div.tab button.active {
+  background-color: #ccc;
+}
+
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+.maintab {
+  display: block;
+}
+
+/*END TABS*/

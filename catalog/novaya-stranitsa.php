@@ -7,16 +7,16 @@ $APPLICATION->SetTitle("Новая страница");
   <div class="row">
     <div class="left-wrapper">
       <div class="img-wrapper slider-for">
-        <div><img src="/images/realize/1photo.jpg" alt=""></div>
-        <div><img src="/images/realize/2photo.jpg" alt=""></div>
-        <div><img src="/images/realize/3photo.jpg" alt=""></div>
-        <div><img src="/images/realize/4photo.jpg" alt=""></div>
-        <div><img src="/images/realize/5photo.jpg" alt=""></div>
-        <div><img src="/images/realize/6photo.jpg" alt=""></div>
+        <div><img src="/images/texture-1.png" alt=""></div>
+        <div><img src="/images/texture-1.png" alt=""></div>
+        <div><img src="/images/texture-1.png" alt=""></div>
+        <div><img src="/images/texture-1.png" alt=""></div>
+        <div><img src="/images/texture-1.png" alt=""></div>
+        <div><img src="/images/texture-1.png" alt=""></div>
       </div>
     </div>
     <div class="right-wrapper">
-      <div class="left-wrapper">
+      <div class="left-wrapper flex-col">
         <div class="information-wrapper">
           <h4>Кирпич облицовочный</h4>
           <h4>Giallo Macenato</h4>
@@ -47,22 +47,66 @@ $APPLICATION->SetTitle("Новая страница");
             </tr>
           </table>
         </div>
-        <div class="link-description">Lorem ipsum</div>
-        <a href="#">Link1</a>
-      </div>
-      <div class="right-wrapper">
-        <div class="slider-nav">
-          <div class="slick-vertical-wrapper"><img src="/images/realize/1photo.jpg" alt=""></div>
-          <div class="slick-vertical-wrapper"><img src="/images/realize/2photo.jpg" alt=""></div>
-          <div class="slick-vertical-wrapper"><img src="/images/realize/3photo.jpg" alt=""></div>
-          <div class="slick-vertical-wrapper"><img src="/images/realize/4photo.jpg" alt=""></div>
-          <div class="slick-vertical-wrapper"><img src="/images/realize/5photo.jpg" alt=""></div>
-          <div class="slick-vertical-wrapper"><img src="/images/realize/6photo.jpg" alt=""></div>
+        <div>
+          <div class="link-description">Lorem ipsum</div>
+          <a href="#">Link1</a>
         </div>
-        <div class="link-description">Lorem ipsum</div>
-        <a href="#">Link1</a>
+      </div>
+      <div class="right-wrapper flex-col">
+        <div class="slider-nav">
+          <div class="slick-vertical-wrapper"><img src="/images/texture-2.png" alt=""></div>
+          <div class="slick-vertical-wrapper"><img src="/images/texture-3.png" alt=""></div>
+          <div class="slick-vertical-wrapper"><img src="/images/texture-4.png" alt=""></div>
+          <div class="slick-vertical-wrapper"><img src="/images/texture-2.png" alt=""></div>
+          <div class="slick-vertical-wrapper"><img src="/images/texture-3.png" alt=""></div>
+          <div class="slick-vertical-wrapper"><img src="/images/texture-4.png" alt=""></div>
+        </div>
+        <div>
+          <div class="link-description">Lorem ipsum</div>
+          <a href="#">Link1</a>
+        </div>
       </div>
     </div>
+  </div>
+  <div class="row">
+    <div class="slider-product" data-slick='{ "slidesToShow": 3, "infinite": true, "centerMode": false, "focusOnSelect": true }'>
+      <div><img src="/images/realize/1photo.jpg" alt=""></div>
+      <div><img src="/images/realize/2photo.jpg" alt=""></div>
+      <div><img src="/images/realize/3photo.jpg" alt=""></div>
+      <div><img src="/images/realize/4photo.jpg" alt=""></div>
+      <div><img src="/images/realize/5photo.jpg" alt=""></div>
+      <div><img src="/images/realize/6photo.jpg" alt=""></div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="tab">
+      <button class="tablinks" onclick="openCity(event, 'Tab1')">tab1</button>
+      <button class="tablinks" onclick="openCity(event, 'Tab2')">tab2</button>
+      <button class="tablinks" onclick="openCity(event, 'Tab3')">tab3</button>
+      <button class="tablinks" onclick="openCity(event, 'Tab4')">tab4</button>
+      <button class="tablinks" onclick="openCity(event, 'Tab5')">tab5</button>
+    </div>
+
+    <div id="Tab1" class="tabcontent maintab">
+      <p>London is the capital city of England. 1</p>
+    </div>
+
+    <div id="Tab2" class="tabcontent">
+      <p>London is the capital city of England.</p>
+    </div>
+
+    <div id="Tab3" class="tabcontent">
+      <p>London is the capital city of England.</p>
+    </div>
+
+    <div id="Tab4" class="tabcontent">
+      <p>London is the capital city of England.</p>
+    </div>
+
+    <div id="Tab5" class="tabcontent">
+      <p>London is the capital city of England.</p>
+    </div>
+
   </div>
 </div>
 <?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
