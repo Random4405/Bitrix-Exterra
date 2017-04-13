@@ -1005,7 +1005,6 @@ div.tab button.active {
   display: inline-block;
   padding-left: 7.5px;
   padding-right: 7.5px;
-  margin-bottom: 70px;
   .texture-name {
     position: absolute;
     bottom: 0;
@@ -1028,6 +1027,7 @@ div.tab button.active {
 .jumbo {
   width: 100%;
   margin-bottom: 70px;
+  margin-top: 70px;
   img {
     max-width: 100%;
   }
