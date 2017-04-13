@@ -59,9 +59,9 @@ $APPLICATION->SetTitle("Новая страница");
             </tr>
           </table>
         </div>
-        <div>
-          <div class="link-description">Lorem ipsum</div>
-          <a href="#">Link1</a>
+        <div class='catalog-button'>
+          <div class="link-description">Понравился товар?</div>
+          <a href="#">Заказать</a>
         </div>
       </div>
       <div class="right-wrapper flex-col">
@@ -74,14 +74,22 @@ $APPLICATION->SetTitle("Новая страница");
             <div class="texture-name">Бежевый</div>
             <img src="/images/texture-3.png" alt="">
           </div>
-          <div class="slick-vertical-wrapper"><img src="/images/texture-4.png" alt=""></div>
-          <div class="slick-vertical-wrapper"><img src="/images/texture-2.png" alt=""></div>
-          <div class="slick-vertical-wrapper"><img src="/images/texture-3.png" alt=""></div>
-          <div class="slick-vertical-wrapper"><img src="/images/texture-4.png" alt=""></div>
+          <div class="slick-vertical-wrapper">
+            <div class="texture-name">Бежевый</div>
+            <img src="/images/texture-3.png" alt="">
+          </div>
+          <div class="slick-vertical-wrapper">
+            <div class="texture-name">Бежевый</div>
+            <img src="/images/texture-3.png" alt="">
+          </div>
+          <div class="slick-vertical-wrapper">
+            <div class="texture-name">Бежевый</div>
+            <img src="/images/texture-3.png" alt="">
+          </div>
         </div>
-        <div>
-          <div class="link-description">Lorem ipsum</div>
-          <a href="#">Link1</a>
+        <div class='catalog-button'>
+          <div class="link-description">Узнать больше</div>
+          <a href="#">Скачать текстуры в 1 клик</a>
         </div>
       </div>
     </div>
