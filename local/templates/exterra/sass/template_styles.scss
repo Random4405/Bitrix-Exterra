@@ -648,6 +648,18 @@ $wrapper-margin: 15px;
   width: calc(50% - #{$wrapper-margin/2});
 }
 
+.left-product-wrapper, .right-product-wrapper {
+  width: 50%;
+}
+
+.left-product-wrapper {
+  float: left;
+}
+
+.right-product-wrapper {
+  float: right;
+}
+
 .flex-col {
   display: flex;
   justify-content: space-between;
@@ -923,6 +935,7 @@ div.tab button.active {
   padding: 8px 16px;
   border: 1px solid #ccc;
   border-top: none;
+  margin-bottom: 50px;
   p {
     text-align: justify;
   }
@@ -933,6 +946,52 @@ div.tab button.active {
 }
 
 /*END TABS*/
+
+.flex-row {
+  display: flex;
+  justify-content: space-around;
+}
+
+.flex-product-wrapper {
+  h3 {
+    color: #282828;
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  p {
+    color: #282828;
+    font-family: Arial;
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 0;
+    &:last-child {
+      margin-bottom: 10px;
+    }
+  }
+  margin-bottom: 70px;
+}
+
+.green {
+  color: #009900  !important;
+  font-family: Arial !important;
+  font-size: 16px !important;
+  font-weight: 400 !important;
+}
+
+.product-button {
+  background-color: #882204;
+  color: white;
+  text-align: center;
+  padding: 5px 8px;
+  border: 2px solid #882204;
+  &:hover, &:active {
+    background-color: black;
+    border: 2px solid black;
+    text-decoration: none;
+    color: white;
+  }
+}
 
 .header-underline {
   border-bottom: 4px solid #bbb;
