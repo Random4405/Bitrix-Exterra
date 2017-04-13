@@ -19,7 +19,7 @@ IncludeTemplateLangFile(__FILE__);
 </head>
 <body>
   <div id="panel"><?$APPLICATION->ShowPanel();?></div>
-  <header class="js-header">
+  <header class="js-header <? if ($_SERVER['REQUEST_URI'] != '/') echo "header-underline"?>">
     <div class="header-contacts">
       <div class="container">
         <div class="row">

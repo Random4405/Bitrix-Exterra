@@ -3,8 +3,20 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Новая страница");
 ?>
 
+
 <div class="container">
   <div class="row">
+    <?$APPLICATION->IncludeComponent(
+      "bitrix:breadcrumb",
+      "",
+      Array(
+        "PATH" => "",
+        "SITE_ID" => "s1",
+        "START_FROM" => "0"
+      )
+    );?>
+  </div>
+  <div class="row two-column-wrapper">
     <div class="left-wrapper">
       <div class="img-wrapper slider-for">
         <div><img src="/images/texture-1.png" alt=""></div>
@@ -54,8 +66,14 @@ $APPLICATION->SetTitle("Новая страница");
       </div>
       <div class="right-wrapper flex-col">
         <div class="slider-nav">
-          <div class="slick-vertical-wrapper"><img src="/images/texture-2.png" alt=""></div>
-          <div class="slick-vertical-wrapper"><img src="/images/texture-3.png" alt=""></div>
+          <div class="slick-vertical-wrapper">
+            <div class="texture-name">Бежевый</div>
+            <img src="/images/texture-2.png" alt="">
+          </div>
+          <div class="slick-vertical-wrapper">
+            <div class="texture-name">Бежевый</div>
+            <img src="/images/texture-3.png" alt="">
+          </div>
           <div class="slick-vertical-wrapper"><img src="/images/texture-4.png" alt=""></div>
           <div class="slick-vertical-wrapper"><img src="/images/texture-2.png" alt=""></div>
           <div class="slick-vertical-wrapper"><img src="/images/texture-3.png" alt=""></div>

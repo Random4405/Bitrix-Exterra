@@ -76,11 +76,11 @@ $(document).ready(function(){
     asNavFor: '.slider-nav'
   });
   $('.slider-nav').slick({
-    slidesToShow: 2,
+    slidesToShow: 3,
     /* slidesToScroll: 1, */
     infinite: true,
     asNavFor: '.slider-for',
-    centerMode: true,
+    /* centerMode: true, */
     vertical: true,
     focusOnSelect: true
   });
