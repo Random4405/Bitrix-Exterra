@@ -662,9 +662,10 @@ $wrapper-margin: 15px;
 
 .flex-col {
   display: flex;
-  justify-content: space-between;
   flex-direction: column;
   height: 100%;
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
 }
 
 .two-column-wrapper {
