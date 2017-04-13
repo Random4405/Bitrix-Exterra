@@ -658,6 +658,7 @@ $wrapper-margin: 15px;
 .two-column-wrapper {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 40px;
 }
 
 .left-wrapper {
@@ -733,6 +734,9 @@ $wrapper-margin: 15px;
   font-size: 16px;
   line-height: 24px;
   font-weight: 700;
+  p.cost + p.cost {
+    margin-bottom: 30px;
+  }
   .cost-green {
     color: green;
     font-size: 24px;
@@ -755,11 +759,15 @@ $wrapper-margin: 15px;
 }
 
 .slider-product {
-  width: 50%;
   img {
-    width: 148px;
-    height: 148px;
+    width: 100%;
+    height: auto;
+    padding-left: 7px;
+    padding-right: 7px;
   }
+  margin-left: 25px;
+  margin-right: 30px;
+  margin-bottom: 40px;
 }
 
 button.slick-prev {
@@ -807,24 +815,67 @@ button.slick-next {
 .catalog-button {
   .link-description {
     color: #4e4e4e;
-    margin-left: 16px;
     font-family: Arial;
+    text-align: center;
     font-size: 18px;
     font-weight: 400;
     + a {
       background-color: #882204;
       color: white;
       margin-left: 16px;
-      padding: 10px 20px;
+      margin-bottom: 40px;
+      text-align: center;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      text-transform: uppercase;
+      font-weight: 700;
+      width: 250px;
+      border: 2px solid #882204;
+      display: inline-block;
+      &:hover, &:active {
+        background-color: black;
+        border: 2px solid black;
+        text-decoration: none;
+      }
+      &.green-button {
+        background-color: #fff;
+        border: 2px solid green;
+        text-transform: none;
+        color: green;
+        box-sizing: content-box;
+        &:hover, &:active {
+          color: white;
+          background-color: green;
+          text-decoration: none;
+        }
+      }
     }
   }
 }
+
+.sticker-new, .sticker-in {
+  width: 70px;
+  height: 17px;
+  margin-left: auto;
+  margin-right: 25px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+.sticker-new {
+  background: url(/images/sticker-new.png);
+}
+
+.sticker-in {
+  background: url(/images/sticker-in.png);
+}
+
 /*TABS*/
 /* Style the tab */
 div.tab {
   overflow: hidden;
-  border: 1px solid #ccc;
-  background-color: #f1f1f1;
+  // background-color: #f1f1f1;
+  background-color: white;
 }
 
 /* Style the buttons inside the tab */
@@ -835,7 +886,16 @@ div.tab button {
   outline: none;
   cursor: pointer;
   padding: 14px 16px;
-  transition: 0.3s;
+  width: 20%;
+  // transition: 0.3s;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-right: 1px solid transparent;
+  border-left: 1px solid transparent;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid #ccc;
 }
 
 /* Change background color of buttons on hover */
@@ -845,16 +905,27 @@ div.tab button:hover {
 
 /* Create an active/current tablink class */
 div.tab button.active {
-  background-color: #ccc;
+  color: #87270d;
+  font-family: Arial;
+  background-color: #f1f1f1;
+  border-bottom: 1px solid transparent;
+  font-size: 15px;
+  font-weight: 700;
+  border-right: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  border-top: 1px solid #ccc;
 }
 
 
 /* Style the tab content */
 .tabcontent {
   display: none;
-  padding: 6px 12px;
+  padding: 8px 16px;
   border: 1px solid #ccc;
   border-top: none;
+  p {
+    text-align: justify;
+  }
 }
 
 .maintab {

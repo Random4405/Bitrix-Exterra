@@ -6,15 +6,15 @@ $APPLICATION->SetTitle("Новая страница");
 
 <div class="container">
   <div class="row">
-    <?$APPLICATION->IncludeComponent(
-      "bitrix:breadcrumb",
-      "",
-      Array(
-        "PATH" => "",
-        "SITE_ID" => "s1",
-        "START_FROM" => "0"
-      )
-    );?>
+<?$APPLICATION->IncludeComponent(
+  "bitrix:breadcrumb",
+  "",
+  Array(
+    "PATH" => "",
+    "SITE_ID" => "s1",
+    "START_FROM" => "0"
+  )
+);?>
   </div>
   <div class="row two-column-wrapper">
     <div class="left-wrapper">
@@ -89,19 +89,26 @@ $APPLICATION->SetTitle("Новая страница");
         </div>
         <div class='catalog-button'>
           <div class="link-description">Узнать больше</div>
-          <a href="#">Скачать текстуры в 1 клик</a>
+          <a class='green-button' href="#">Скачать текстуры в 1 клик</a>
         </div>
       </div>
     </div>
   </div>
   <div class="row">
-    <div class="slider-product" data-slick='{ "slidesToShow": 3, "infinite": true, "centerMode": false, "focusOnSelect": true }'>
-      <div><img src="/images/realize/1photo.jpg" alt=""></div>
-      <div><img src="/images/realize/2photo.jpg" alt=""></div>
-      <div><img src="/images/realize/3photo.jpg" alt=""></div>
-      <div><img src="/images/realize/4photo.jpg" alt=""></div>
-      <div><img src="/images/realize/5photo.jpg" alt=""></div>
-      <div><img src="/images/realize/6photo.jpg" alt=""></div>
+    <div class="left-wrapper">
+      <div class="slider-product" data-slick='{
+      "slidesToShow": 3,
+      "infinite": true,
+      "centerMode": false,
+      "focusOnSelect": true
+      }'>
+        <div><img src="/images/lorem-slider-1.png" alt=""></div>
+        <div><img src="/images/lorem-slider-2.png" alt=""></div>
+        <div><img src="/images/lorem-slider-3.png" alt=""></div>
+        <div><img src="/images/lorem-slider-1.png" alt=""></div>
+        <div><img src="/images/lorem-slider-2.png" alt=""></div>
+        <div><img src="/images/lorem-slider-3.png" alt=""></div>
+      </div>
     </div>
   </div>
   <div class="row">
@@ -114,7 +121,41 @@ $APPLICATION->SetTitle("Новая страница");
     </div>
 
     <div id="Tab1" class="tabcontent maintab">
-      <p>London is the capital city of England. 1</p>
+      <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eleifend diam vel turpis efficitur suscipit. Fusce posuere dapibus neque, vel vehicula nisi iaculis
+
+      consequat.Duis feugiat risus dui, eget fermentum magna accumsan nec. Nulla laoreet commodo justo eu faucibus. Nunc tristique in ex nec mattis. Aenean
+
+      malesuada ac erat auctor dictum. Praesent lectus ipsum, sollicitudin a ultrices ut, malesuada id eros. Aenean laoreet leo metus, quis ultrices nisl cursus ac.
+
+      Vestibulum augue dolor, dignissim tincidunt magna vel, feugiat laoreet quam. Fusce eu velit rutrum, imperdiet quam a, egestas nisi. Quisque sit amet mi semper,
+
+      iaculis mauris eget, venenatis orci. Sed quis felis risus. Nullam ut posuere lectus. Nulla lacinia dui in sapien rutrum fringilla. Vivamus et lobortis dolor. Proin sit amet
+
+      elit efficitur velit vestibulum tristique.
+
+      Donec vitae mi interdum, tempor erat quis, faucibus augue. Mauris sapien lorem, rhoncus eget pharetra et, pellentesque a justo. Cras vulputate erat ipsum, et
+
+      fringilla nibh volutpat non. Donec tellus leo, suscipit sit amet varius eget, dictum in orci. Duis sapien risus, vestibulum vitae sodales quis, feugiat vel leo. Morbi
+
+      pretium dolor id felis rhoncus dapibus. Morbi at volutpat eros. Quisque risus lorem, consectetur eget lectus et, semper mollis neque. Aliquam purus lectus, tempor.
+
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel suscipit neque. Nunc interdum lobortis vestibulum. Vivamus iaculis suscipit neque eget
+
+      hendrerit. Donec lacinia in ipsum vel porttitor. Nulla ultricies cursus mauris nec gravida. Maecenas aliquam a diam eget feugiat. Nunc leo nibh, aliquet vel orci sit
+
+      amet, ultrices fringilla nisl.
+
+      Donec bibendum tincidunt erat id malesuada. Nunc varius velit lorem, rhoncus lacinia ligula tristique quis. Sed tortor dui, condimentum sit amet porta molestie,
+
+      dictum condimentum lacus. Donec auctor nisl vel tortor feugiat iaculis. Fusce erat est, fringilla a condimentum id, posuere vel ligula. Integer augue velit, lobortis nec
+
+      fermentum a, sodales ut libero. Aliquam eleifend mauris a vulputate accumsan. Nunc interdum urna at purus tincidunt molestie. Nullam viverra a nisi nec elementum
+
+      Donec sempernisi sapien, at egestas quam efficitur sed.
+      </p>
+
+
     </div>
 
     <div id="Tab2" class="tabcontent">

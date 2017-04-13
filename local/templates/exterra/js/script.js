@@ -34,3 +34,7 @@ function openCity(evt, cityName) {
 // jQuery( document ).ready(function( $ ) {
 //   $('.tab-main').click();
 // });
+
+jQuery( document ).ready(function( $ ) {
+  $('button.tablinks').first().addClass('active');
+});
