@@ -1093,12 +1093,14 @@ div.tab button.active {
     font-weight: 700;
   }
   ul {
+    /* УБРАТЬ */
+    padding-left: 40%;
     padding-bottom: 40px;
     margin-bottom: 16px;
     li {
       font-family: Arial;
       list-style-position: inside;
-      list-style-image: url(/images/li-marker-2.png);
+      list-style-image: url(/images/li-black-marker.png);
       font-size: 16px;
       font-weight: 400;
       color: #4e4e4e;
