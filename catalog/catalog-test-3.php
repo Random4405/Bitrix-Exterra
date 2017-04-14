@@ -15,35 +15,90 @@ $APPLICATION->SetTitle("Новая страница");
   )
 );?>
   </div>
+</div>
+<div class="container">
   <div class="row flex-row">
-    <div class="content-sidebar">
-      <ul>
-        <li>Кирпич облицовочный</li>
-        <li>Клинкерный</li>
-        <li>Кирпич ручной формовки</li>
-        <li>Декоративный кирпич для
-          внутренней отделки</li>
-        <li>Распродажа</li>
-      </ul>
+    <div class="flex-product-wrapper">
+      <div class="img-product-wrapper"><img class="img-responsive" src="/images/sand.png" alt=""></div>
+      <h3>Название</h3>
+      <div class="product-desc">
+        <div class="left-product-wrapper">
+          <div class="product-cost">
+            <p>за шт.</p>
+            <p>17.25 P</p>
+          </div>
+          <p class="green">+ в наличии</p>
+        </div>
+        <div class="right-product-wrapper">
+          <div class="product-cost">
+            <p>за кв.м</p>
+            <p>1213.00</p>
+          </div>
+          <a class="product-button" href="#">Купить сейчас</a>
+        </div>
+      </div>
     </div>
-    <div class="content-main">
-      <div class="img-wrapper">
-        <div class="texture-name">Кирпич клинкерный</div>
-        <img class="img-responsive" src="/images/catalog-qube.png" alt="">
+    <div class="flex-product-wrapper">
+      <div class="img-product-wrapper"><img class="img-responsive" src="/images/sand.png" alt=""></div>
+      <h3>Название</h3>
+      <div class="product-desc">
+        <div class="left-product-wrapper">
+          <div class="product-cost">
+            <p>за шт.</p>
+            <p>17.25 P</p>
+          </div>
+          <p class="green">+ в наличии</p>
+        </div>
+        <div class="right-product-wrapper">
+          <div class="product-cost">
+            <p>за кв.м</p>
+            <p>1213.00</p>
+          </div>
+          <a class="product-button" href="#">Купить сейчас</a>
+        </div>
       </div>
-      <div class="img-wrapper">
-        <div class="texture-name">Кирпич клинкерный</div>
-        <img class="img-responsive" src="/images/catalog-qube.png" alt="">
+    </div>
+    <div class="flex-product-wrapper">
+      <div class="img-product-wrapper"><img class="img-responsive" src="/images/sand.png" alt=""></div>
+      <h3>Название</h3>
+      <div class="product-desc">
+        <div class="left-product-wrapper">
+          <div class="product-cost">
+            <p>за шт.</p>
+            <p>17.25 P</p>
+          </div>
+          <p class="green">+ в наличии</p>
+        </div>
+        <div class="right-product-wrapper">
+          <div class="product-cost">
+            <p>за кв.м</p>
+            <p>1213.00</p>
+          </div>
+          <a class="product-button" href="#">Купить сейчас</a>
+        </div>
       </div>
-      <div class="img-wrapper">
-        <div class="texture-name">Кирпич клинкерный</div>
-        <img class="img-responsive" src="/images/catalog-qube.png" alt="">
+    </div>
+    <div class="flex-product-wrapper">
+      <div class="img-product-wrapper"><img class="img-responsive" src="/images/sand.png" alt=""></div>
+      <h3>Название</h3>
+      <div class="product-desc">
+        <div class="left-product-wrapper">
+          <div class="product-cost">
+            <p>за шт.</p>
+            <p>17.25 P</p>
+          </div>
+          <p class="green">+ в наличии</p>
+        </div>
+        <div class="right-product-wrapper">
+          <div class="product-cost">
+            <p>за кв.м</p>
+            <p>1213.00</p>
+          </div>
+          <a class="product-button" href="#">Купить сейчас</a>
+        </div>
       </div>
     </div>
   </div>
-</div>
-<div class="jumbo"><img src="/images/catalog-jumbo.png" alt=""></div>
-<div class="container">
   <div class="row">
     <p class="desc">
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eleifend diam vel turpis efficitur suscipit. Fusce posuere dapibus neque, vel vehicula nisi iaculis consequat.
@@ -86,88 +141,6 @@ $APPLICATION->SetTitle("Новая страница");
 
   <div class="row">
     <h1 class="title">Популярные товары</h1>
-  </div>
-  <div class="row flex-row">
-    <div class="flex-product-wrapper">
-      <div class="img-product-wrapper"><img class="img-responsive" src="/images/sand.png" alt=""></div>
-      <h3>Название</h3>
-      <div class="product-desc">
-        <div class="left-product-wrapper">
-          <div class="product-cost">
-            <p>за шт.</p>
-            <p>17.25 P</p>
-          </div>
-          <p class="green">+ в наличии</p>
-        </div>
-        <div class="right-product-wrapper">
-          <div class="product-cost">
-            <p>за кв.м</p>
-            <p>1213.00</p>
-          </div>
-          <a class="product-button" href="#">Купить сейчас</a>
-        </div>
-      </div>
-    </div>
-    <div class="flex-product-wrapper">
-      <div class="img-product-wrapper"><img class="img-responsive" src="/images/sand.png" alt=""></div>
-      <h3>Название</h3>
-      <div class="product-desc">
-        <div class="left-product-wrapper">
-          <div class="product-cost">
-            <p>за шт.</p>
-            <p>17.25 P</p>
-          </div>
-          <p class="green">+ в наличии</p>
-        </div>
-        <div class="right-product-wrapper">
-          <div class="product-cost">
-            <p>за кв.м</p>
-            <p>1213.00</p>
-          </div>
-          <a class="product-button" href="#">Купить сейчас</a>
-        </div>
-      </div>
-    </div>
-    <div class="flex-product-wrapper">
-      <div class="img-product-wrapper"><img class="img-responsive" src="/images/sand.png" alt=""></div>
-      <h3>Название</h3>
-      <div class="product-desc">
-        <div class="left-product-wrapper">
-          <div class="product-cost">
-            <p>за шт.</p>
-            <p>17.25 P</p>
-          </div>
-          <p class="green">+ в наличии</p>
-        </div>
-        <div class="right-product-wrapper">
-          <div class="product-cost">
-            <p>за кв.м</p>
-            <p>1213.00</p>
-          </div>
-          <a class="product-button" href="#">Купить сейчас</a>
-        </div>
-      </div>
-    </div>
-    <div class="flex-product-wrapper">
-      <div class="img-product-wrapper"><img class="img-responsive" src="/images/sand.png" alt=""></div>
-      <h3>Название</h3>
-      <div class="product-desc">
-        <div class="left-product-wrapper">
-          <div class="product-cost">
-            <p>за шт.</p>
-            <p>17.25 P</p>
-          </div>
-          <p class="green">+ в наличии</p>
-        </div>
-        <div class="right-product-wrapper">
-          <div class="product-cost">
-            <p>за кв.м</p>
-            <p>1213.00</p>
-          </div>
-          <a class="product-button" href="#">Купить сейчас</a>
-        </div>
-      </div>
-    </div>
   </div>
 </div>
 <?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
