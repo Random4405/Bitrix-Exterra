@@ -15,86 +15,89 @@ $APPLICATION->SetTitle("Новая страница");
   )
 );?>
   </div>
-</div>
-<div class="container">
-  <div class="row flex-row">
-    <div class="flex-product-wrapper">
-      <div class="img-product-wrapper"><img class="img-responsive" src="/images/sand.png" alt=""></div>
-      <h3>Название</h3>
-      <div class="product-desc">
-        <div class="left-product-wrapper">
-          <div class="product-cost">
-            <p>за шт.</p>
-            <p>17.25 P</p>
+  <div class="content-sidebar">
+    saddasdasdsa
+  </div>
+  <div class="content-main">
+    <div class="row flex-row">
+      <div class="flex-product-wrapper">
+        <div class="img-product-wrapper"><img class="img-responsive" src="/images/sand.png" alt=""></div>
+        <h3>Название</h3>
+        <div class="product-desc">
+          <div class="left-product-wrapper">
+            <div class="product-cost">
+              <p>за шт.</p>
+              <p>17.25 P</p>
+            </div>
+            <p class="green">+ в наличии</p>
           </div>
-          <p class="green">+ в наличии</p>
-        </div>
-        <div class="right-product-wrapper">
-          <div class="product-cost">
-            <p>за кв.м</p>
-            <p>1213.00</p>
+          <div class="right-product-wrapper">
+            <div class="product-cost">
+              <p>за кв.м</p>
+              <p>1213.00</p>
+            </div>
+            <a class="product-button" href="#">Купить сейчас</a>
           </div>
-          <a class="product-button" href="#">Купить сейчас</a>
-        </div>
-      </div>
-    </div>
-    <div class="flex-product-wrapper">
-      <div class="img-product-wrapper"><img class="img-responsive" src="/images/sand.png" alt=""></div>
-      <h3>Название</h3>
-      <div class="product-desc">
-        <div class="left-product-wrapper">
-          <div class="product-cost">
-            <p>за шт.</p>
-            <p>17.25 P</p>
-          </div>
-          <p class="green">+ в наличии</p>
-        </div>
-        <div class="right-product-wrapper">
-          <div class="product-cost">
-            <p>за кв.м</p>
-            <p>1213.00</p>
-          </div>
-          <a class="product-button" href="#">Купить сейчас</a>
         </div>
       </div>
-    </div>
-    <div class="flex-product-wrapper">
-      <div class="img-product-wrapper"><img class="img-responsive" src="/images/sand.png" alt=""></div>
-      <h3>Название</h3>
-      <div class="product-desc">
-        <div class="left-product-wrapper">
-          <div class="product-cost">
-            <p>за шт.</p>
-            <p>17.25 P</p>
+      <div class="flex-product-wrapper">
+        <div class="img-product-wrapper"><img class="img-responsive" src="/images/sand.png" alt=""></div>
+        <h3>Название</h3>
+        <div class="product-desc">
+          <div class="left-product-wrapper">
+            <div class="product-cost">
+              <p>за шт.</p>
+              <p>17.25 P</p>
+            </div>
+            <p class="green">+ в наличии</p>
           </div>
-          <p class="green">+ в наличии</p>
-        </div>
-        <div class="right-product-wrapper">
-          <div class="product-cost">
-            <p>за кв.м</p>
-            <p>1213.00</p>
+          <div class="right-product-wrapper">
+            <div class="product-cost">
+              <p>за кв.м</p>
+              <p>1213.00</p>
+            </div>
+            <a class="product-button" href="#">Купить сейчас</a>
           </div>
-          <a class="product-button" href="#">Купить сейчас</a>
         </div>
       </div>
-    </div>
-    <div class="flex-product-wrapper">
-      <div class="img-product-wrapper"><img class="img-responsive" src="/images/sand.png" alt=""></div>
-      <h3>Название</h3>
-      <div class="product-desc">
-        <div class="left-product-wrapper">
-          <div class="product-cost">
-            <p>за шт.</p>
-            <p>17.25 P</p>
+      <div class="flex-product-wrapper">
+        <div class="img-product-wrapper"><img class="img-responsive" src="/images/sand.png" alt=""></div>
+        <h3>Название</h3>
+        <div class="product-desc">
+          <div class="left-product-wrapper">
+            <div class="product-cost">
+              <p>за шт.</p>
+              <p>17.25 P</p>
+            </div>
+            <p class="green">+ в наличии</p>
           </div>
-          <p class="green">+ в наличии</p>
+          <div class="right-product-wrapper">
+            <div class="product-cost">
+              <p>за кв.м</p>
+              <p>1213.00</p>
+            </div>
+            <a class="product-button" href="#">Купить сейчас</a>
+          </div>
         </div>
-        <div class="right-product-wrapper">
-          <div class="product-cost">
-            <p>за кв.м</p>
-            <p>1213.00</p>
+      </div>
+      <div class="flex-product-wrapper">
+        <div class="img-product-wrapper"><img class="img-responsive" src="/images/sand.png" alt=""></div>
+        <h3>Название</h3>
+        <div class="product-desc">
+          <div class="left-product-wrapper">
+            <div class="product-cost">
+              <p>за шт.</p>
+              <p>17.25 P</p>
+            </div>
+            <p class="green">+ в наличии</p>
           </div>
-          <a class="product-button" href="#">Купить сейчас</a>
+          <div class="right-product-wrapper">
+            <div class="product-cost">
+              <p>за кв.м</p>
+              <p>1213.00</p>
+            </div>
+            <a class="product-button" href="#">Купить сейчас</a>
+          </div>
         </div>
       </div>
     </div>
