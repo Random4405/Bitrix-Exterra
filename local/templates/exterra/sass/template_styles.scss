@@ -1,3 +1,13 @@
+@function calculateRem($size) {
+  $remSize: $size / 16px;
+  @return #{$remSize}rem;
+}
+
+@mixin fontSize($size) {
+  font-size: $size; //Fallback in px
+  font-size: calculateRem($size);
+}
+
 html {
   font-size: 100%;
 }
@@ -14,7 +24,7 @@ ul, ol {
 h1 {
   color: #4e4e4e;
   font-family: Arial;
-  font-size: 36px;
+  @include fontSize(36px);
   font-weight: 700;
   line-height: 34px;
   text-align: center;
@@ -195,7 +205,7 @@ footer {
         padding-left: 15px;
         color: #230e0d;
         font-family: Arial;
-        font-size: 18px;
+        @include fontSize(18px);
         font-weight: 700;
         text-transform: uppercase;
         &::-webkit-input-placeholder { color: black; };
@@ -207,7 +217,7 @@ footer {
       border: none;
       color: white;
       font-family: Arial;
-      font-size: 18px;
+      @include fontSize(18px);
       font-weight: 700;
       text-transform: uppercase;
     }
@@ -366,7 +376,7 @@ footer {
   width: 299px;
   height: 14px;
   font-family: Arial;
-  font-size: 15px;
+  @include fontSize(15px);
   font-weight: 400;
   color: #87270d;
   margin-bottom: 35px;
@@ -395,7 +405,7 @@ footer {
 h4 {
   color: #4e4e4e;
   font-family: Arial;
-  font-size: 18px;
+  @include fontSize(18px);
   font-weight: 400;
   line-height: 32px;
   text-align: center;
@@ -424,7 +434,7 @@ h4 {
       font-weight: 400;
       line-height: 32px;
       color: #87270d;
-      font-size: 18px;
+      @include fontSize(18px);
       position: relative;
       &.about-why:hover:before,
       &.about-how:hover:before,
@@ -444,7 +454,7 @@ h4 {
         z-index: 10;
         color: #4e4e4e;
         font-family: Arial;
-        font-size: 36px;
+        @include fontSize(36px);
         font-weight: 700;
         text-align: center;
       }
@@ -456,7 +466,7 @@ h4 {
       font-weight: 400;
       line-height: 32px;
       color: #4e4e4e;
-      font-size: 16px;
+      @include fontSize(16px);
     }
   }
 }
@@ -475,7 +485,7 @@ h4 {
   h2 {
     color: #ffffff;
     font-family: Arial;
-    font-size: 18px;
+    @include fontSize(18px);
     font-weight: 700;
     line-height: 32px;
     margin-bottom: 40px;
@@ -506,7 +516,7 @@ h4 {
     h1.show-room {
       color: #87270d;
       font-family: Arial;
-      font-size: 36px;
+      @include fontSize(36px);
       font-weight: 700;
       line-height: 16px;
       text-align: left;
@@ -515,8 +525,10 @@ h4 {
       color: #4e4e4e;
       font-family: Arial;
       font-weight: 400;
-      span { font-size: 18px; }
-      font-size: 16px;
+      span { 
+        @include fontSize(18px); 
+      }
+      @include fontSize(16px);
       line-height: 0.7;
     }
   }
@@ -551,7 +563,7 @@ h4 {
         border: none;
         color: white;
         font-family: Arial;
-        font-size: 18px;
+        @include fontSize(18px);
         font-weight: 700;
         text-transform: uppercase;
         padding: 10px 15px;
@@ -595,7 +607,7 @@ h4 {
   z-index: 10;
   color: #4e4e4e;
   font-family: Arial;
-  font-size: 36px;
+  @include fontSize(36px);
   font-weight: 700;
   text-align: center;
 }
@@ -631,7 +643,7 @@ ul#horizontal-multilevel-menu {
     display:block;
     color: #f2f2f2;
     font-family: Arial;
-    font-size: 18px;
+    @include fontSize(18px);
     font-weight: 700;
     line-height: 20pt;
   }
@@ -705,7 +717,7 @@ $wrapper-margin: 15px;
     width: 100%;
     color: #4e4e4e;
     font-family: Arial;
-    font-size: 15px;
+    @include fontSize(15px);
     font-weight: 700;
     text-transform: uppercase;
     background-color: rgba(255, 255, 255, .6);
@@ -729,7 +741,7 @@ $wrapper-margin: 15px;
   h4 {
     text-align: left;
     font-family: Arial;
-    font-size: 18px;
+    @include fontSize(18px);
     font-weight: 700;
     text-transform: uppercase;
     color: #4e4e4e;
@@ -744,7 +756,7 @@ $wrapper-margin: 15px;
       margin-bottom: 32px;
     }
   }
-  font-size: 16px;
+  @include fontSize(16px);
   line-height: 24px;
   font-weight: 700;
   p.cost + p.cost {
@@ -752,7 +764,7 @@ $wrapper-margin: 15px;
   }
   .cost-green {
     color: green;
-    font-size: 24px;
+    @include fontSize(24px);
   }
   table {
     font-weight: 400;
@@ -830,7 +842,7 @@ button.slick-next {
     color: #4e4e4e;
     font-family: Arial;
     text-align: center;
-    font-size: 18px;
+    @include fontSize(18px);
     font-weight: 400;
     + a {
       background-color: #882204;
@@ -902,7 +914,7 @@ div.tab button {
   width: 20%;
   // transition: 0.3s;
   font-family: Arial;
-  font-size: 15px;
+  @include fontSize(15px);
   font-weight: 700;
   text-transform: uppercase;
   border-right: 1px solid transparent;
@@ -922,7 +934,7 @@ div.tab button.active {
   font-family: Arial;
   background-color: #f1f1f1;
   border-bottom: 1px solid transparent;
-  font-size: 15px;
+  @include fontSize(15px);
   font-weight: 700;
   border-right: 1px solid #ccc;
   border-left: 1px solid #ccc;
@@ -958,7 +970,7 @@ div.tab button.active {
   h3 {
     color: #282828;
     font-family: Arial;
-    font-size: 16px;
+    @include fontSize(16px);
     font-weight: 400;
     margin-left: 10px;
   }
@@ -971,7 +983,7 @@ div.tab button.active {
     color: #282828;
     font-family: Arial;
     font-weight: 400;
-    font-size: 16px;
+    @include fontSize(16px);
     margin-bottom: 0;
     &:last-child {
       margin-bottom: 10px;
@@ -986,7 +998,7 @@ div.tab button.active {
 .green {
   color: #009900  !important;
   font-family: Arial !important;
-  font-size: 16px !important;
+  @include fontSize(16px);
   font-weight: 400 !important;
 }
 
@@ -1015,7 +1027,7 @@ div.tab button.active {
     text-align: center;
     color: #4e4e4e;
     font-family: Arial;
-    font-size: 15px;
+    @include fontSize(15px);
     font-weight: 700;
     text-transform: uppercase;
     background-color: rgba(255, 255, 255, .6);
@@ -1040,7 +1052,7 @@ div.tab button.active {
 .desc {
   color: #4e4e4e;
   font-family: Arial;
-  font-size: 16px;
+  @include fontSize(16px);
   font-weight: 400;
 }
 
