@@ -18,78 +18,78 @@ $APPLICATION->SetTitle("Новая страница");
 <div class="row flex-row mb16">
   <div class="catalog-category-wrapper">
     <div class="img-wrapper">
-      <img src="/images/test-image.png" alt="">
       <span class="texture-name">Кирпич</span>
+      <img src="/images/test-image.png" alt="">
     </div>
   </div>
   <div class="catalog-category-wrapper">
     <div class="img-wrapper">
-      <img src="/images/test-image.png" alt="">
       <span class="texture-name">Кирпич</span>
+      <img src="/images/test-image.png" alt="">
     </div>
   </div>
   <div class="catalog-category-wrapper">
     <div class="img-wrapper">
-      <img src="/images/test-image.png" alt="">
       <span class="texture-name">Кирпич</span>
+      <img src="/images/test-image.png" alt="">
     </div>
   </div>
   <div class="catalog-category-wrapper">
     <div class="img-wrapper">
-      <img src="/images/test-image.png" alt="">
       <span class="texture-name">Кирпич</span>
-    </div>
-  </div>
-</div>
-<div class="row flex-row mb16">
-  <div class="catalog-category-wrapper">
-    <div class="img-wrapper">
       <img src="/images/test-image.png" alt="">
-      <span class="texture-name">Кирпич</span>
-    </div>
-  </div>
-  <div class="catalog-category-wrapper">
-    <div class="img-wrapper">
-      <img src="/images/test-image.png" alt="">
-      <span class="texture-name">Кирпич</span>
-    </div>
-  </div>
-  <div class="catalog-category-wrapper">
-    <div class="img-wrapper">
-      <img src="/images/test-image.png" alt="">
-      <span class="texture-name">Кирпич</span>
-    </div>
-  </div>
-  <div class="catalog-category-wrapper">
-    <div class="img-wrapper">
-      <img src="/images/test-image.png" alt="">
-      <span class="texture-name">Кирпич</span>
     </div>
   </div>
 </div>
 <div class="row flex-row mb16">
   <div class="catalog-category-wrapper">
     <div class="img-wrapper">
-      <img src="/images/test-image.png" alt="">
       <span class="texture-name">Кирпич</span>
+      <img src="/images/test-image.png" alt="">
     </div>
   </div>
   <div class="catalog-category-wrapper">
     <div class="img-wrapper">
-      <img src="/images/test-image.png" alt="">
       <span class="texture-name">Кирпич</span>
+      <img src="/images/test-image.png" alt="">
     </div>
   </div>
   <div class="catalog-category-wrapper">
     <div class="img-wrapper">
-      <img src="/images/test-image.png" alt="">
       <span class="texture-name">Кирпич</span>
+      <img src="/images/test-image.png" alt="">
     </div>
   </div>
   <div class="catalog-category-wrapper">
     <div class="img-wrapper">
-      <img src="/images/test-image.png" alt="">
       <span class="texture-name">Кирпич</span>
+      <img src="/images/test-image.png" alt="">
+    </div>
+  </div>
+</div>
+<div class="row flex-row mb16">
+  <div class="catalog-category-wrapper">
+    <div class="img-wrapper">
+      <span class="texture-name">Кирпич</span>
+      <img src="/images/test-image.png" alt="">
+    </div>
+  </div>
+  <div class="catalog-category-wrapper">
+    <div class="img-wrapper">
+      <span class="texture-name">Кирпич</span>
+      <img src="/images/test-image.png" alt="">
+    </div>
+  </div>
+  <div class="catalog-category-wrapper">
+    <div class="img-wrapper">
+      <span class="texture-name">Кирпич</span>
+      <img src="/images/test-image.png" alt="">
+    </div>
+  </div>
+  <div class="catalog-category-wrapper">
+    <div class="img-wrapper">
+      <span class="texture-name">Кирпич</span>
+      <img src="/images/test-image.png" alt="">
     </div>
   </div>
 </div>
