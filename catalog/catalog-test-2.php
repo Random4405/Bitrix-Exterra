@@ -15,7 +15,7 @@ $APPLICATION->SetTitle("Новая страница");
   )
 );?>
   </div>
-  <div class="row flex-row">
+  <div class="row">
     <div class="content-sidebar">
       <ul>
         <li>Кирпич облицовочный</li>

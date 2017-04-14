@@ -1041,12 +1041,13 @@ div.tab button.active {
   font-weight: 400;
 }
 
-// .content-sidebar {
-//   float: left;
-//   max-width: 200px;
-// }
+.content-sidebar {
+  float: left;
+  max-width: 200px;
+}
 
 .content-main {
+  margin-left: 200px;
   display: flex;
   justify-content: space-between;
   margin-left: -7.5px;
