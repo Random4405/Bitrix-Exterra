@@ -172,4 +172,5 @@ $APPLICATION->SetTitle("Новая страница");
     </div>
   </div>
 </div>
+<div class="mb70"></div>
 <?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
