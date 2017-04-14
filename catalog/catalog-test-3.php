@@ -92,7 +92,7 @@ $APPLICATION->SetTitle("Новая страница");
         </div>
       </div>
     </div>
-    <div class="row flex-row">
+    <div class="flex-row no-margin">
       <div class="flex-product-wrapper">
         <div class="img-product-wrapper"><img class="img-responsive" src="/images/sand.png" alt=""></div>
         <h3>Название</h3>
@@ -154,6 +154,7 @@ $APPLICATION->SetTitle("Новая страница");
         </div>
       </div>
     </div>
+    <div class="category-pager"></div>
   </div>
   <div class="row">
     <p class="desc">
@@ -193,10 +194,6 @@ $APPLICATION->SetTitle("Новая страница");
 
     Nullam facilisis sodales nunc consectetur fermentum. Maecenas at eros ligula. Fusce facilisis quis lorem ac interdum. Proin vel turpis ac ligula lacinia pretium. end ac.
     </p>
-  </div>
-
-  <div class="row">
-    <h1 class="title">Популярные товары</h1>
   </div>
 </div>
 <?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
