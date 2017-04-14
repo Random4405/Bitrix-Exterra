@@ -27,17 +27,19 @@ $APPLICATION->SetTitle("Новая страница");
       </ul>
     </div>
     <div class="content-main">
-      <div class="img-wrapper">
-        <div class="texture-name">Кирпич клинкерный</div>
-        <img class="img-responsive" src="/images/catalog-qube.png" alt="">
-      </div>
-      <div class="img-wrapper">
-        <div class="texture-name">Кирпич клинкерный</div>
-        <img class="img-responsive" src="/images/catalog-qube.png" alt="">
-      </div>
-      <div class="img-wrapper">
-        <div class="texture-name">Кирпич клинкерный</div>
-        <img class="img-responsive" src="/images/catalog-qube.png" alt="">
+      <div class="flex-row">
+        <div class="img-wrapper">
+          <div class="texture-name">Кирпич клинкерный</div>
+          <img class="img-responsive" src="/images/catalog-qube.png" alt="">
+        </div>
+        <div class="img-wrapper">
+          <div class="texture-name">Кирпич клинкерный</div>
+          <img class="img-responsive" src="/images/catalog-qube.png" alt="">
+        </div>
+        <div class="img-wrapper">
+          <div class="texture-name">Кирпич клинкерный</div>
+          <img class="img-responsive" src="/images/catalog-qube.png" alt="">
+        </div>
       </div>
     </div>
   </div>
