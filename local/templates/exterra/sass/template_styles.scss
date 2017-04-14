@@ -1098,6 +1098,7 @@ div.tab button.active {
     li {
       font-family: Arial;
       list-style-position: inside;
+      list-style-image: url(/images/li-marker-2.png);
       font-size: 16px;
       font-weight: 400;
       color: #4e4e4e;
@@ -1117,4 +1118,77 @@ div.tab button.active {
   background-color: #fff;
   padding: 40px;
   margin-bottom: 32px;
+}
+
+
+.catalog-category-wrapper {
+  position: relative;
+  .texture-name {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    color: #4e4e4e;
+    font-family: Arial;
+    @include fontSize(15px);
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: rgba(255, 255, 255, .6);
+    width: 80%;
+    padding: 10px;
+  }
+}
+
+.mb16 {
+  margin-bottom: 16px;
+}
+
+.subcategory-main {
+  .subcategory-wrapper {
+    padding-top: 23px;
+    padding-bottom: 23px;
+    font-family: Arial;
+    color: #4e4e4e;
+    font-size: 16px;
+    font-weight: 400;
+    h3 {
+      font-size: 18px;
+      font-weight: 700;
+    }
+    .left-wrapper {
+      > ul {
+        > li {
+          list-style-position: inside;
+          list-style-image: url(/images/li-black-marker.png);
+          &:hover {
+            color: rgb(135, 39, 13);
+            > ul { color: #4e4e4e; }
+          }
+          &:last-child {
+            color: #87270d;
+            list-style-image: url(/images/li-terra-marker.png);
+          }
+          > ul { /* Подсписок */
+            > li {
+              list-style-image: url(/images/li-empty-marker.png);
+              padding-left: 10px;
+              &:hover {
+                color: rgb(135, 39, 13);
+                > ul { color: #4e4e4e; }
+              }
+            }
+          }
+        }
+      }
+    }
+    .img-wrapper {
+      float: right;
+    }
+    * {
+      background-color: #f2f2f2 !important;
+    }
+    &:last-child {
+      border-bottom: 4px solid #bbb;
+    }
+    border-top: 4px solid #bbb;
+  }
 }
