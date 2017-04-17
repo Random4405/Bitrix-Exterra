@@ -112,7 +112,7 @@ $APPLICATION->SetTitle("Экстерра Групп | Продажа строи�
                 )
             );?>
           </div>
-          <div class="right-wrapper">
+          <div class="right-wrapper no-white-fix">
             <?$APPLICATION->IncludeComponent(
             	"bitrix:news",
             	"main-news-infoblock",
