@@ -7,7 +7,7 @@
 // });
 
 jQuery( document ).ready(function( $ ) {
-  $('.custom-preview').each(function(index, element) {$clamp(element, { clamp: 6, useNativeClamp: false });});
+  $('.custom-preview').each(function(index, element) {$clamp(element, { clamp: 5, useNativeClamp: false });});
 });
 
 function openCity(evt, cityName) {
