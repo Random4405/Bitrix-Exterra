@@ -30,7 +30,6 @@ $APPLICATION->SetTitle("Экстерра Групп | Продажа строи�
       <h1 class="title">Популярные товары</h1>
       <!-- .custom-product-wrapper*4>img.product-main-image+.about-product>h4{Кирпич керамический пустотелый AP-Adriatico 240-70}+.cost-wrapper+.status-wrapper -->
     </div>
-  </div>
   
   
   <?$arrFilter = array (
@@ -132,6 +131,7 @@ $APPLICATION->SetTitle("Экстерра Групп | Продажа строи�
 		"USE_PRODUCT_QUANTITY" => "N"
 	)
 );?>
+  </div>
 </section>
 
 
