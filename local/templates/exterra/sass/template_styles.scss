@@ -1202,4 +1202,9 @@ $sidebar-width: 250px;
 
 .no-white-fix {
   background: none;
+  .title {
+    &:before, &:after {
+      border-color: white;
+    }
+  }
 }
