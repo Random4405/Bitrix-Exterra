@@ -971,6 +971,7 @@ div.tab button.active {
   h3 {
     color: #282828;
     font-family: Arial;
+    max-width: 230px;
     @include fontSize(16px);
     font-weight: 400;
     margin-left: 10px;
