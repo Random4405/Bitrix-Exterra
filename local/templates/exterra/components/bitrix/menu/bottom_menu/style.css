@@ -15,8 +15,8 @@
   font-size: 1.12rem;
   border-right: 1px solid #4e4e4e;
 }
-.footer-menu ul li:first-child {
-  border-left: 1px solid #4e4e4e;
+.footer-menu ul li:last-child {
+  border-right: none;
 }
 .footer-menu ul li a {
   color: #4e4e4e;
