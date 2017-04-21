@@ -17,6 +17,14 @@ body {
   background-color: #f2f2f2;
 }
 
+a {
+  text-decoration: none !important;
+  color: #4e4e4e;
+  &:hover, &:focus {
+    color: #87270D;
+  }
+}
+
 ul, ol {
   padding-left: 0;
 }
