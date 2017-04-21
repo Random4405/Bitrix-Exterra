@@ -1190,18 +1190,33 @@ $sidebar-width: 250px;
     @include fontSize(16px);
     font-weight: 400;
     h3 {
-      font-size: 18px;
-      @include fontSize(18px);
-      font-weight: 700;
+      a {
+        font-size: 18px;
+        font-family: Arial;
+        color: #4e4e4e;
+        font-size: 16px;
+        @include fontSize(18px);
+        font-weight: 700;
+        text-decoration: none;
+        &:hover {
+          color: #87270D;
+        }
+      }
     }
     .left-wrapper {
       > ul {
         > li {
           list-style-position: inside;
           list-style-image: url(/images/li-black-marker.png);
-          &:hover {
+          a {
+            text-decoration: none;
+            color: #4e4e4e;
+          }
+          a:hover {
             color: rgb(135, 39, 13);
-            > ul { color: #4e4e4e; }
+          }
+          &:hover {
+            list-style-image: url(/images/li-terra-marker.png);
           }
           &:last-child {
             color: #87270d;
