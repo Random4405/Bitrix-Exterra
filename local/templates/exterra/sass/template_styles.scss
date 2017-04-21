@@ -1147,8 +1147,12 @@ $sidebar-width: 250px;
 }
 
 .flex-row.no-margin .flex-product-wrapper {
-  margin-left: 0;
-  margin-right: 0;
+  &:last-child {
+    margin-right: 0px;
+  }
+  &:first-child {
+    margin-left: 0px;
+  }
 }
 
 .category-pager {
