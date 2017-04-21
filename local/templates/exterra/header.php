@@ -9,6 +9,16 @@ IncludeTemplateLangFile(__FILE__);
   <?$APPLICATION->SetAdditionalCSS("/bitrix/css/main/bootstrap.css");?>
   <?CJSCore::Init(array("jquery"));?>
   <?$APPLICATION->ShowHead();?>
+  <?
+     global $USER;
+     if ($USER->IsAdmin()):
+  ?>
+     <style>
+        .js-header {
+           top: auto;
+        }
+     </style>
+  <?endif;?>
   <link href="<?=SITE_TEMPLATE_PATH?>/common.css" type="text/css" rel="stylesheet" />
   <link href="<?=SITE_TEMPLATE_PATH?>/colors.css" type="text/css" rel="stylesheet" />
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
