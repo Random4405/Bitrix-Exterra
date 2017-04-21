@@ -622,25 +622,36 @@ h4 {
 
 /* MENU */
 ul#horizontal-multilevel-menu {
+
+  $menu-width: 20%;
+
   ul {
     position:absolute;
-    display: none;
+    z-index: 9999;
+    // display: none;
+    display: block;
     background: #1f1f1e;
-    width: 20%;
+    width: $menu-width;
     left: 0;
     top: 80px;
     padding-top: 40px;
     padding-bottom: 35px;
+    list-style-position: outside;
+    li:hover ul {
+      display: block;
+    }
   }
-  ul li{
+
+  ul li {
     padding-top:1px; /* Вводим отступ между li чтобы создать иллюзию разделенных пунктов меню */
     list-style-image: url(/images/li-marker-2.png);
     text-transform: none;
     margin-left: 30px;
     // float:none;
   }
+
   ul a{
-    white-space:nowrap; /* Останавливаем перенос текста и создаем многострочный выпадающий пункт */
+    // white-space:nowrap; /* Останавливаем перенос текста и создаем многострочный выпадающий пункт */
     display:block;
     color: #f2f2f2;
     font-family: Arial;
@@ -648,9 +659,29 @@ ul#horizontal-multilevel-menu {
     font-weight: 700;
     line-height: 20pt;
   }
-  li:hover ul{ /* Выводим выпадающий пункт при наведении курсора */
+
+  li:hover ul { /* Выводим выпадающий пункт при наведении курсора */
     display: block;
   }
+
+  a.parent + ul { /* Второй список */
+    background-color: white;
+    top: 0;
+    width: (100% - $menu-width) * (100% / $menu-width);
+    margin-left: 100%;
+    height: 100%;
+    display: none;
+    li {
+      list-style-image: url(/images/li-black2-marker.png);
+      a {
+        font-family: Arial;
+        color: #4e4e4e;
+        font-size: 16px;
+        font-weight: 400;
+      }
+    }
+  }
+
 }
 /* END MENU */
 
