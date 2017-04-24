@@ -651,7 +651,7 @@ h4 {
   text-transform: uppercase;
   font-size: 1.12rem;
   line-height: $line-height;
-  &:nth-child(1) a:after, &:nth-child(2) a:after {
+  &:nth-child(1) > a:after, &:nth-child(2) > a:after {
     content: '';
     position: absolute;
     width: 19px;
@@ -706,6 +706,9 @@ ul#horizontal-multilevel-menu {
     @include fontSize(18px);
     font-weight: 700;
     line-height: 20pt;
+    &:hover, &:focus {
+      color: #87270d;
+    }
   }
 
   li:hover ul { /* Выводим выпадающий пункт при наведении курсора */
@@ -727,6 +730,16 @@ ul#horizontal-multilevel-menu {
         font-size: 16px;
         font-weight: 400;
       }
+    }
+    &:after {
+      content: 'IMAGE';
+      position: absolute;
+      right: 0;
+      top: 0;
+      margin: 40px;
+      background: green;
+      width: 340px;
+      height: 265px;
     }
   }
 
