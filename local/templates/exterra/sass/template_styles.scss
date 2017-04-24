@@ -634,13 +634,23 @@ h4 {
 .header-main .container .row ul#horizontal-multilevel-menu > li {
   $menu-height: 80px;
   $line-height: 30px;
-
+  // position: relative;
   padding: ($menu-height - $line-height)/2 30px;
   text-transform: uppercase;
   font-size: 1.12rem;
   line-height: $line-height;
+  &:nth-child(1) a:after, &:nth-child(2) a:after {
+    content: '';
+    position: absolute;
+    width: 19px;
+    height: 9px;
+    right: -25px;
+    top: calc(36% - 4px);
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAJCAYAAADQHRcxAAABRElEQVQoU4WRu0oDQRSGz5nZCwtiqbXs5hl8ABslCBKwFC1tJKWbVddLkbUVS19AFDt9C0VE201QFCNiGUJ2bs4Gs0zWRWe6f/7znTP/wbbvngKxNgHQAgSlLyLIgZKsGaXsDEon8b1rRckS5jaldBmikvKFCrGF0QzMTk27IRC7qXUsaqUYouQbYZqdj7Uk8C6A0NWcY/i+UIj1sDO8KdSk5uwA2IdACB0bVQ7kfK3VzS6Pa96VRNow+4HgPSL58naH3eY1RguAZM45AsuOTCBI0dd/fwKk83+BfsFyoR04MaIdT0yoszFBeuIPLlk9TtmdGenEZEU2VRP+PCrJ3zHj9dYzuy8vpxKWm5LAOQC0d0sZfpIBXwhfs8cyqPKbpkkvZU8vZX8EVKLH+mwxfmMPVaB/YaMMffcECWkwyVfKGZWh36rOiQm2mK1EAAAAAElFTkSuQmCC') no-repeat right;
+  }
   > a {
     padding-bottom: 5px;
+    position: relative;
     &:hover, &:focus {
       border-bottom: 3px solid #87270d;
     }
