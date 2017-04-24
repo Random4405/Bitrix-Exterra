@@ -1021,6 +1021,7 @@ div.tab button.active {
 /*END TABS*/
 
 .flex-row {
+  position: relative;
   display: flex;
   justify-content: space-between;
   margin-bottom: 32px;
@@ -1411,3 +1412,25 @@ $sidebar-width: 250px;
   }
 }
 /* END FILTER */
+
+.product-arrows {
+  $margin-arrows: 10px;
+  &:before {
+    content: '';
+    background: url(/images/slider-arrow-left.png);
+    height: 40px;
+    width: 20px;
+    position: absolute;
+    top: calc(50% - 20px);
+    left: -20px - ($margin-arrows);
+  }
+  &:after {
+    content: '';
+    background: url(/images/slider-arrow-right.png);
+    height: 40px;
+    width: 20px;
+    position: absolute;
+    top: calc(50% - 20px);
+    right: -20px - ($margin-arrows);
+  }
+}

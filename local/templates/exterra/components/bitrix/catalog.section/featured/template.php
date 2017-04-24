@@ -31,7 +31,7 @@ foreach ($arResult['ITEMS'] as $key => $arItem)
 	
 	$file = CFile::ResizeImageGet($arItem["PREVIEW_PICTURE"]['ID'], array('width'=>288, 'height'=>288), BX_RESIZE_IMAGE_EXACT , true);                
 		
-	if ($num == 0) echo '<div class="row flex-row">';
+	if ($num == 0) echo '<div class="row flex-row product-arrows">';
 	?>	
 	
       <div class="flex-product-wrapper" id="<? echo $strMainID; ?>">
