@@ -1054,6 +1054,10 @@ div.tab button.active {
   &:last-child {
     margin-right: 0;
   }
+  border: 2px solid #f2f2f2;
+  &:hover {
+    border: 2px solid #87270d;
+  }
   h3 {
     max-width: 230px;
     margin-left: 10px;
