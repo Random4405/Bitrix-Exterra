@@ -902,6 +902,7 @@ button.slick-next {
     font-family: Arial;
     text-align: center;
     @include fontSize(18px);
+    font-size: 0;
     font-weight: 400;
     + a {
       background-color: #882204;
