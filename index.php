@@ -140,7 +140,7 @@ $APPLICATION->SetTitle("Экстерра Групп | Продажа строи�
         <h1 class="title">Реализованные объекты</h1>
     </div>
 </div>
-<div class="slick">
+<div class="slick slick-main-arrows" data-slick='{"arrows": true}'>
   <div><img src="/images/realize/1photo.jpg" alt=""></div>
   <div><img src="/images/realize/2photo.jpg" alt=""></div>
   <div><img src="/images/realize/3photo.jpg" alt=""></div>

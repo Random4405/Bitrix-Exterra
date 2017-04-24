@@ -1434,3 +1434,14 @@ $sidebar-width: 250px;
     right: -20px - ($margin-arrows);
   }
 }
+
+.slick-main-arrows button {
+  position: absolute;
+  z-index: 9999;
+  &.slick-prev {
+    left: 10px;
+  }
+  &.slick-next {
+    right: 10px;
+  }
+}
