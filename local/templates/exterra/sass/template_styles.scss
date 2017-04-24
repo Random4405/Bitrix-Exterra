@@ -1459,10 +1459,14 @@ $sidebar-width: 250px;
 .slick-main-arrows button {
   position: absolute;
   z-index: 9999;
+  $center-img-width: 620px;
+  $margin-with-center: 40px; /* DONT CHANGE */
+  $margin-with-center: $margin-with-center + 40px;
+  $margin-arrows: calc((100vw - #{$center-img-width})/2 - #{$margin-with-center});
   &.slick-prev {
-    left: 10px;
+    left: $margin-arrows;
   }
   &.slick-next {
-    right: 10px;
+    right: $margin-arrows;
   }
 }
