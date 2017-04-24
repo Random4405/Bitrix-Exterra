@@ -158,6 +158,15 @@ header {
 footer {
   background:transparent url('/images/bg-wall.jpg') left top repeat-x;
   padding-top: 70px;
+  .footer-menu {
+    li {
+      a {
+        &:hover, &:focus {
+          color: #87270d;
+        }
+      }
+    }
+  }
 }
 
 .footer-contacts {
@@ -228,6 +237,9 @@ footer {
       @include fontSize(18px);
       font-weight: 700;
       text-transform: uppercase;
+      &:hover, &:focus {
+        background: black;
+      }
     }
   }
   h1 {
