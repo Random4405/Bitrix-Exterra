@@ -1267,6 +1267,17 @@ $sidebar-width: 250px;
     width: 80%;
     padding: 10px;
     margin-left: 7%;
+    z-index: 9;
+  }
+  &:hover, &:focus {
+    opacity: .8;
+    overflow: hidden;
+    img {
+      transform: scale(1.01);
+    }
+    & .texture-name {
+      color: #87270d;
+    }
   }
 }
 
