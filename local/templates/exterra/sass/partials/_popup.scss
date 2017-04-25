@@ -16,6 +16,9 @@
       margin-right: 10px;
     }
     form {
+      legend {
+        text-align: center;
+      }
       fieldset {
         display: flex;
         flex-direction: column;
