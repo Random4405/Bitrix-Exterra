@@ -1,15 +1,53 @@
 
 .popup-form {
-  width: 200px;
-  height: 200px;
-  background: red;
-  position: absolute;
-}
-// popup-form-wrapper
-// popup-background
-//
-
-.popup-background {
+  .popup-form-wrapper {
+    $width: 50%;
+    width: $width;
+    left: 50% - $width/2;
+    position: absolute;
+    background: #f3f3f3;
+    z-index: 1001;
+    border: 4px solid #bbbbbb;
+    form {
+      fieldset {
+        display: flex;
+        flex-direction: column;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        input, textarea {
+          border: none;
+          $width: 82%;
+          width: $width;
+          margin-left: (100% - $width)/2;
+          height: 46px;
+          padding-left: 15px;
+        }
+        input {
+          margin-bottom: 16px;
+        }
+        textarea {
+          height: 92px;
+          padding-top: 10px;
+          margin-bottom: 32px;
+        }
+        input.submit {
+          color: #ffffff;
+          background: #882204;
+          $width: 40%;
+          width: $width;
+          margin-left: (100% - $width)/2;
+          font-family: Arial;
+          font-size: 18px;
+          font-weight: 700;
+          text-transform: uppercase;
+          &:hover {
+            background: black;
+          }
+        }
+      }
+    }
+  }
+  .popup-background {
     width: 100%;
     height: 100%;
     position: fixed;
@@ -18,6 +56,8 @@
     right: 0;
     bottom: 0;
     z-index: 1000;
-    background: grey;
-    opacity: 0.5;
+    background: white;
+    opacity: 0.8;
   }
+}
+

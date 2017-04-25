@@ -7,10 +7,21 @@ $APPLICATION->SetTitle("Каталог");
 <!-- САМА ФОРМА ТУТ -->
 
 
-<div class="popup-form">
-  <div class="popup-form-wrapper"></div>
-</div>
-<div class="popup-background"></div>
+    <div class="popup-form">
+      <div class="popup-form-wrapper">
+        <form>
+          <fieldset>
+            <input type="text" placeholder="Имя:">
+            <input type="text" placeholder="Телефон:">
+            <input type="text" placeholder="Название товара:">
+            <input type="text" placeholder="E-mail:">
+            <textarea placeholder="Комментарий:"></textarea>
+            <input class="submit" type="submit" value="ОТПРАВИТЬ">
+          </fieldset>
+        </form>
+      </div>
+      <div class="popup-background"></div>
+    </div>
 
 
 <!-- САМА ФОРМА ТУТ -->
