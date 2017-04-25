@@ -118,7 +118,7 @@ $arFirstPhoto = current($arResult['MORE_PHOTO']);
 		}
 		unset($arOneProp);?>
 		</table>
-          
+
         </div>
         <div class='catalog-button'>
           <div class="link-description">Понравился товар?</div>
@@ -128,8 +128,8 @@ $arFirstPhoto = current($arResult['MORE_PHOTO']);
       <div class="right-wrapper flex-col">
         <div class="slider-nav">
 		<?foreach ($arResult['PROPERTIES']['photo']['VALUE'] as $key => $photo2):
-			$file = CFile::ResizeImageGet($photo2, array('width'=>300, 'height'=>70), BX_RESIZE_IMAGE_EXACT , true); 
-               
+			$file = CFile::ResizeImageGet($photo2, array('width'=>300, 'height'=>70), BX_RESIZE_IMAGE_EXACT , true);
+
 		?>
 		 <div class="slick-vertical-wrapper">
 			<?if ($arResult['PROPERTIES']['photo']['DESCRIPTION'][$key]):?>
@@ -139,7 +139,7 @@ $arFirstPhoto = current($arResult['MORE_PHOTO']);
           </div>
 		<?endforeach;?>
         </div>
-		
+
 		<?if ($arResult['PROPERTIES']['archive']['VALUE']):?>
 			<div class='catalog-button'>
 			  <div class="link-description">Узнать больше</div>
@@ -151,7 +151,6 @@ $arFirstPhoto = current($arResult['MORE_PHOTO']);
     </div>
   </div>
   <div class="row">
-    <div class="left-wrapper">
       <div class="slider-product" data-slick='{
       "slidesToShow": 3,
       "infinite": true,
@@ -161,7 +160,6 @@ $arFirstPhoto = current($arResult['MORE_PHOTO']);
 	    <?foreach ($arResult['PROPERTIES']['photo_obj']['VALUE'] as $photo3):?>
 			<div><img src="<?=CFile::GetPath($photo3)?>" alt=""></div>
 		<?endforeach;?>
-      </div>
     </div>
   </div>
   <div class="row">
@@ -196,8 +194,8 @@ $arFirstPhoto = current($arResult['MORE_PHOTO']);
     </div>
 
   </div>
-  
- 
+
+
 <?if ($arResult['PROPERTIES']['additional_products']['VALUE']):?>
 
 <?
