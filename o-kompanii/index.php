@@ -3,6 +3,8 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("О компании");
 ?>
 
+<div class="container">
+  <div class="row">
 <?$APPLICATION->IncludeComponent(
   "bitrix:breadcrumb",
   "",
@@ -12,6 +14,8 @@ $APPLICATION->SetTitle("О компании");
     "START_FROM" => "0"
   )
 );?>
+</div>
+</div>
 
 <h1 class="title title-50px">Только качественные строительные материалы</h1>
 
