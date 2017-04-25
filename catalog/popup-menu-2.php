@@ -11,13 +11,11 @@ $APPLICATION->SetTitle("Каталог");
       <div class="popup-form-wrapper">
         <form>
             <i class="fa fa-close"></i>
-          <legend>Заказ товара</legend>
+          <legend>Заказать звонок</legend>
           <fieldset>
             <input required type="text" placeholder="Имя:*">
             <input required type="text" placeholder="Телефон:*">
-            <input type="text" placeholder="Название товара:">
-            <input type="text" placeholder="E-mail:">
-            <textarea placeholder="Комментарий:"></textarea>
+            <input type="text" placeholder="Время:">
             <input class="submit" type="submit" value="ОТПРАВИТЬ">
           </fieldset>
         </form>
