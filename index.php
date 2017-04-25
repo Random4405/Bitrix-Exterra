@@ -72,7 +72,7 @@ $APPLICATION->SetTitle("Экстерра Групп | Продажа строи�
 		"INCLUDE_SUBSECTIONS" => "Y",
 		"LABEL_PROP" => "-",
 		"LAZY_LOAD" => "N",
-		"LINE_ELEMENT_COUNT" => "8",
+		"LINE_ELEMENT_COUNT" => "4",
 		"LOAD_ON_SCROLL" => "N",
 		"MESSAGE_404" => "",
 		"MESS_BTN_ADD_TO_BASKET" => "В корзину",
