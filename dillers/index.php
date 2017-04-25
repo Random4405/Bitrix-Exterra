@@ -4,7 +4,8 @@ $APPLICATION->SetTitle("Дилерам");
 ?>
 
 
-
+<div class="container">
+  <div class="row">
 <?$APPLICATION->IncludeComponent(
   "bitrix:breadcrumb",
   "",
@@ -14,6 +15,9 @@ $APPLICATION->SetTitle("Дилерам");
     "START_FROM" => "0"
   )
 );?>
+</div>
+  </div>
+
 
 <div class="about-wrapper">
   <div class="l-wrapper"></div>

@@ -3,11 +3,20 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Контакты");
 ?>
 
+
+<div class="container">
+  <div class="row">
 <?$APPLICATION->IncludeComponent(
-	"bitrix:breadcrumb",
-	"",
-	Array()
-	);?>
+  "bitrix:breadcrumb",
+  "",
+  Array(
+    "PATH" => "",
+    "SITE_ID" => "s1",
+    "START_FROM" => "0"
+  )
+);?>
+</div>
+  </div>
 
 	<div class="container bg-white">
   <div class="row">
@@ -25,8 +34,8 @@ $APPLICATION->SetTitle("Контакты");
         </div>
         <div class="contacts-right">
           <?$APPLICATION->IncludeComponent(
-            "custom:main.feedback", 
-            "feedback_contacts", 
+            "custom:main.feedback",
+            "feedback_contacts",
             array(
               "COMPONENT_TEMPLATE" => "feedback_contacts",
               "EMAIL_TO" => "dvsiteminsk@gmail.com",
