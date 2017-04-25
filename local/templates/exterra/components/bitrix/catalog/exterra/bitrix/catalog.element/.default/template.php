@@ -152,7 +152,7 @@ $arFirstPhoto = current($arResult['MORE_PHOTO']);
   </div>
   <div class="row">
       <div class="slider-product" data-slick='{
-      "slidesToShow": 3,
+      "slidesToShow": 7,
       "infinite": true,
       "centerMode": false,
       "focusOnSelect": true
