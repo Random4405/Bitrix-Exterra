@@ -28,12 +28,12 @@ foreach ($arResult['ITEMS'] as $key => $arItem)
 		? $arItem['IPROPERTY_VALUES']['ELEMENT_PAGE_TITLE']
 		: $arItem['NAME']
 	);
-	
-	$file = CFile::ResizeImageGet($arItem["PREVIEW_PICTURE"]['ID'], array('width'=>288, 'height'=>288), BX_RESIZE_IMAGE_EXACT , true);                
-		
-	if ($num == 0) echo '<div class="row flex-row product-arrows">';
-	?>	
-	
+
+	$file = CFile::ResizeImageGet($arItem["PREVIEW_PICTURE"]['ID'], array('width'=>288, 'height'=>288), BX_RESIZE_IMAGE_EXACT , true);
+
+	if ($num == 0) echo '<div class="row flex-row product-arrows slick-featured">';
+	?>
+
       <div class="flex-product-wrapper" id="<? echo $strMainID; ?>">
         <div class="img-product-wrapper"><a href="<? echo $arItem['DETAIL_PAGE_URL']; ?>"><img class="img-responsive" src="<?=$file['src']?>" alt=""></a></div>
         <h3><a href="<? echo $arItem['DETAIL_PAGE_URL']; ?>"><? echo $productTitle; ?></a></h3>
@@ -63,7 +63,7 @@ foreach ($arResult['ITEMS'] as $key => $arItem)
 
 <?
 $num++;
-if ($num == 4) {
+if ($num == 7) {
 	$num = 0;
 	echo '</div>';
 }

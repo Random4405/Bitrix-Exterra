@@ -88,6 +88,9 @@ $(document).ready(function(){
 </script>
 <script>
 $('.slider-product').slick();
+$('.product-arrows').slick({
+  slidesToShow: 4
+})
 </script>
 </body>
 </html>
