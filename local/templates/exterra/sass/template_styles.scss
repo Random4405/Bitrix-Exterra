@@ -207,6 +207,9 @@ footer {
 .form-wrapper {
   background:transparent url('/images/feedback-bg.png') no-repeat;
   background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .mfeedback {
