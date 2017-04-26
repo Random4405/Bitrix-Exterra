@@ -8,15 +8,15 @@ $APPLICATION->SetTitle("Каталог");
 
     <div class="popup-form">
       <div class="popup-form-wrapper">
-        <form>
+        <form action="post.php" method="POST">
             <i class="fa fa-close"></i>
           <legend>Заказ товара</legend>
           <fieldset>
-            <input required type="text" placeholder="Имя:*">
-            <input required id="phone" type="text" placeholder="Телефон:*">
-            <input type="text" placeholder="Название товара:">
-            <input type="text" placeholder="E-mail:">
-            <textarea placeholder="Комментарий:"></textarea>
+            <input name="name" required type="text" placeholder="Имя:*">
+            <input name="phone" required id="phone" type="text" placeholder="Телефон:*">
+            <input name="product" type="text" placeholder="Название товара:">
+            <input name="email" type="text" placeholder="E-mail:">
+            <textarea name="message" placeholder="Комментарий:"></textarea>
             <input class="submit" type="submit" value="ОТПРАВИТЬ">
           </fieldset>
         </form>
