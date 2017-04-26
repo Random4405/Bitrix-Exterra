@@ -2,7 +2,7 @@
 $aMenuLinks = Array(
 	Array(
 		"Оплата и доставка", 
-		"", 
+		"/oplata-i-dostavka/", 
 		Array(), 
 		Array(), 
 		"" 
@@ -16,14 +16,14 @@ $aMenuLinks = Array(
 	),
 	Array(
 		"Шоу-рум", 
-		"", 
+		"/shou-rum/", 
 		Array(), 
 		Array(), 
 		"" 
 	),
 	Array(
 		"Контакты", 
-		"", 
+		"/contacts/", 
 		Array(), 
 		Array(), 
 		"" 
