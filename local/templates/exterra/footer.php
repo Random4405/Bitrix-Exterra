@@ -44,6 +44,7 @@ IncludeTemplateLangFile(__FILE__);
   </div>
 </footer>
 <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+<?$APPLICATION->AddHeadScript("/local/templates/exterra/js/jquery.maskedinput.min.js");?>
 <script>
     $(document).ready(function(){
       $('.slick').slick({

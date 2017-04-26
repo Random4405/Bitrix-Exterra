@@ -14,7 +14,7 @@ $APPLICATION->SetTitle("Каталог");
           <legend>Заказать звонок</legend>
           <fieldset>
             <input required type="text" placeholder="Имя:*">
-            <input required type="text" placeholder="Телефон:*">
+            <input id="phone" required type="text" placeholder="Телефон:*">
             <input type="text" placeholder="Время:">
             <input class="submit" type="submit" value="ОТПРАВИТЬ">
           </fieldset>
@@ -23,6 +23,9 @@ $APPLICATION->SetTitle("Каталог");
       <div class="popup-background"></div>
     </div>
 
+<script>
+$("#phone").mask("+7 861 (99) 999-99-99");
+</script>
 
 <!-- САМА ФОРМА ТУТ -->
 

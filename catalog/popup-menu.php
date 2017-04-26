@@ -6,7 +6,6 @@ $APPLICATION->SetTitle("Каталог");
 
 <!-- САМА ФОРМА ТУТ -->
 
-
     <div class="popup-form">
       <div class="popup-form-wrapper">
         <form>
@@ -14,7 +13,7 @@ $APPLICATION->SetTitle("Каталог");
           <legend>Заказ товара</legend>
           <fieldset>
             <input required type="text" placeholder="Имя:*">
-            <input required type="text" placeholder="Телефон:*">
+            <input required id="phone" type="text" placeholder="Телефон:*">
             <input type="text" placeholder="Название товара:">
             <input type="text" placeholder="E-mail:">
             <textarea placeholder="Комментарий:"></textarea>
@@ -25,6 +24,10 @@ $APPLICATION->SetTitle("Каталог");
       <div class="popup-background"></div>
     </div>
 
+
+<script>
+$("#phone").mask("+7 861 (99) 999-99-99");
+</script>
 
 <!-- САМА ФОРМА ТУТ -->
 
