@@ -1151,12 +1151,23 @@ div.tab button.active {
   display: inline-block;
   padding-left: 7.5px;
   padding-right: 7.5px;
+  &:hover, &:focus {
+    opacity: .8;
+    overflow: hidden;
+    img {
+      transform: scale(1.01);
+    }
+    & .texture-name {
+      color: #87270d;
+    }
+  }
   .texture-name {
     position: absolute;
     bottom: 0;
     text-align: center;
     color: #4e4e4e;
     font-family: Arial;
+    z-index: 9;
     @include fontSize(15px);
     font-weight: 700;
     text-transform: uppercase;
