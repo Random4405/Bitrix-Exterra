@@ -21,10 +21,12 @@ IncludeTemplateLangFile(__FILE__);
   <?endif;?>
   <link href="<?=SITE_TEMPLATE_PATH?>/common.css" type="text/css" rel="stylesheet" />
   <link href="<?=SITE_TEMPLATE_PATH?>/colors.css" type="text/css" rel="stylesheet" />
+  <link href="<?=SITE_TEMPLATE_PATH?>/lightbox.css" type="text/css" rel="stylesheet" />
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css"/>
   <?$APPLICATION->AddHeadScript("/local/templates/exterra/js/clamp.min.js");?>
   <?$APPLICATION->AddHeadScript("/local/templates/exterra/js/script.js");?>
+  <?$APPLICATION->AddHeadScript("/local/templates/exterra/js/lightbox.js");?>
   <title><?$APPLICATION->ShowTitle()?></title>
 </head>
 <body class="<? if ($_SERVER['REQUEST_URI'] == '/contacts/') echo "no-white-fix"?>">
@@ -59,8 +61,8 @@ IncludeTemplateLangFile(__FILE__);
 	false
 );?>
           <?$APPLICATION->IncludeComponent(
-	"bitrix:menu", 
-	"top_menu", 
+	"bitrix:menu",
+	"top_menu",
 	array(
 		"ALLOW_MULTI_SELECT" => "N",
 		"CHILD_MENU_TYPE" => "left",

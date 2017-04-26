@@ -158,7 +158,7 @@ $arFirstPhoto = current($arResult['MORE_PHOTO']);
       "focusOnSelect": true
       }'>
 	    <?foreach ($arResult['PROPERTIES']['photo_obj']['VALUE'] as $photo3):?>
-			<div><img src="<?=CFile::GetPath($photo3)?>" alt=""></div>
+      <div><a href="<?=CFile::GetPath($photo3)?>" data-lightbox="product-lightbox"><img src="<?=CFile::GetPath($photo3)?>" alt=""></a></div>
 		<?endforeach;?>
     </div>
   </div>
