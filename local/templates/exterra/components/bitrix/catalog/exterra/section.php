@@ -505,9 +505,9 @@ if (ModuleManager::isModuleInstalled("sale"))
 	"INCLUDE_SUBSECTIONS" => 'Y'
   );?>
   <?$APPLICATION->IncludeComponent(
-	"bitrix:catalog.section",
-	"featured",
-	Array(
+	"bitrix:catalog.section", 
+	"featured", 
+	array(
 		"ACTION_VARIABLE" => "action",
 		"ADD_PICT_PROP" => "-",
 		"ADD_PROPERTIES_TO_BASKET" => "Y",
@@ -560,25 +560,35 @@ if (ModuleManager::isModuleInstalled("sale"))
 		"PAGER_SHOW_ALWAYS" => "N",
 		"PAGER_TEMPLATE" => ".default",
 		"PAGER_TITLE" => "Товары",
-		"PAGE_ELEMENT_COUNT" => "4",
+		"PAGE_ELEMENT_COUNT" => "8",
 		"PARTIAL_PRODUCT_PROPERTIES" => "N",
-		"PRICE_CODE" => array(),
+		"PRICE_CODE" => array(
+		),
 		"PRICE_VAT_INCLUDE" => "Y",
 		"PRODUCT_BLOCKS_ORDER" => "price,props,sku,quantityLimit,quantity,buttons,compare",
 		"PRODUCT_ID_VARIABLE" => "id",
-		"PRODUCT_PROPERTIES" => array(),
+		"PRODUCT_PROPERTIES" => array(
+		),
 		"PRODUCT_PROPS_VARIABLE" => "prop",
 		"PRODUCT_QUANTITY_VARIABLE" => "quantity",
 		"PRODUCT_ROW_VARIANTS" => "[{'VARIANT':'2','BIG_DATA':false},{'VARIANT':'2','BIG_DATA':false},{'VARIANT':'2','BIG_DATA':false},{'VARIANT':'2','BIG_DATA':false},{'VARIANT':'2','BIG_DATA':false},{'VARIANT':'2','BIG_DATA':false}]",
-		"PROPERTY_CODE" => array("nalichie", "price_kvm", "price_sht", ""),
-		"PROPERTY_CODE_MOBILE" => array(),
+		"PROPERTY_CODE" => array(
+			0 => "nalichie",
+			1 => "price_kvm",
+			2 => "price_sht",
+			3 => "",
+		),
+		"PROPERTY_CODE_MOBILE" => "",
 		"RCM_PROD_ID" => $_REQUEST["PRODUCT_ID"],
 		"RCM_TYPE" => "personal",
 		"SECTION_CODE" => "",
 		"SECTION_ID" => "",
 		"SECTION_ID_VARIABLE" => "SECTION_ID",
 		"SECTION_URL" => "",
-		"SECTION_USER_FIELDS" => array("", ""),
+		"SECTION_USER_FIELDS" => array(
+			0 => "",
+			1 => "",
+		),
 		"SEF_MODE" => "N",
 		"SET_BROWSER_TITLE" => "Y",
 		"SET_LAST_MODIFIED" => "N",
@@ -597,8 +607,10 @@ if (ModuleManager::isModuleInstalled("sale"))
 		"USE_ENHANCED_ECOMMERCE" => "N",
 		"USE_MAIN_ELEMENT_SECTION" => "N",
 		"USE_PRICE_COUNT" => "N",
-		"USE_PRODUCT_QUANTITY" => "N"
-	)
+		"USE_PRODUCT_QUANTITY" => "N",
+		"COMPONENT_TEMPLATE" => "featured"
+	),
+	false
 );?>
 </div>
 <div class="mb70"></div>
