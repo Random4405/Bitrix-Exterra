@@ -4,6 +4,7 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Каталог");
 ?>
 
+
 <!-- САМА ФОРМА ТУТ -->
 
     <div class="popup-form">
@@ -12,12 +13,12 @@ $APPLICATION->SetTitle("Каталог");
             <i class="fa fa-close"></i>
           <legend>Заказ товара</legend>
           <fieldset>
-            <input name="name" required type="text" placeholder="Имя:*">
-            <input name="phone" required id="phone" type="text" placeholder="Телефон:*">
+            <input id="name" name="name" pattern="[a-z]{1,15}" required type="text" placeholder="Имя:*">
+            <input id="phone" name="phone" required id="phone" type="text" placeholder="Телефон:*">
             <input name="product" type="text" placeholder="Название товара:">
-            <input name="email" type="text" placeholder="E-mail:">
+            <input id="email" name="email" type="text" placeholder="E-mail:">
             <textarea name="message" placeholder="Комментарий:"></textarea>
-            <input class="submit" type="submit" value="ОТПРАВИТЬ">
+            <input id="confirm" onclick="TestFields()" class="submit" type="submit" value="ОТПРАВИТЬ">
           </fieldset>
         </form>
       </div>
@@ -27,6 +28,107 @@ $APPLICATION->SetTitle("Каталог");
 
 <script>
 $("#phone").mask("+7 861 (99) 999-99-99");
+</script>
+
+
+<script type="text/javascript">
+document.getElementById('confirm').disabled = true;
+$('#confirm').css('background', 'grey')
+
+
+  $(document).ready(function() {
+    $("#name").keyup(function(){
+      var name = $("#name").val();
+      if(name != 0)
+      {
+        if(name)
+        {
+            $('#name').css('border', '1px solid transparent')
+              isValidAll();
+        } else {
+            $('#name').css('border', '1px solid #e02222')
+              isValidAll();
+        }
+      } else {
+          $('#name').css('border', '1px solid #e02222')
+          isValidAll();
+      }
+    });
+  });
+
+
+$(document).ready(function() {
+  $("#phone").keyup(function(){
+
+    var phone = $("#phone").val();
+
+    if(phone != 0)
+    {
+      if(isValidPhone(phone))
+      {
+          $('#phone').css('border', '1px solid transparent')
+            isValidAll();
+      } else {
+          $('#phone').css('border', '1px solid #e02222')
+            isValidAll();
+      }
+    } else {
+        $('#phone').css('border', '1px solid #e02222')
+          isValidAll();
+    }
+
+  });
+
+});
+
+$(document).ready(function() {
+  $("#email").keyup(function(){
+
+    var email = $("#email").val();
+
+    if(email != 0)
+    {
+      if(isValidEmailAddress(email))
+      {
+          $('#email').css('border', '1px solid transparent')
+          isValidAll();
+      } else {
+          $('#email').css('border', '1px solid #e02222')
+            isValidAll();
+      }
+    } else {
+        $('#email').css('border', '1px solid #e02222')
+          isValidAll();
+    }
+
+  });
+
+});
+
+
+
+function isValidPhone(Phone) {
+  var pattern = new RegExp(/\+7 861 \(\d{2}\) \d{3}-\d{2}-\d{2}/i);
+  return pattern.test(Phone);
+}
+
+function isValidAll() {
+  var name = $("#name").val();
+  var phone = $("#phone").val();
+  if ( isValidPhone(phone) && (name != 0) ) {
+    document.getElementById('confirm').disabled = false;
+    $('#confirm').css('background', '#882204');
+  } else {
+    document.getElementById('confirm').disabled = true;
+    $('#confirm').css('background', 'grey');
+  }
+}
+
+function isValidEmailAddress(emailAddress) {
+  var pattern = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i);
+  return pattern.test(emailAddress);
+}
+
 </script>
 
 <!-- САМА ФОРМА ТУТ -->

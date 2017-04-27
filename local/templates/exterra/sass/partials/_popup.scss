@@ -31,6 +31,16 @@
           margin-left: (100% - $width)/2;
           height: 46px;
           padding-left: 15px;
+          &:focus {
+            outline: none;
+          }
+          input:valid {
+            border-color: green;
+          }
+
+          input:invalid {
+            border-color: red;
+          }
         }
         input {
           margin-bottom: 16px;
