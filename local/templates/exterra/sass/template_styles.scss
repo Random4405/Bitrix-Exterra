@@ -101,6 +101,7 @@ header {
   ul {
     display: flex;
     justify-content: center;
+    margin-bottom: 0;
     li {
       list-style-type: none;
       @for $i from 1 through 5 {
@@ -329,6 +330,8 @@ footer {
   position: relative;
   $line-height: 34px;
   line-height: $line-height;
+  margin-top: (140px/2) - $line-height/2;
+  margin-bottom: (140px/2) - $line-height/2;
   &:before,
   &:after {
     content: '';
