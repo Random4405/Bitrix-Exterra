@@ -660,6 +660,9 @@ h4 {
   text-transform: uppercase;
   font-size: 1.12rem;
   line-height: $line-height;
+  &:nth-child(1) {
+    margin-right: 30px;
+  }
   &:nth-child(1) > a:after {
     content: '';
     position: absolute;
