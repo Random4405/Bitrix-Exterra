@@ -259,8 +259,9 @@ footer {
 /* NEWS */
 
 .sell {
-  background: url('/images/sell-bg.jpg') -325px no-repeat;
-  background-size: cover;
+  background: 
+    url('/images/brick.png') calc(50% + 324px/2) 80% no-repeat,
+    url('/images/texture.png') 0 0 repeat-x ;
   .sell-wrapper {
     display: flex;
     justify-content: space-between;
