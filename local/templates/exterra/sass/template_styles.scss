@@ -714,6 +714,10 @@ h4 {
   line-height: $line-height;
   &:nth-child(1) {
     margin-right: 30px;
+    // cursor: pointer;
+    a {
+      // pointer-events: none;
+    }
   }
   &:nth-child(1) > a:after {
     content: '';
@@ -758,7 +762,7 @@ ul#horizontal-multilevel-menu {
     padding-bottom: 35px;
     list-style-position: outside;
     li:hover ul {
-      display: block;
+      // display: block;
     }
   }
 
@@ -784,7 +788,7 @@ ul#horizontal-multilevel-menu {
   }
 
   li:hover ul { /* Выводим выпадающий пункт при наведении курсора */
-    display: block;
+    // display: block;
   }
 
   a.parent + ul { /* Второй список */
@@ -805,11 +809,15 @@ ul#horizontal-multilevel-menu {
     }
   }
 
-  li:hover > ul {
-    display: block;
-    li:nth-child(2) > a.parent + ul {
+
+  &.open {
+
+    li > ul {
       display: block;
-      // background-color: red;
+      li:nth-child(2) > a.parent + ul {
+        display: block;
+        // background-color: red;
+      }
     }
   }
 
