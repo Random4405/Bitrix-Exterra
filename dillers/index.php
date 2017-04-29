@@ -16,10 +16,10 @@ $APPLICATION->SetTitle("Дилерам");
   )
 );?>
 </div>
-  </div>
 
 
-<div class="about-wrapper">
+<div class="row">
+<div class="about-wrapper dillers-fix">
   <div class="l-wrapper"></div>
   <div class="r-wrapper">
     <h4 style="font-family: Arial; font-weight: 400; line-height: 32px; color: #87270d; font-size: 18px; position: relative;">Компания Exterra Group является прямым поставщиком клинкерных материалов на строительный рынок Республики Крым.</h4>
@@ -55,6 +55,8 @@ $APPLICATION->SetTitle("Дилерам");
       </li>
     </ul>
   </div>
+</div>
+</div>
 </div>
 
 <?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
