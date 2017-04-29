@@ -122,7 +122,7 @@ $arFirstPhoto = current($arResult['MORE_PHOTO']);
         </div>
         <div class='catalog-button'>
           <div class="link-description">Понравился товар?</div>
-          <a href="#">Заказать</a>
+          <a href="#" onclick="event.preventDefault();buyForm('<?=$arResult['NAME']?>');">Заказать</a>
         </div>
       </div>
       <div class="right-wrapper flex-col">

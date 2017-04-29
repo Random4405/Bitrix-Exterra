@@ -60,7 +60,7 @@ foreach ($arResult['ITEMS'] as $key => $arItem)
               <p><?=$arItem['DISPLAY_PROPERTIES']['price_kvm']['VALUE']?></p>
             </div>
 			<?endif;?>
-            <a class="product-button" href="#">Купить сейчас</a>
+            <a class="product-button" href="#" onclick="event.preventDefault();buyForm('<?=$arItem['NAME']?>');">Купить сейчас</a>
           </div>
         </div>
       </div>
