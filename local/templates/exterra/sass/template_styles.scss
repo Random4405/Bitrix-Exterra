@@ -457,6 +457,9 @@ h4 {
     background:transparent url('/images/about-bg.png') left top no-repeat;
   }
   .r-wrapper {
+    h4 {
+      margin-top: 60px;
+    }
     flex-basis: 70%;
     padding-left: 15px;
     ul {
