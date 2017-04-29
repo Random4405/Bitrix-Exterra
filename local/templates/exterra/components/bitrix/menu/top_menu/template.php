@@ -20,8 +20,8 @@ foreach($arResult as $arItem):?>
     <li<?if ($arItem["SELECTED"]):?> class="item-selected"<?endif?>><a href="<?=$arItem["LINK"]?>" class="parent"><?=$arItem["TEXT"]?></a>
 				<ul>
           <div class="img-wrapper header_menu_image">
-          <span class="texture-name">Декоративный камень</span>
-          <img class="wtf" src="/images/menu_test.png">
+          <span class="texture-name"><?=$arItem["TEXT"]?></span>
+          <img class="wtf" src="<?=$arItem["PICTURE"]?>">
         </div>
 		<?endif?>
 
