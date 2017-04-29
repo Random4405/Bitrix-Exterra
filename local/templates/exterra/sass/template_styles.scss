@@ -373,13 +373,22 @@ footer {
 
 .title-50px {
   color: #87270d;
+  margin-top: 0;
+  &:before {
+    width: 114px;
+    left: 0;
+    margin-left: 0;
+  }
+  &:after {
+    width: 114px;
+    right: 0;
+    margin-right: 0;
+  }
 }
 
 .title-50px:before, .title-50px:after {
-  width: 50px !important;
   background: #87270d !important;
-  border-width: 0 10px;
-  height: 1px;
+  // width: 114px;
 }
 
 .slick {
