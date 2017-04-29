@@ -811,7 +811,6 @@ ul#horizontal-multilevel-menu {
 
 
   &.open {
-
     li > ul {
       display: block;
       li:nth-child(2) > a.parent + ul {
