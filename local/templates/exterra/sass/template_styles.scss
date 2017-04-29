@@ -684,7 +684,15 @@ h4 {
 
 ul#horizontal-multilevel-menu {
 
-  $menu-width: 20%;
+  $menu-width: 30%;
+
+  > li > ul > li {
+    margin-bottom: 15pt;
+  }
+
+  > li > ul {
+    min-height: 510px;
+  }
 
   ul {
     position:absolute;
@@ -743,16 +751,6 @@ ul#horizontal-multilevel-menu {
         font-weight: 400;
       }
     }
-    &:after {
-      content: 'IMAGE';
-      position: absolute;
-      right: 0;
-      top: 0;
-      margin: 40px;
-      background: green;
-      width: 340px;
-      height: 265px;
-    }
   }
 
   li:hover > ul {
@@ -763,6 +761,11 @@ ul#horizontal-multilevel-menu {
     }
   }
 
+}
+
+.header_menu_image {
+  float: right;
+  right: 40px;
 }
 /* END MENU */
 

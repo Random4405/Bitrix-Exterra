@@ -17,8 +17,12 @@ foreach($arResult as $arItem):?>
 			<li><a href="<?=$arItem["LINK"]?>" class="<?if ($arItem["SELECTED"]):?>root-item-selected<?else:?>root-item<?endif?>"><?=$arItem["TEXT"]?></a>
 				<ul>
 		<?else:?>
-			<li<?if ($arItem["SELECTED"]):?> class="item-selected"<?endif?>><a href="<?=$arItem["LINK"]?>" class="parent"><?=$arItem["TEXT"]?></a>
+    <li<?if ($arItem["SELECTED"]):?> class="item-selected"<?endif?>><a href="<?=$arItem["LINK"]?>" class="parent"><?=$arItem["TEXT"]?></a>
 				<ul>
+          <div class="img-wrapper header_menu_image">
+          <span class="texture-name">Декоративный камень</span>
+          <img class="wtf" src="/images/menu_test.png">
+        </div>
 		<?endif?>
 
 	<?else:?>

@@ -38,3 +38,4 @@ function openCity(evt, cityName) {
 jQuery( document ).ready(function( $ ) {
   $('button.tablinks').first().addClass('active');
 });
+
