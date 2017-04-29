@@ -460,6 +460,9 @@ h4 {
     h4 {
       margin-top: 60px;
       margin-bottom: 20px;
+      &.hover:hover {
+        color: #87270d;
+      }
     }
     flex-basis: 70%;
     padding-left: 15px;
@@ -467,6 +470,9 @@ h4 {
       li {
         list-style-image: url(/images/li-marker.png);
         list-style-position: inside;
+        p {
+          margin-bottom: 20px;
+        }
       }
     }
     span {
@@ -489,7 +495,7 @@ h4 {
         height: 144px;
         left: -327px;
         line-height: 144px;
-        top: 0;
+        top: -11px;
         background-color: rgba(255, 255, 255, .8);
         z-index: 10;
         color: #4e4e4e;

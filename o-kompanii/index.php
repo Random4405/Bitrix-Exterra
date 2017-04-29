@@ -19,7 +19,7 @@ $APPLICATION->SetTitle("О компании");
 
 <h1 class="title title-50px">Только качественные строительные материалы</h1>
 
-<div class="slick f-no-bottom-margin">
+<div class="slick f-no-bottom-margin slick-main-arrows" data-slick="{"arrows": true}">
   <div><img src="/images/realize/1photo.jpg" alt=""></div>
   <div><img src="/images/realize/2photo.jpg" alt=""></div>
   <div><img src="/images/realize/3photo.jpg" alt=""></div>
@@ -35,7 +35,7 @@ $APPLICATION->SetTitle("О компании");
     <div class="about-wrapper">
       <div class="l-wrapper"></div>
       <div class="r-wrapper">
-        <h4>«Экстерра Групп» – компания, четко ориентированная на продажу потребителям только качественных строительных материалов.</h4>
+        <h4 class="hover">«Экстерра Групп» – компания, четко ориентированная на продажу потребителям только качественных строительных материалов.</h4>
         <ul>
           <li>
             <span class="about-why">Почему мы? Потому что мы заботимся о Вас, своих клиентах.</span>
