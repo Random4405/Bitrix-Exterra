@@ -43,6 +43,7 @@ jQuery( document ).ready(function( $ ) {
     } else {
       $("#horizontal-multilevel-menu").addClass("open");
     }
+     return false;
   });
 });
 
