@@ -811,13 +811,21 @@ ul#horizontal-multilevel-menu {
   }
 
 
-  &.open {
-    li > ul {
+  // &.open {
+  //   li > ul {
+  //     display: block;
+  //     li:nth-child(2) > a.parent + ul {
+  //       display: block;
+  //       // background-color: red;
+  //     }
+  //   }
+  // }
+
+    li:hover > ul {
+    display: block;
+    li:nth-child(2) > a.parent + ul {
       display: block;
-      li:nth-child(2) > a.parent + ul {
-        display: block;
-        // background-color: red;
-      }
+      // background-color: red;
     }
   }
 
