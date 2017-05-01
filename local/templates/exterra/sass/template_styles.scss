@@ -1,4 +1,5 @@
 @import "partials/_popup";
+@import "partials/font-awesome";
 
 @function calculateRem($size) {
   $remSize: $size / 16px;
