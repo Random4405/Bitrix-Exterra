@@ -49,8 +49,7 @@ $res = CIBlockSection::GetByID($arResult['VARIABLES']['SECTION_ID']);
 if($ar_res = $res->GetNext())
   $arSect = $ar_res;
 ?>
-<h1><?=$arSect['NAME']?></h1>
-<h5>Выберите подкатегорию</h5>
+<span class="subcategory_name"><?=$arSect['NAME']?></span>
 <ul>
 <?
 $arFilter = Array('IBLOCK_ID'=>6, 'GLOBAL_ACTIVE'=>'Y', 'SECTION_ID' => $arSect['IBLOCK_SECTION_ID']);
