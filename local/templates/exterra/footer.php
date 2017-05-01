@@ -233,6 +233,22 @@ $('.slider-product').slick();
 $('.product-arrows').slick({
 slidesToShow: 4,
 })
+
+
+  function TestFields(){
+    $.ajax({
+    url: '/catalog/post.php',
+      type: 'POST',
+      dataType: 'html',
+      data: $('#form_id').serialize(),
+      success: function(response) {
+        alert('Отправлено'); // отправлено удачно
+      },
+      error: function(response) {
+        alert('Ошибка'); // ошибка
+      }
+  });
+}
 </script>
 </body>
 </html>
