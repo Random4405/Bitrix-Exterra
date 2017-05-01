@@ -32,9 +32,9 @@ if ($USER->IsAdmin()):
   <body class="<? if ($_SERVER['REQUEST_URI'] == '/contacts/') echo "no-white-fix"?>">
     <div id="panel"><?$APPLICATION->ShowPanel();?></div>
 
-    <div class="alert alert-success alert-dismissable">
-      <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-      <strong>Success!</strong> Indicates a successful or positive action.
+    <div id="results" class="alert alert-success alert-dismissable">
+      <i class="fa fa-close close" onclick="$('#results').hide()"></i>
+      <strong>Success!</strong>
     </div>
 
 

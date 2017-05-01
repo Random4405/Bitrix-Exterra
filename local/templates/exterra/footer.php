@@ -49,7 +49,7 @@ IncludeTemplateLangFile(__FILE__);
 
 <div class="popup-form" style="display: none;">
   <div class="popup-form-wrapper">
-	<form id="product_form" action="javascript:void(null);" method="POST">
+	<form id="form_product" action="javascript:void(null);" method="POST">
 		<i class="fa fa-close" onclick="buyFormClose();"></i>
 	  <legend>Заказ товара</legend>
 	  <fieldset>
@@ -58,7 +58,7 @@ IncludeTemplateLangFile(__FILE__);
 		<input name="product" id="productname" type="text" placeholder="Название товара:">
 		<input id="email" name="email" type="text" placeholder="E-mail:">
 		<textarea name="message" placeholder="Комментарий:"></textarea>
-		<input id="confirm" onclick="TestFields()" class="submit" type="submit" value="ОТПРАВИТЬ">
+		<input id="confirm" onclick="SendResult(); buyFormClose();" class="submit" type="submit" value="ОТПРАВИТЬ">
 	  </fieldset>
 	</form>
   </div>
@@ -235,7 +235,7 @@ slidesToShow: 4,
 })
 
 
-  function TestFields(){
+  function SendResult(){
     msg = $('#form_product').serialize();
     $.ajax({
     url: '/catalog/post.php',
@@ -243,10 +243,12 @@ slidesToShow: 4,
       dataType: 'html',
       data: msg,
       success: function(response) {
-        alert('Отправлено'); // отправлено удачно
+        /* alert('Отправлено'); // отправлено удачно */
+        $('#results').show();
+        $('#results strong').html('sdsdsdsd');
       },
       error: function(response) {
-        alert('Ошибка'); // ошибка
+        /* alert('Ошибка'); // ошибка */
       }
   });
 }
