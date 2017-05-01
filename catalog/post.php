@@ -39,7 +39,7 @@ mail("$adminemail", "$date $time Сообщение
 // Выводим сообщение пользователю
 
 print "<script language='Javascript'>
-  alert("work");
+  alert('work');
 </script>";
 exit;
 ?>

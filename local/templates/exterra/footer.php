@@ -49,11 +49,11 @@ IncludeTemplateLangFile(__FILE__);
 
 <div class="popup-form" style="display: none;">
   <div class="popup-form-wrapper">
-	<form action="post.php" method="POST">
+	<form id="product_form" action="javascript:void(null);" method="POST">
 		<i class="fa fa-close" onclick="buyFormClose();"></i>
 	  <legend>Заказ товара</legend>
 	  <fieldset>
-		<input id="name" name="name" pattern="[a-z]{1,15}" required type="text" placeholder="Имя:*">
+		<input id="name" name="name" required type="text" placeholder="Имя:*">
 		<input id="phone" name="phone" required id="phone" type="text" placeholder="Телефон:*">
 		<input name="product" id="productname" type="text" placeholder="Название товара:">
 		<input id="email" name="email" type="text" placeholder="E-mail:">
@@ -236,11 +236,12 @@ slidesToShow: 4,
 
 
   function TestFields(){
+    msg = $('#form_product').serialize();
     $.ajax({
     url: '/catalog/post.php',
       type: 'POST',
       dataType: 'html',
-      data: $('#form_id').serialize(),
+      data: msg,
       success: function(response) {
         alert('Отправлено'); // отправлено удачно
       },
