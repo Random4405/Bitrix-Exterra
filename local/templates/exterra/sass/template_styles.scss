@@ -823,7 +823,7 @@ ul#horizontal-multilevel-menu {
 
     li:hover > ul {
     display: block;
-    li:nth-child(2) > a.parent + ul {
+    li:nth-child(1) > a.parent + ul {
       display: block;
       // background-color: red;
     }
