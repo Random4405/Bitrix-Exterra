@@ -749,7 +749,7 @@ ul#horizontal-multilevel-menu {
   }
 
   > li > ul {
-    min-height: 510px;
+    min-height: 600px;
   }
 
   ul {
@@ -843,6 +843,17 @@ ul#horizontal-multilevel-menu {
     //   // background-color: red;
     // }
   // }
+
+
+  .links {
+    position: absolute;
+    bottom: 16px;
+    right: 47px;
+    width: 340px;
+    a {
+      color: #4e4e4e;
+    }
+  }
 
 }
 
