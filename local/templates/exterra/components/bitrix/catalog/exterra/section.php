@@ -427,6 +427,8 @@ if (ModuleManager::isModuleInstalled("sale"))
   </div>
   <div class="row">
     <div class="content-sidebar">
+      
+      <span class="subcategory_name"><?=$ar_section['NAME']?></span>
 
 <?$APPLICATION->IncludeComponent(
   "bitrix:catalog.section.list",
