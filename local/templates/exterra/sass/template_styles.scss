@@ -1331,9 +1331,12 @@ $sidebar-width: 250px;
 
 .select-category-wrapper {
   background-color: #fff;
+  margin-right: 15px;
+  overflow: hidden;
   h1 {
     padding-top: 40px;
     margin-top: 0;
+    font-size: 20px;
   }
   h5 {
     color: #87270d;
@@ -1345,9 +1348,8 @@ $sidebar-width: 250px;
     font-weight: 700;
   }
   ul {
-    /* УБРАТЬ */
-    padding-left: 40%;
     padding-bottom: 40px;
+    margin-left: 15px;
     margin-bottom: 16px;
     li {
       font-family: Arial;
