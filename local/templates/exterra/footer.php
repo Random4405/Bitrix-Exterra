@@ -245,7 +245,7 @@ slidesToShow: 4,
       success: function(response) {
         /* alert('Отправлено'); // отправлено удачно */
         $('#results').show();
-        $('#results strong').html('sdsdsdsd');
+        $('#results strong').html('Ваш заказ принят. Мы свяжемся с Вами в ближайшее время');
       },
       error: function(response) {
         /* alert('Ошибка'); // ошибка */
