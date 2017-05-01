@@ -744,7 +744,8 @@ ul#horizontal-multilevel-menu {
   $menu-width: 30%;
 
   > li > ul > li {
-    padding-bottom: 15pt;
+    padding-top: 7px;
+    padding-bottom: 7px;
   }
 
   > li > ul {
@@ -762,9 +763,9 @@ ul#horizontal-multilevel-menu {
     padding-top: 40px;
     padding-bottom: 35px;
     list-style-position: outside;
-    li:hover ul {
-      // display: block;
-    }
+    // li:hover ul {
+    //   display: block;
+    // }
   }
 
   ul li {
@@ -807,27 +808,41 @@ ul#horizontal-multilevel-menu {
         font-size: 16px;
         font-weight: 400;
       }
+      &:hover {
+        a {
+          color: #87270d;
+        }
+        list-style-image: url(/images/li-terra-marker.png);
+      }
     }
   }
 
 
-  // &.open {
-  //   li > ul {
-  //     display: block;
-  //     li:nth-child(2) > a.parent + ul {
-  //       display: block;
-  //       // background-color: red;
-  //     }
-  //   }
-  // }
-
-    li:hover > ul {
-    display: block;
-    li:nth-child(1) > a.parent + ul {
+  &.open {
+      > li > ul {
       display: block;
-      // background-color: red;
+      li:nth-child(1) > a.parent + ul {
+        display: block;
+        // background-color: red;
+      }
     }
   }
+
+  > li > ul > li {
+    &:hover {
+      a.parent + ul {
+        display: block;
+      }
+    }
+  }
+
+    // li:hover > ul {
+    // display: block;
+    // li:nth-child(1) > a.parent + ul {
+    //   display: block;
+    //   // background-color: red;
+    // }
+  // }
 
 }
 

@@ -37,13 +37,9 @@ function openCity(evt, cityName) {
 
 jQuery( document ).ready(function( $ ) {
   $('button.tablinks').first().addClass('active');
-  $("#horizontal-multilevel-menu li").first().click(function(){
-    if ($("#horizontal-multilevel-menu").hasClass("open")) {
-      $("#horizontal-multilevel-menu").removeClass("open");
-    } else {
-      $("#horizontal-multilevel-menu").addClass("open");
-    }
-     return false;
+  $("#horizontal-multilevel-menu > li:first-child > a ").click(function(){
+    $("#horizontal-multilevel-menu").toggleClass("open")
+    event.preventDefault();
   });
 });
 
