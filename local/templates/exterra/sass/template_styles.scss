@@ -415,19 +415,19 @@ footer {
 }
 
 .bx-breadcrumb {
-  font-family: Arial;
-  @include fontSize(12px);
-  font-weight: 400;
   color: #87270d;
   margin-bottom: 30px;
   margin-top: 17px;
   & a {
     color: #4e4e4e;
+    font-family: Arial;
+    @include fontSize(12px);
+    font-weight: 400;
   }
   .bx-breadcrumb-item {
     span {
-      font-size: 1rem !important;
-      font-family: Arial;
+      // font-size: 1rem !important;
+      // font-family: Arial;
     }
   }
   .fa-angle-right {
