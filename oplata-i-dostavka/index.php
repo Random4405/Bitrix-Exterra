@@ -20,7 +20,7 @@ $APPLICATION->SetTitle("Дилерам");
 
 
 <div class="about-wrapper">
-  <div class="l-wrapper"></div>
+  <!--<div class="l-wrapper"></div> -->
   <div class="r-wrapper">
     <ul>
       <li>
