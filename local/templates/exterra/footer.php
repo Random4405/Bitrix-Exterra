@@ -44,6 +44,30 @@ IncludeTemplateLangFile(__FILE__);
   </div>
 </footer>
 
+<!-- Форма звонка -->
+
+
+<div class="popup-form-call" style="display: none;">
+  <div class="popup-form-wrapper">
+    <form>
+      <i class="fa fa-close" onclick="callFormClose()"></i>
+      <legend>Заказать звонок</legend>
+      <fieldset>
+        <input required type="text" placeholder="Имя:*">
+        <input id="phone" required type="text" placeholder="Телефон:*">
+        <input type="text" placeholder="Время:">
+        <input class="submit" type="submit" value="ОТПРАВИТЬ">
+      </fieldset>
+    </form>
+  </div>
+  <div class="popup-background"></div>
+</div>
+
+<script>
+$("#phone").mask("+7 861 (99) 999-99-99");
+</script>
+
+<!-- Форма звонка -->
 
 <!-- САМА ФОРМА ТУТ -->
 
@@ -171,7 +195,6 @@ function isValidEmailAddress(emailAddress) {
 
 function buyForm(name) {
 	$('.popup-form').show();
-	$('#productname').val(name);
 }
 
 function buyFormClose(name) {
@@ -179,6 +202,13 @@ function buyFormClose(name) {
 }
 
 
+function callFormShow() {
+  $('.popup-form-call').show();
+}
+
+function callFormClose() {
+  $('.popup-form-call').hide();
+}
 
 </script>
 

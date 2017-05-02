@@ -1,12 +1,17 @@
 
-.popup-form {
-  .popup-form-wrapper {
-    $width: 50%;
-    width: $width;
-    left: 50% - $width/2;
+.popup-form, .popup-form-call {
     position: fixed;
-    top: calc(50% - 275px);
-    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    z-index: 9999;
+  .popup-form-wrapper {
+    width: 50%;
+    position: relative;
     background: #f3f3f3;
     z-index: 1001;
     border: 4px solid #bbbbbb;
