@@ -9,27 +9,25 @@ $backurl="http://exterragroup.ru/";  // На какую страничку пе�
 //---------------------------------------------------------------------- //
 
 
-
 // Принимаем данные с формы
 $name=$_POST['name'];
 $email=$_POST['email'];
-$msg=$_POST['message'];
+$message=$_POST['message'];
 $phone=$_POST['phone'];
 $product=$_POST['product'];
+$time=$_POST['time'];
 
 
 
-// Проверяем валидность e-mail
-
-  $msg="
-    <p>Имя: $name</p>
-    <p>E-mail: $email</p>
-    <p>Сообщение: $msg</p>
-    <p>Телефон: $phone</p>
-    <p>Название продукта: $product</p>
-";
+if( $email != 0 ) { $email = "E-mail: $email \n"; }
+if( $time != 0 ) { $time = "Время: $time \n"; }
+if( $message != 0 ) { $message = "Сообщение: $message \n"; }
+if( $product != 0 ) { $product = "Название продукта: $product \n"; }
 
 
+  $msg="Имя: $name\n"."Телефон: $phone \n".$email.$message.$product.$time;
+
+	print "$msg";
 
 // Отправляем письмо админу
 

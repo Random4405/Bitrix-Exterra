@@ -49,23 +49,20 @@ IncludeTemplateLangFile(__FILE__);
 
 <div class="popup-form-call" style="display: none;">
   <div class="popup-form-wrapper">
-    <form>
-      <i class="fa fa-close" onclick="callFormClose()"></i>
+    <form id="form_call" action="javascript:void(null);" method="POST">
+      <i class="fa fa-close" onclick="callFormClose();"></i>
       <legend>Заказать звонок</legend>
       <fieldset>
-        <input required type="text" placeholder="Имя:*">
-        <input id="phone" required type="text" placeholder="Телефон:*">
-        <input type="text" placeholder="Время:">
-        <input class="submit" type="submit" value="ОТПРАВИТЬ">
+        <input name="name" id="name_call" required type="text" placeholder="Имя:*">
+        <input name="phone" id="phone_call" required type="text" placeholder="Телефон:*">
+        <input name="time" type="text" placeholder="Время:">
+        <input id="confirm_call" onclick="SendResult('call'); callFormClose();" class="submit" type="submit" value="ОТПРАВИТЬ">
       </fieldset>
     </form>
   </div>
-  <div class="popup-background"></div>
+  <div class="popup-background" onclick="callFormClose();"></div>
 </div>
 
-<script>
-$("#phone").mask("+7 861 (99) 999-99-99");
-</script>
 
 <!-- Форма звонка -->
 
@@ -82,7 +79,7 @@ $("#phone").mask("+7 861 (99) 999-99-99");
 		<input name="product" id="productname" type="text" placeholder="Название товара:">
 		<input id="email" name="email" type="text" placeholder="E-mail:">
 		<textarea name="message" placeholder="Комментарий:"></textarea>
-		<input id="confirm" onclick="SendResult(); buyFormClose();" class="submit" type="submit" value="ОТПРАВИТЬ">
+		<input id="confirm" onclick="SendResult('product'); buyFormClose();" class="submit" type="submit" value="ОТПРАВИТЬ">
 	  </fieldset>
 	</form>
   </div>
@@ -92,10 +89,76 @@ $("#phone").mask("+7 861 (99) 999-99-99");
 
 <script>
 $("#phone").mask("+7 861 (99) 999-99-99");
+$("#phone_call").mask("+7 861 (99) 999-99-99");
 </script>
 
 
 <script type="text/javascript">
+
+document.getElementById('confirm_call').disabled = true;
+$('#confirm_call').css('background', 'grey')
+
+
+  $(document).ready(function() {
+    $("#name_call").keyup(function(){
+      var name = $("#name_call").val();
+      if(name != 0)
+      {
+        if(name)
+        {
+            $('#name_call').css('border', '1px solid transparent')
+              isValidAllCall();
+        } else {
+            $('#name_call').css('border', '1px solid #e02222')
+              isValidAllCall();
+        }
+      } else {
+          $('#name_call').css('border', '1px solid #e02222')
+          isValidAllCall();
+      }
+    });
+  });
+
+
+$(document).ready(function() {
+  $("#phone_call").keyup(function(){
+
+    var phone = $("#phone_call").val();
+
+    if(phone != 0)
+    {
+      if(isValidPhone(phone))
+      {
+          $('#phone_call').css('border', '1px solid transparent')
+            isValidAllCall();
+      } else {
+          $('#phone_call').css('border', '1px solid #e02222')
+            isValidAllCall();
+      }
+    } else {
+        $('#phone_call').css('border', '1px solid #e02222')
+          isValidAllCall();
+    }
+
+  });
+
+});
+
+function isValidAllCall() {
+  var name = $("#name_call").val();
+  var phone = $("#phone_call").val();
+  if ( isValidPhone(phone) && (name != 0) ) {
+    document.getElementById('confirm_call').disabled = false;
+    $('#confirm_call').css('background', '#882204');
+  } else {
+    document.getElementById('confirm_call').disabled = true;
+    $('#confirm_call').css('background', 'grey');
+  }
+}
+
+
+// ФОРМА ПРОДУКТА
+
 document.getElementById('confirm').disabled = true;
 $('#confirm').css('background', 'grey')
 
@@ -195,6 +258,7 @@ function isValidEmailAddress(emailAddress) {
 
 function buyForm(name) {
 	$('.popup-form').show();
+  $('#productname').val(name);
 }
 
 function buyFormClose(name) {
@@ -211,6 +275,8 @@ function callFormClose() {
 }
 
 </script>
+
+
 
 <!-- САМА ФОРМА ТУТ -->
 
@@ -265,8 +331,13 @@ slidesToShow: 4,
 })
 
 
-  function SendResult(){
-    msg = $('#form_product').serialize();
+  function SendResult(form_name){
+    if (form_name == 'call') {
+      msg = $('#form_call').serialize();
+    } 
+    if (form_name == 'product') {
+      msg = $('#form_product').serialize();
+    }
     $.ajax({
     url: '/catalog/post.php',
       type: 'POST',
@@ -276,6 +347,7 @@ slidesToShow: 4,
         /* alert('Отправлено'); // отправлено удачно */
         $('#results').show();
         $('#results strong').html('Ваш заказ принят. Мы свяжемся с Вами в ближайшее время');
+        // $('#results strong').html(response);
       },
       error: function(response) {
         /* alert('Ошибка'); // ошибка */
