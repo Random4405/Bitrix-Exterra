@@ -378,14 +378,16 @@ footer {
   margin-top: 0;
   margin-bottom: 41px;
   &:before {
-    width: 114px;
+    width: 82px;
     left: 0;
     margin-left: 0;
+    border-left: none;
   }
   &:after {
-    width: 114px;
+    width: 82px;
     right: 0;
     margin-right: 0;
+    border-right: none;
   }
 }
 
@@ -644,6 +646,7 @@ h4 {
 
 .contacts-building {
   img { width: 100%; }
+  margin-bottom: 50px;
 }
 
 .constacts-slick {
