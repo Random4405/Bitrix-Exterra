@@ -20,7 +20,7 @@ $APPLICATION->SetTitle("Контакты");
 
 	<div class="container bg-white">
   <div class="row">
-    <h1 class="title">Контакты</h1>
+    <h1 class="title f-no-margin-top">Контакты</h1>
   </div>
     <div class="row">
       <div class="contacts-flex-wrapper">

@@ -1,4 +1,5 @@
 @import "partials/_popup";
+@import "partials/_fixes";
 @import "partials/font-awesome";
 
 @function calculateRem($size) {
@@ -634,7 +635,10 @@ h4 {
         font-weight: 700;
         text-transform: uppercase;
         padding: 10px 15px;
-        width: 30%;
+        width: 40%;
+        &:hover {
+          background-color: #000;
+        }
       }
     }
   }
