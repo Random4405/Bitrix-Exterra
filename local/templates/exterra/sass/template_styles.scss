@@ -456,16 +456,19 @@ h4 {
 }
 
 .about-wrapper {
-  display: flex;
+  overflow: hidden;
   .l-wrapper {
-    position: relative;
-    top: 0px;
+    position: absolute;
     z-index: -1;
-    flex-basis: 286px;
     background:transparent url('/images/about-bg.png') left top no-repeat;
     background-size: cover;
+    left: 0;
+    $container-width: 1200px;
+    width: calc((100% - #{$container-width})/2  + 286px);
+    height: 200%;
   }
   .r-wrapper {
+    margin-left: 286px;
     h4 {
       margin-top: 60px;
       margin-bottom: 20px;
@@ -473,7 +476,6 @@ h4 {
         color: #87270d;
       }
     }
-    flex-basis: calc(100% - 286px);
     padding-left: 15px;
     ul {
       li {
@@ -688,7 +690,7 @@ h4 {
 
 .dillers-fix {
   .l-wrapper {
-    top: 0;
+    // top: 0;
   }
   .r-wrapper {
     h4 {
