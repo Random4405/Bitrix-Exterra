@@ -42,7 +42,7 @@ if( $col != 0 ) { $col = "Количество: $col \n"; }
 if(empty($picture))  {
   mail("$adminemail", "$date $time Сообщение от $name", "$msg");
 } else {
-  send_mail($mail_to, $thm, $msg, $picture);
+  send_mail("$adminemail", "$date $time Сообщение от $name", $msg, $picture);
 };
 
 
