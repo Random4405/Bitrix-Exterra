@@ -70,18 +70,24 @@ IncludeTemplateLangFile(__FILE__);
 
 <div class="popup-form" style="display: none;">
   <div class="popup-form-wrapper">
-	<form id="form_product" action="javascript:void(null);" method="POST">
-		<i class="fa fa-close" onclick="buyFormClose();"></i>
-	  <legend>Заказ товара</legend>
-	  <fieldset>
-		<input id="name" name="name" required type="text" placeholder="Имя:*">
-		<input id="phone" name="phone" required id="phone" type="text" placeholder="Телефон:*">
-		<input name="product" id="productname" type="text" placeholder="Название товара:">
-		<input id="email" name="email" type="text" placeholder="E-mail:">
-		<textarea name="message" placeholder="Комментарий:"></textarea>
-		<input id="confirm" onclick="SendResult('product'); buyFormClose();" class="submit" type="submit" value="ОТПРАВИТЬ">
-	  </fieldset>
-	</form>
+  <form enctype="multipart/form-data" id="form_product" action="javascript:void(null);" method="POST">
+    <i class="fa fa-close" onclick="buyFormClose();"></i>
+    <legend>Заказ товара</legend>
+    <fieldset>
+      <input id="name" name="name" required type="text" placeholder="Имя:*">
+      <input id="phone" name="phone" required id="phone" type="text" placeholder="Телефон:*">
+      <input name="product" id="productname" type="text" placeholder="Название товара:">
+      <input id="email" name="email" type="text" placeholder="E-mail:">
+      <input id="col" name="col" type="text" placeholder="Количество:">
+      <select id="units" name="units">
+        <option>Пункт 1</option>
+        <option>Пункт 2</option>
+      </select>
+      <input type="file" name="file">
+      <textarea name="message" placeholder="Комментарий:"></textarea>
+      <input id="confirm" onclick="SendResult('product'); buyFormClose();" class="submit" type="submit" value="ОТПРАВИТЬ">
+    </fieldset>
+  </form>
   </div>
   <div class="popup-background" onclick="buyFormClose();"></div>
 </div>
@@ -334,7 +340,7 @@ slidesToShow: 4,
   function SendResult(form_name){
     if (form_name == 'call') {
       msg = $('#form_call').serialize();
-    } 
+    }
     if (form_name == 'product') {
       msg = $('#form_product').serialize();
     }
@@ -347,7 +353,7 @@ slidesToShow: 4,
         /* alert('Отправлено'); // отправлено удачно */
         $('#results').show();
         $('#results strong').html('Ваш заказ принят. Мы свяжемся с Вами в ближайшее время');
-        // $('#results strong').html(response);
+        $('#results strong').html(response);
       },
       error: function(response) {
         /* alert('Ошибка'); // ошибка */
