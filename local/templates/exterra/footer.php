@@ -83,7 +83,7 @@ IncludeTemplateLangFile(__FILE__);
         <option>Пункт 1</option>
         <option>Пункт 2</option>
       </select>
-      <input type="file" name="file">
+      <input type="file" name="uploaded_file" id="uploaded_file" />
       <textarea name="message" placeholder="Комментарий:"></textarea>
       <input id="confirm" onclick="SendResult('product'); buyFormClose();" class="submit" type="submit" value="ОТПРАВИТЬ">
     </fieldset>
@@ -339,16 +339,21 @@ slidesToShow: 4,
 
   function SendResult(form_name){
     if (form_name == 'call') {
-      msg = $('#form_call').serialize();
+      var form = $('#form_call')[0];
     }
     if (form_name == 'product') {
-      msg = $('#form_product').serialize();
+      /* msg = $('#form_product').serialize(); */
+      var form = $('#form_product')[0];
     }
+    var msg = new FormData(form);
     $.ajax({
-    url: '/catalog/post.php',
+      url: '/catalog/post.php',
       type: 'POST',
-      dataType: 'html',
       data: msg,
+      async: false,
+      cache: false,
+      contentType: false,
+      processData: false,
       success: function(response) {
         /* alert('Отправлено'); // отправлено удачно */
         $('#results').show();
