@@ -80,8 +80,9 @@ IncludeTemplateLangFile(__FILE__);
       <input id="email" name="email" type="text" placeholder="E-mail:">
       <input id="col" name="col" type="text" placeholder="Количество:">
       <select id="units" name="units">
-        <option>Пункт 1</option>
-        <option>Пункт 2</option>
+        <option>шт.</option>
+        <option>кг.</option>
+        <option>кв.м</option>
       </select>
       <input type="file" name="uploaded_file" id="uploaded_file" />
       <textarea name="message" placeholder="Комментарий:"></textarea>
