@@ -1,9 +1,15 @@
 @import "partials/_popup";
 @import "partials/_fixes";
 @import "partials/font-awesome";
+@import "partials/_fonts";
 
 /* FONTS */
-@import url('https://fonts.googleapis.com/css?family=Lato');
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(/local/templates/exterra/fonts/Lato/Lato-Regular.ttf) format('ttf');
+}
 /* FONTS */
 
 @function calculateRem($size) {
@@ -721,8 +727,58 @@ h4 {
 
 /* MENU */
 
+/* Logo */
 .header-main .container .row ul#horizontal-multilevel-menu > li {
-  $menu-height: 80px;
+  $margin-right: 130px;
+  $margin-left: 350px;
+  $logo-width: 293px;
+  $triangle-margin: 54px;
+
+  &:nth-child(2) {
+    margin-right: $margin-right;
+  }
+
+  &:nth-child(3) {
+    position: absolute;
+    left: calc(50% - #{$logo-width}/2);
+    a {
+      font-size: 0;
+      display: block;
+      background: url(/images/logo.png);
+      width: 293px;
+      height: 81px;
+    }
+    &:after { //Triangle
+      $triangle-width: $logo-width + $triangle-margin*2;
+      content: ''; 
+      position: absolute;
+      border-color: #f4f4f4 transparent transparent transparent;
+      border-style: solid;
+      border-width: 60px $triangle-width/2 0 $triangle-width/2;
+      top: calc(100% - 1px - 25px);
+      height: 0;
+      width: 0;
+      left: - $triangle-margin/2;
+      display: inline-block;
+      z-index: 9999;
+    }
+    &:hover {
+      a {
+        border-bottom: none !important;
+      }
+    }
+  }
+
+  &:nth-child(4) {
+    margin-left: $margin-left;
+  }
+}
+
+
+/* Logo */
+
+.header-main .container .row ul#horizontal-multilevel-menu > li {
+  $menu-height: 88px;
   $line-height: 30px;
   // position: relative;
   padding: ($menu-height - $line-height)/2 30px;
