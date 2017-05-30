@@ -308,6 +308,7 @@ function callFormClose() {
           arrows: false,
           autoplay: true,
           autoplaySpeed: 2000,
+          dots: true
       });
     });
 </script>
