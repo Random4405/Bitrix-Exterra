@@ -56,18 +56,7 @@ if ($USER->IsAdmin()):
       <div class="header-main">
         <div class="container">
           <div class="row">
-<?$APPLICATION->IncludeComponent(
-  "bitrix:main.include",
-  ".default",
-  array(
-    "AREA_FILE_SHOW" => "sect",
-    "AREA_FILE_SUFFIX" => "inc_top_logo",
-    "EDIT_TEMPLATE" => "",
-    "COMPONENT_TEMPLATE" => ".default",
-    "AREA_FILE_RECURSIVE" => "Y"
-  ),
-  false
-);?>
+
 <?$APPLICATION->IncludeComponent(
   "bitrix:menu",
   "top_menu",
