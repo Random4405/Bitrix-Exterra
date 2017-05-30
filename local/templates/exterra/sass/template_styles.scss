@@ -46,25 +46,25 @@ h1 {
 
 header {
   .header-contacts {
-    height: 40px;
+    height: 33px;
     width: 100%;
     ul {
       display: flex;
-      justify-content: flex-end;
+      justify-content: center;
       align-items: center;
       margin-bottom: 0;
-      height: 40px;
+      height: 33px;
       li {
         list-style-type: none;
         padding: 0 15px;
-        color: #898989;
-        border-right: 1px solid #818181;
+        color: white;
+        border-right: 1px solid white;
         &:hover {
           color: white;
           cursor: pointer;
         }
         &:first-child {
-          border-left: 1px solid #818181;
+          border-left: 1px solid white;
         }
       }
     }
