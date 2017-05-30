@@ -2,6 +2,10 @@
 @import "partials/_fixes";
 @import "partials/font-awesome";
 
+/* FONTS */
+@import url('https://fonts.googleapis.com/css?family=Lato');
+/* FONTS */
+
 @function calculateRem($size) {
   $remSize: $size / 16px;
   @return #{$remSize}rem;

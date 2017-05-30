@@ -15,7 +15,7 @@ $aMenuLinks = Array(
 		"" 
 	),
 	Array(
-		"Логотип", 
+		"", 
 		"#", 
 		Array(), 
 		Array(), 
