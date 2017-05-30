@@ -1,5 +1,6 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
+$APPLICATION->SetPageProperty("title", "Экстерра Групп | Продажа строительных материалов премиум класса");
 $APPLICATION->SetTitle("Экстерра Групп | Продажа строительных материалов премиум класса");
 ?>
 
