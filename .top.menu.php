@@ -15,6 +15,20 @@ $aMenuLinks = Array(
 		"" 
 	),
 	Array(
+		"Логотип", 
+		"#", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Акции", 
+		"/promotions/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
 		"Дилерам", 
 		"/dillers/", 
 		Array(), 
@@ -24,13 +38,6 @@ $aMenuLinks = Array(
 	Array(
 		"Контакты", 
 		"/contacts/", 
-		Array(), 
-		Array(), 
-		"" 
-	),
-	Array(
-		"Акции", 
-		"/promotions/", 
 		Array(), 
 		Array(), 
 		"" 

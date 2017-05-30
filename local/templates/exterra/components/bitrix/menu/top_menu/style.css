@@ -13,7 +13,7 @@
 }
 .header-main .container .row ul#horizontal-multilevel-menu {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
   margin-bottom: 0;
   height: 80px;
@@ -26,4 +26,14 @@
 }
 .header-main .container .row ul#horizontal-multilevel-menu li:last-child {
   padding-right: 0;
+}
+
+.header-main .container .row ul#horizontal-multilevel-menu li:nth-child(3) a {
+  font-size: 0;
+}
+
+.header-main .container .row ul#horizontal-multilevel-menu li:nth-child(3) {
+  background: url(/images/logo.png);
+  width: 293px;
+  height: 81px;
 }
