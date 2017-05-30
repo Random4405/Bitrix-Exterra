@@ -114,6 +114,7 @@ header {
   }
   .slick-dots {
     bottom: 0;
+    z-index: 200;
     li {
       margin: 0;
       &.slick-active {
@@ -1756,5 +1757,61 @@ $sidebar-width: 288px;
   }
   &.slick-next {
     right: $margin-arrows;
+  }
+}
+
+.main-slider-wrapper {
+  position: relative;
+  .slick-main {
+    .slide-height {
+      height: 550px;
+    }
+  }
+  .absolute-wrapper {
+    z-index: 10;
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    .button {
+      margin-top: 33px;
+      background-color: #a31a18;
+      display: inherit;
+      border: 2px solid #a31a18;
+      a {
+        color: #ffffff;
+        font-family: Lato;
+        padding: 20px;
+        font-size: 18px;
+        line-height: 18px;
+        font-weight: 100;
+        text-transform: uppercase;
+      }
+      &:hover {
+        background: none;
+        border: 2px solid #a31a18;
+      }
+    }
+    .main-slider-text {
+      border: 6px double white;
+      padding: 25px;
+      p {
+        margin-top: 40px;
+        text-align: center;
+        color: white;
+        font-family: Lato;
+        font-weight: 100;
+        text-transform: uppercase;
+        font-size: 29px;
+        line-height: 38px;
+        margin-bottom: 0;
+        &:first-line {
+          font-size: 34px;
+        }
+      }
+    }
   }
 }

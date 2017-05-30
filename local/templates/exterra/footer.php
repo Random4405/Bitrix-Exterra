@@ -306,7 +306,7 @@ function callFormClose() {
       $('.slick-main').slick({
           infinite: true,
           arrows: false,
-          autoplay: true,
+          autoplay: false,
           autoplaySpeed: 2000,
           dots: true
       });
