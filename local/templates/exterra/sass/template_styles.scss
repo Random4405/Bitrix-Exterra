@@ -142,23 +142,43 @@ header {
   }
 }
 
-.plates {
-  ul {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 0;
-    li {
-      list-style-type: none;
-      @for $i from 1 through 5 {
-        div.plate-#{$i} {
-          background: url('/images/icons/Icon-#{$i}.jpg') no-repeat;
-          width: 240px;
-          height: 180px;
-          max-height: 100%;
-          z-index: 1;
-          &:hover {
-            background: url('/images/icons/Icon-#{$i}-press.jpg') no-repeat;
-            z-index: 2;
+.plates-wrapper {
+  background: url(/images/icons/bg.png);
+  .plates {
+    ul {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 0;
+      li {
+        list-style-type: none;
+        @for $i from 1 through 5 {
+          div.plate-#{$i} {
+            position: relative;
+            background: url('/images/icons/icon-#{$i}.png') no-repeat 50% 13px;
+            width: 240px;
+            height: 180px;
+            max-height: 100%;
+            z-index: 1;
+            .plate-text {
+              position: absolute;
+              color: #a31a18;
+              font-family: Lato;
+              font-size: 14px;
+              font-weight: 400;
+              text-transform: uppercase;
+              border: 1px solid #a31a18;
+              text-align: center;
+              width: 220px;
+              margin-left: 10px;
+              margin-right: 10px;
+              bottom: 10px;
+            }
+            &:hover {
+              .plate-text {
+                background-color: #a31a18;
+                color: white;
+              }
+            }
           }
         }
       }
@@ -1765,6 +1785,7 @@ $sidebar-width: 288px;
 .main-slider-wrapper {
   position: relative;
   .slick-main {
+    margin-bottom: 15px !important;
     .slide-height {
       height: 550px;
     }

@@ -15,18 +15,22 @@ $APPLICATION->SetTitle("Экстерра Групп | Продажа строи�
       "EDIT_TEMPLATE" => ""
     )
   );?>
-  <div class="container">
-    <div class="row">
-      <div class="plates">
-        <ul>
-          <li><div class="plate-1"></div></li>
-          <li><div class="plate-2"></div></li>
-          <li><div class="plate-3"></div></li>
-          <li><div class="plate-4"></div></li>
-          <li><div class="plate-5"></div></li>
-        </ul>
+  <div class="plates-wrapper">
+    <div class="container ">
+      <div class="row">
+        <div class="plates">
+          <ul>
+            <li><div class="plate-1"><div class="plate-text">Прямые поставки<br>из Европы</div></div></li>
+            <li><div class="plate-2"><div class="plate-text">Прямые поставки<br>из Европы</div></div></li>
+            <li><div class="plate-3"><div class="plate-text">Прямые поставки<br>из Европы</div></div></li>
+            <li><div class="plate-4"><div class="plate-text">Прямые поставки<br>из Европы</div></div></li>
+            <li><div class="plate-5"><div class="plate-text">Прямые поставки<br>из Европы</div></div></li>
+          </ul>
+        </div>
       </div>
     </div>
+  </div>
+  <div class="container">
     <div class="row">
       <h1 class="title">Популярные товары</h1>
       <!-- .custom-product-wrapper*4>img.product-main-image+.about-product>h4{Кирпич керамический пустотелый AP-Adriatico 240-70}+.cost-wrapper+.status-wrapper -->
