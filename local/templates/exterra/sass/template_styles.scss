@@ -1341,10 +1341,19 @@ div.tab button.active {
     }
   }
   .left-product-wrapper {
-    margin-bottom: 10px;
+    border: 1px solid #bfca04;
     p {
       margin-left: 10px;
     }
+  }
+  .right-product-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
   }
   p {
     color: #282828;
@@ -1363,22 +1372,29 @@ div.tab button.active {
 }
 
 .green {
-  color: #009900  !important;
+  position: absolute;
+  background-color: #bfca04;
+  color: white !important;
+  padding: 5px 10px;
   font-family: Lato !important;
   @include fontSize(16px);
   font-weight: 400 !important;
 }
 
 .product-button {
-  background-color: #a41310;
-  color: white;
+  color: #a31a18;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 300;
+  background-color: white;
+  border: 1px solid #a31a18;
   text-align: center;
+  display: inline-block;
   @include fontSize(14px);
-  padding: 5px 8px;
-  border: 2px solid #a41310;
+  padding: 3px 9px;
+  border: 1px solid #a31a18;
   &:hover, &:active {
-    background-color: black;
-    border: 2px solid black;
+    background-color: #a31a18;
     text-decoration: none;
     color: white;
   }
