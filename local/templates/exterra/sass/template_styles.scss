@@ -1183,7 +1183,7 @@ button.slick-next {
     font-size: 0;
     font-weight: 400;
     + a {
-      background-color: #882204;
+      background-color: #a41310;
       color: white;
       margin-left: 16px;
       margin-bottom: 40px;
@@ -1193,7 +1193,7 @@ button.slick-next {
       text-transform: uppercase;
       font-weight: 700;
       width: 250px;
-      border: 2px solid #882204;
+      border: 2px solid #a41310;
       display: inline-block;
       &:hover, &:active {
         background-color: black;
@@ -1370,12 +1370,12 @@ div.tab button.active {
 }
 
 .product-button {
-  background-color: #882204;
+  background-color: #a41310;
   color: white;
   text-align: center;
   @include fontSize(14px);
   padding: 5px 8px;
-  border: 2px solid #882204;
+  border: 2px solid #a41310;
   &:hover, &:active {
     background-color: black;
     border: 2px solid black;
