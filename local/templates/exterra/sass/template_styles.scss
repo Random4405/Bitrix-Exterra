@@ -1844,6 +1844,8 @@ $sidebar-width: 288px;
     margin-bottom: 15px !important;
     .slide-height {
       height: 550px;
+      display: flex;
+      align-items: flex-end;
     }
   }
   .absolute-wrapper {
