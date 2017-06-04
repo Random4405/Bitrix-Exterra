@@ -346,12 +346,15 @@ footer {
 
 /* NEWS */
 
-.sell {
-  margin-top: 70px;
-  padding-bottom: 15px;
+.wall-texture {
   background:
     url('/images/triangle.png') 50% -1px no-repeat,
     url('/images/texture.png') 0 0 repeat-y ;
+}
+
+.sell {
+  margin-top: 70px;
+  padding-bottom: 15px;
   .sell-wrapper {
     .about-wrapper {
       h1 {
@@ -1444,10 +1447,12 @@ div.tab button.active {
 }
 
 .desc {
-  color: #4e4e4e;
   font-family: Lato;
   @include fontSize(16px);
   font-weight: 400;
+  color: #000000;
+  font-family: Lato;
+  line-height: 24px;
 }
 
 $sidebar-width: 288px;

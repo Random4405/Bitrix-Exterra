@@ -427,7 +427,7 @@ if (ModuleManager::isModuleInstalled("sale"))
   </div>
   <div class="row">
     <div class="content-sidebar">
-      
+
       <span class="subcategory_name"><?=$ar_section['NAME']?></span>
 
 <?$APPLICATION->IncludeComponent(
@@ -487,14 +487,18 @@ if (ModuleManager::isModuleInstalled("sale"))
   </div>
 </div>
 <?if ($ar_section['DETAIL_PICTURE'] > 0):?>
-<div class="jumbo"><img src="<?=CFile::GetPath($ar_section['DETAIL_PICTURE']);?>" alt=""></div>
+<!-- <div class="jumbo"><img src="<?=CFile::GetPath($ar_section['DETAIL_PICTURE']);?>" alt=""></div> -->
 <?endif;?>
+<div class="wall-texture">
+  <div class="container">
+    <div class="row">
+      <p class="desc">
+      <?=$ar_section['DESCRIPTION']?>
+      </p>
+    </div>
+    </div>
+</div>
 <div class="container">
-  <div class="row">
-    <p class="desc">
-    <?=$ar_section['DESCRIPTION']?>
-    </p>
-  </div>
   <div class="row">
     <h1 class="title">Популярные товары</h1>
   </div>
