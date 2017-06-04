@@ -1,6 +1,13 @@
 <?
 $aMenuLinks = Array(
 	Array(
+		"Logo", 
+		"/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
 		"Каталог", 
 		"/catalog/", 
 		Array(), 
@@ -15,15 +22,15 @@ $aMenuLinks = Array(
 		"" 
 	),
 	Array(
-		"", 
-		"#", 
+		"Акции", 
+		"/promotions/", 
 		Array(), 
 		Array(), 
 		"" 
 	),
 	Array(
-		"Акции", 
-		"/promotions/", 
+		"База данных", 
+		"", 
 		Array(), 
 		Array(), 
 		"" 
