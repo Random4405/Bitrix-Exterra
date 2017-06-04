@@ -1429,20 +1429,6 @@ div.tab button.active {
       background-color: #a31a18;
     }
   }
-  .texture-name {
-    position: absolute;
-    bottom: 0;
-    text-align: center;
-    color: #4e4e4e;
-    font-family: Lato;
-    z-index: 9;
-    @include fontSize(15px);
-    font-weight: 700;
-    text-transform: uppercase;
-    background-color: rgba(255, 255, 255, .6);
-    width: 100%;
-    padding: 10px;
-  }
   img {
     width: 100%;
   }
@@ -1470,8 +1456,15 @@ $sidebar-width: 288px;
   float: left;
   max-width: $sidebar-width;
   span.subcategory_name {
-    font-size: 18px;
-    font-weight: 700;
+    color: #4e4e4e;
+    font-family: Lato;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    border: 1px solid #a31a18;
+    padding: 8px;
+    display: inherit;
+    margin-right: 10px;
   }
   .bx_sitemap {
     margin-top: 20px;
@@ -1558,28 +1551,29 @@ $sidebar-width: 288px;
 
 .catalog-category-wrapper {
   position: relative;
-  .texture-name {
-    position: absolute;
-    bottom: 0;
-    text-align: center;
-    font-family: Lato;
-    color: #ffffff;
-    font-weight: 300;
-    @include fontSize(15px);
-    text-transform: uppercase;
-    background-color: rgba(27, 27, 27, .6);
-    left: 0;
-    right: 0;
-    z-index: 9;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    padding: 0;
-    justify-content: center;
-  }
   &:hover, &:focus {
     overflow: hidden;
   }
+}
+
+.texture-name {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  font-family: Lato;
+  color: #ffffff;
+  font-weight: 300;
+  @include fontSize(15px);
+  text-transform: uppercase;
+  background-color: rgba(27, 27, 27, .6);
+  left: 0;
+  right: 0;
+  z-index: 9;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  justify-content: center;
 }
 
 .mb16 {
