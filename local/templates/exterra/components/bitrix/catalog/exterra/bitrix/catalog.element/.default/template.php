@@ -96,8 +96,15 @@ $arFirstPhoto = current($arResult['MORE_PHOTO']);
 			); ?>
 		  </h4>
           <br>
-          <p class="cost">Цена: <span class="cost-green"><?=$arResult['DISPLAY_PROPERTIES']['price_sht']['VALUE']?></span></p>
-          <p class="cost">Цена: <span class="cost-green"><?=$arResult['DISPLAY_PROPERTIES']['price_kvm']['VALUE']?></p>
+          <div class="cost clearfix">
+        <div class="left-wrapper">
+          Цена:
+        </div>
+        <div class="right-wrapper">
+            <span class="cost-green"><?=$arResult['DISPLAY_PROPERTIES']['price_sht']['VALUE']?></span><br>
+            <span class="cost-green"><?=$arResult['DISPLAY_PROPERTIES']['price_kvm']['VALUE']?>
+        </div>
+          </div>
           <?if ($arResult['DISPLAY_PROPERTIES']['new']['VALUE']):?>
 			<div class="sticker-new"></div>
 		  <?endif;?>
@@ -128,10 +135,10 @@ $arFirstPhoto = current($arResult['MORE_PHOTO']);
 
 		?>
 		 <div class="slick-vertical-wrapper">
+						<img src="<?=$file['src']?>" alt="">
 			<?if ($arResult['PROPERTIES']['photo']['DESCRIPTION'][$key]):?>
-            <div class="texture-name"><?=$arResult['PROPERTIES']['photo']['DESCRIPTION'][$key]?></div>
+            <div class="texture-name--another"><?=$arResult['PROPERTIES']['photo']['DESCRIPTION'][$key]?></div>
 			<?endif;?>
-            <img src="<?=$file['src']?>" alt="">
           </div>
 		<?endforeach;?>
         </div>
@@ -209,7 +216,7 @@ foreach ($arResult['PROPERTIES']['additional_products']['VALUE'] as $additional)
 ?>
 
 <div class="row">
-	<h1 class="title">С этим товаром покупают</h1>
+	<h1>С этим товаром покупают</h1>
 </div>
  <?
   global $arrFilter2;
