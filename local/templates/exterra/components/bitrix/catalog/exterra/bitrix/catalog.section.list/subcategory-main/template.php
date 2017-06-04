@@ -92,9 +92,7 @@ if (0 < $arResult["SECTIONS_COUNT"])
 				
 								
 				<div class="subcategory-wrapper">
-				  <div class="container">
-					<div class="row">
-					  <div class="left-wrapper" id="<? echo $this->GetEditAreaId($arSection['ID']); ?>">
+					  <div class="subcategory-card" id="<? echo $this->GetEditAreaId($arSection['ID']); ?>">
 						<h3><a href="<? echo $arSection['SECTION_PAGE_URL'];?>"><? echo $arSection['NAME']; ?></a></h3>
 						<ul>
 						<?
@@ -107,11 +105,9 @@ if (0 < $arResult["SECTIONS_COUNT"])
 						?>
 						</ul>
 					  </div>
-					  <div class="right-wrapper">
+					  <!--<div class="right-wrapper">
 						<div class="img-wrapper"><img src="<? echo $arSection['PICTURE']['SRC']; ?>" alt="<? echo $arSection['PICTURE']['TITLE']; ?>"></div>
-					  </div>
-					</div>
-				  </div>
+					  </div>-->
 				</div>
 				
 				

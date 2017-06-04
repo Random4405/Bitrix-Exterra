@@ -1587,70 +1587,38 @@ $sidebar-width: 288px;
 }
 
 .subcategory-main {
-  .subcategory-wrapper {
-    padding-top: 23px;
-    padding-bottom: 23px;
-    font-family: Lato;
-    color: #4e4e4e;
-    font-size: 16px;
-    @include fontSize(16px);
-    font-weight: 400;
-    h3 {
-      a {
-        font-size: 18px;
-        font-family: Lato;
-        color: #4e4e4e;
-        font-size: 16px;
-        @include fontSize(18px);
-        font-weight: 700;
-        text-decoration: none;
-        &:hover {
-          color: #a31a18;
+  .bx_catalog_line {
+    display: flex;
+    flex-wrap: wrap;
+    .subcategory-wrapper {
+      flex-basis: calc(25% - 5px*2);
+      margin-left: 5px;
+      margin-right: 5px;
+      .subcategory-card {
+        h3 {
+          font-family: Lato;
+          @include fontSize(15px);
+          border: 1px solid #a31a18;
+          padding: 10px;
+          text-align: center;
         }
-      }
-    }
-    .left-wrapper {
-      > ul {
-        > li {
-          list-style-position: inside;
-          list-style-image: url(/images/li-black-marker.png);
-          a {
-            text-decoration: none;
-            color: #4e4e4e;
-          }
-          a:hover {
-            color: rgb(135, 39, 13);
-          }
-          &:hover {
-            list-style-image: url(/images/li-terra-marker.png);
-          }
-          &:last-child {
-            color: #a31a18;
-            list-style-image: url(/images/li-terra-marker.png);
-          }
-          > ul { /* Подсписок */
-            > li {
-              list-style-image: url(/images/li-empty-marker.png);
-              padding-left: 10px;
-              &:hover {
-                color: rgb(135, 39, 13);
-                > ul { color: #4e4e4e; }
+        ul {
+          margin-left: 15px;
+          li {
+            list-style-type: none;
+            a {
+              font-family: Lato;
+              font-size: 16px;
+              color: #4e4e4e;
+              font-weight: 300;
+              &:hover, &:focus {
+                color: #87270d;
               }
             }
           }
         }
       }
     }
-    .img-wrapper {
-      float: right;
-    }
-    * {
-      background-color: #f2f2f2 !important;
-    }
-    &:last-child {
-      border-bottom: 4px solid #bbb;
-    }
-    border-top: 4px solid #bbb;
   }
 }
 
