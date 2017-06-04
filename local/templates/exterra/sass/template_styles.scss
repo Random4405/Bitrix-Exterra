@@ -817,6 +817,10 @@ h4 {
 /* Logo */
 .header-main .container .row ul#horizontal-multilevel-menu > li {
 
+  &:nth-child(2) {
+    padding-left: 0;
+  }
+
   &:first-child {
     order: 1;
     a {
@@ -1415,16 +1419,14 @@ div.tab button.active {
 .img-wrapper {
   position: relative;
   display: inline-block;
-  padding-left: 7.5px;
-  padding-right: 7.5px;
+  margin-left: 7.5px;
+  margin-right: 7.5px;
+  border: 2px solid transparent;
   &:hover, &:focus {
-    opacity: .8;
     overflow: hidden;
-    img {
-      transform: scale(1.01);
-    }
-    & .texture-name {
-      color: #a31a18;
+    border: 2px solid #8c1c1a;
+    .texture-name {
+      background-color: #a31a18;
     }
   }
   .texture-name {
@@ -1438,9 +1440,8 @@ div.tab button.active {
     font-weight: 700;
     text-transform: uppercase;
     background-color: rgba(255, 255, 255, .6);
-    width: 80%;
+    width: 100%;
     padding: 10px;
-    margin-left: 10%;
   }
   img {
     width: 100%;
@@ -1561,26 +1562,23 @@ $sidebar-width: 288px;
     position: absolute;
     bottom: 0;
     text-align: center;
-    color: #4e4e4e;
     font-family: Lato;
+    color: #ffffff;
+    font-weight: 300;
     @include fontSize(15px);
-    font-weight: 700;
     text-transform: uppercase;
-    background-color: rgba(255, 255, 255, .6);
-    width: 80%;
-    padding: 10px;
-    margin-left: 7%;
+    background-color: rgba(27, 27, 27, .6);
+    left: 0;
+    right: 0;
     z-index: 9;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    justify-content: center;
   }
   &:hover, &:focus {
-    opacity: .8;
     overflow: hidden;
-    img {
-      transform: scale(1.01);
-    }
-    & .texture-name {
-      color: #a31a18;
-    }
   }
 }
 
