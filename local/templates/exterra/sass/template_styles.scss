@@ -816,37 +816,25 @@ h4 {
 
 /* Logo */
 .header-main .container .row ul#horizontal-multilevel-menu > li {
-  $margin-right: 130px;
-  $margin-left: 350px;
-  $logo-width: 293px;
-  $triangle-margin: 54px;
 
-  &:nth-child(2) {
-    margin-right: $margin-right;
-  }
-
-  &:nth-child(3) {
-    position: absolute;
-    left: calc(50% - (#{$logo-width}/2 + 29px));
-    padding-top: 0;
-    margin-top: 14px;
+  &:first-child {
+    order: 1;
     a {
       font-size: 0;
       display: block;
       background: url(/images/logo.png);
       width: 293px;
       height: 81px;
-    }
-    &:hover, &:focus {
-      a {
-        border-bottom: none !important;
+      &:hover, &:focus {
+        border-bottom: none;
       }
     }
   }
 
-  &:nth-child(4) {
-    margin-left: $margin-left;
+  &:nth-of-type(n+5) {
+  order: 2;
   }
+
 }
 
 
@@ -856,18 +844,18 @@ h4 {
   $menu-height: 88px;
   $line-height: 30px;
   // position: relative;
-  padding: ($menu-height - $line-height)/2 30px;
+  padding: ($menu-height - $line-height)/2 25px;
   text-transform: uppercase;
   font-size: 1.12rem;
   line-height: $line-height;
-  &:nth-child(1) {
-    margin-right: 30px;
+  &:nth-child(2) {
+    margin-right: 25px;
     // cursor: pointer;
     a {
       // pointer-events: none;
     }
   }
-  &:nth-child(1) > a:after {
+  &:nth-child(2) > a:after {
     content: '';
     position: absolute;
     width: 19px;
