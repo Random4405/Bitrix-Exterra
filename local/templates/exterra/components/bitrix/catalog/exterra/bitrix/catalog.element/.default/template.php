@@ -120,10 +120,6 @@ $arFirstPhoto = current($arResult['MORE_PHOTO']);
 		</table>
 
         </div>
-        <div class='catalog-button'>
-          <div class="link-description">Понравился товар?</div>
-          <a href="#" onclick="event.preventDefault();buyForm('<?=$arResult['NAME']?>');">Заказать</a>
-        </div>
       </div>
       <div class="right-wrapper flex-col">
         <div class="slider-nav">
@@ -140,27 +136,35 @@ $arFirstPhoto = current($arResult['MORE_PHOTO']);
 		<?endforeach;?>
         </div>
 
-		<?if ($arResult['PROPERTIES']['archive']['VALUE']):?>
-			<div class='catalog-button'>
-			  <div class="link-description">Узнать больше</div>
-				<a class='green-button' href="<?=CFile::GetPath($arResult['PROPERTIES']['archive']['VALUE'])?>">Скачать текстуры в 1 клик</a>
-			</div>
-		<?endif;?>
 
       </div>
     </div>
   </div>
   <div class="row">
-      <div class="slider-product" data-slick='{
-      "slidesToShow": 7,
-      "infinite": true,
-      "centerMode": false,
-      "focusOnSelect": true
-      }'>
-	    <?foreach ($arResult['PROPERTIES']['photo_obj']['VALUE'] as $photo3):?>
-      <div><a href="<?=CFile::GetPath($photo3)?>" data-lightbox="product-lightbox"><img src="<?=CFile::GetPath($photo3)?>" alt=""></a></div>
-		<?endforeach;?>
-    </div>
+			<div class="left-wrapper">
+				<div class="slider-product" data-slick='{
+				"slidesToShow": 7,
+				"infinite": true,
+				"centerMode": false,
+				"focusOnSelect": true
+				}'>
+				<?foreach ($arResult['PROPERTIES']['photo_obj']['VALUE'] as $photo3):?>
+				<div><a href="<?=CFile::GetPath($photo3)?>" data-lightbox="product-lightbox"><img src="<?=CFile::GetPath($photo3)?>" alt=""></a></div>
+			<?endforeach;?>
+			</div>
+			</div>
+      <div class="right-wrapper flex-container">
+				<div class='catalog-button'>
+					<div class="link-description">Понравился товар?</div>
+					<a href="#" onclick="event.preventDefault();buyForm('<?=$arResult['NAME']?>');">Заказать</a>
+				</div>
+		<?if ($arResult['PROPERTIES']['archive']['VALUE']):?>
+			<div class='catalog-button'>
+				<div class="link-description">Узнать больше</div>
+				<a class='green-button' href="<?=CFile::GetPath($arResult['PROPERTIES']['archive']['VALUE'])?>">Скачать текстуры в 1 клик</a>
+			</div>
+		<?endif;?>
+			</div>
   </div>
   <div class="row">
     <div class="tab">

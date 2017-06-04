@@ -500,7 +500,7 @@ if (ModuleManager::isModuleInstalled("sale"))
 </div>
 <div class="container">
   <div class="row">
-    <h1 class="title">Популярные товары</h1>
+    <h1>Популярные товары</h1>
   </div>
 <?
 global $arrFilter;

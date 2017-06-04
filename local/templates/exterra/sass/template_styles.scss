@@ -1191,6 +1191,12 @@ button.slick-next {
   }
 }
 
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .catalog-button {
   margin-top: 40px;
   .link-description {
@@ -1447,6 +1453,7 @@ div.tab button.active {
 }
 
 .desc {
+  margin-top: 50px; // TODO: Убрать
   font-family: Lato;
   @include fontSize(16px);
   font-weight: 400;
