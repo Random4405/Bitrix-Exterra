@@ -36,30 +36,28 @@ foreach ($arResult['ITEMS'] as $key => $arItem)
 	
 	$file = CFile::ResizeImageGet($arItem["PREVIEW_PICTURE"]['ID'], array('width'=>288, 'height'=>288), BX_RESIZE_IMAGE_EXACT , true);                
 		
-	if ($num == 0) echo '<div class="flex-row no-margin">';
+	if ($num == 0) echo '<div class="flex-row no-margin mb20">';
 	?>	
       <div class="flex-product-wrapper" id="<? echo $strMainID; ?>">
+      <?if ($arItem['DISPLAY_PROPERTIES']['nalichie']['VALUE']):?>
+            <p class="green">В наличии</p>
+      <?endif;?>
         <div class="img-product-wrapper"><a href="<? echo $arItem['DETAIL_PAGE_URL']; ?>"><img class="img-responsive" src="<?=$file['src']?>" alt=""></a></div>
         <h3><a href="<? echo $arItem['DETAIL_PAGE_URL']; ?>"><? echo $productTitle; ?></a></h3>
         <div class="product-desc">
           <div class="left-product-wrapper">
 			<?if ($arItem['DISPLAY_PROPERTIES']['price_sht']['VALUE']):?>
             <div class="product-cost">
-              <p>за шт.</p>
               <p><?=$arItem['DISPLAY_PROPERTIES']['price_sht']['VALUE']?></p>
             </div>
 			<?endif;?>
-			<?if ($arItem['DISPLAY_PROPERTIES']['nalichie']['VALUE']):?>
-            <p class="green">+ в наличии</p>
-			<?endif;?>
-          </div>
-          <div class="right-product-wrapper">
-			<?if ($arItem['DISPLAY_PROPERTIES']['price_kvm']['VALUE']):?>
+      <?if ($arItem['DISPLAY_PROPERTIES']['price_kvm']['VALUE']):?>
             <div class="product-cost">
-              <p>за кв.м</p>
               <p><?=$arItem['DISPLAY_PROPERTIES']['price_kvm']['VALUE']?></p>
             </div>
-			<?endif;?>
+      <?endif;?>
+          </div>
+          <div class="right-product-wrapper">
             <a class="product-button" href="#" onclick="event.preventDefault();buyForm('<?=$arItem['NAME']?>');">Купить сейчас</a>
           </div>
         </div>

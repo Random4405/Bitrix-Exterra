@@ -1393,6 +1393,7 @@ div.tab button.active {
   }
   .left-product-wrapper {
     border: 1px solid #bfca04;
+    min-height: 65px;
     p {
       margin-left: 10px;
     }
@@ -1567,6 +1568,10 @@ $sidebar-width: 288px;
       }
     }
   }
+}
+
+.mb20 {
+  margin-bottom: 20px;
 }
 
 .flex-row.no-margin .flex-product-wrapper {
