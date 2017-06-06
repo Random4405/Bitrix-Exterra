@@ -290,6 +290,11 @@ function callFormClose() {
 <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
 <?$APPLICATION->AddHeadScript("/local/templates/exterra/js/jquery.maskedinput.min.js");?>
 <script>
+$(document).ready(function(){
+  $('.slick-main').slick();
+});
+</script>
+<script>
     $(document).ready(function(){
       $('.slick').slick({
           infinite: true,
@@ -298,17 +303,6 @@ function callFormClose() {
           autoplay: true,
           autoplaySpeed: 2000,
           variableWidth: true,
-      });
-    });
-</script>
-<script>
-    $(document).ready(function(){
-      $('.slick-main').slick({
-          infinite: true,
-          arrows: false,
-          autoplay: false,
-          autoplaySpeed: 2000,
-          dots: true
       });
     });
 </script>

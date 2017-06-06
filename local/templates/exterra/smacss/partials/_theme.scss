@@ -25,7 +25,23 @@ div.header-contacts {
 
 .header-main {
   color: #4a4a4a;
-  font-family: Lato;
-  font-size: 16px;
-  font-weight: 300;
+}
+
+.l-hero:after {
+  border-color: $color-background transparent transparent transparent;
+}
+
+.hero-button {
+  background-color: $color-primary;
+  border-color: $color-primary;
+  a {
+    color: #ffffff;
+  }
+}
+
+.hero-absolute-text {
+  border-color: white;
+  p {
+    color: white;
+  }
 }

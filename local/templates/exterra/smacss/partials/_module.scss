@@ -214,4 +214,92 @@ ul#horizontal-multilevel-menu {
   right: 40px;
 }
 
-//
+// Hero
+
+.slick-main {
+  background-color: black;
+  margin-bottom: 15px;
+  & > div {
+    opacity: .5;
+  }
+  .hero-slide {
+    height: 550px;
+    display: flex;
+    align-items: flex-end;
+  }
+}
+
+.l-hero .slick-dots {
+  bottom: 0;
+  z-index: 200;
+  li {
+    margin: 0;
+    &.slick-active {
+      button:before {
+        color: white;
+        opacity: .5;
+      }
+    }
+    button {
+      &:hover {
+        &:before {
+          color: #a31a18;
+          opacity: 1;
+        }
+      }
+      &:before {
+        font-size: 7px;
+        line-height: 20px;
+        opacity: .25;
+        color: white;
+      }
+    }
+  }
+}
+
+.hero-absolute-wrapper {
+  z-index: 10;
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-button {
+  margin-top: 33px;
+  display: inherit;
+  border: 2px solid;
+
+  &:hover {
+    background: none;
+  }
+
+  a {
+    padding: 20px;
+    @include fontSize(18px);
+    line-height: 18px;
+    font-weight: 100;
+    text-transform: uppercase;
+  }
+}
+
+.hero-absolute-text {
+  border: 6px double;
+  padding: 25px;
+
+  p {
+    margin-top: 40px;
+    text-align: center;
+    font-weight: 100;
+    text-transform: uppercase;
+    @include fontSize(29px);
+    line-height: 38px;
+    margin-bottom: 0;
+    &:first-line {
+      @include fontSize(34px);
+    }
+  }
+}
