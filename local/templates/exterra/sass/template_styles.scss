@@ -114,42 +114,9 @@
   // width: 114px;
 }
 
-.bx-breadcrumb {
-  color: #a31a18;
-  margin-bottom: 30px;
-  margin-top: 17px;
-  & a {
-    color: #4e4e4e;
-    font-family: Lato;
-    @include fontSize(12px);
-    font-weight: 400;
-  }
-  .bx-breadcrumb-item {
-    span {
-      // font-size: 1rem !important;
-      // font-family: Lato;
-    }
-  }
-  .fa-angle-right {
-    background: url(/images/breadcrumb-arrow.png);
-    width: 5px;
-    height: 9px;
-    &:before {
-      content: '';
-    }
-  }
-}
 
 /* ABOUT COMPANY */
 
-h4 {
-  color: #4e4e4e;
-  font-family: Lato;
-  @include fontSize(18px);
-  font-weight: 400;
-  line-height: 32px;
-  text-align: center;
-}
 
 .t12 {
   top: 12px;

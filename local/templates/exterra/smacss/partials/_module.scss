@@ -475,6 +475,9 @@ ul#horizontal-multilevel-menu {
   max-width: 100%;
   min-height: 220px;
   margin-bottom: 70px;
+  &-no-margin {
+    margin-bottom: 0;
+  }
   img {
     opacity: 0.5;
     transition: all 300ms ease;
@@ -582,5 +585,22 @@ ul#horizontal-multilevel-menu {
   }
   h1 {
     margin: 96px 0 53px 0;
+  }
+}
+
+.bx-breadcrumb {
+  margin-bottom: 30px;
+  margin-top: 17px;
+  & a {
+    font-family: Lato;
+    @include fontSize(12px);
+    font-weight: 400;
+  }
+  .fa-angle-right {
+    width: 5px;
+    height: 9px;
+    &:before {
+      content: '';
+    }
   }
 }

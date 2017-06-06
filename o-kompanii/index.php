@@ -19,7 +19,7 @@ $APPLICATION->SetTitle("О компании");
 
 <h1 class="title title-50px">Только качественные строительные материалы</h1>
 
-<div class="slick f-no-bottom-margin slick-main-arrows t12" data-slick="{"arrows": true}">
+<div class="slick slick-no-marin is-slider-has-arrows is-arrows-has-margins t12" data-slick='{"arrows": true}'>
   <div><img src="/images/realize/1photo.jpg" alt=""></div>
   <div><img src="/images/realize/2photo.jpg" alt=""></div>
   <div><img src="/images/realize/3photo.jpg" alt=""></div>

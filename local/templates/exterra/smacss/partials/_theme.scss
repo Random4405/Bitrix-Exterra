@@ -229,3 +229,14 @@ footer {
     color: $color-white;
   }
 }
+
+
+.bx-breadcrumb {
+  color: $color-primary;
+  & a {
+    color: $color-middle-grey;
+  }
+  .fa-angle-right {
+    background: url(/images/breadcrumb-arrow.png);
+  }
+}
