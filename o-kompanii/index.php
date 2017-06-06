@@ -75,13 +75,13 @@ $APPLICATION->SetTitle("О компании");
 </div>
 <div class="about-ads-wrapper">
   <h1>В ЛИЦЕ КОМПАНИИ « ЭКСТЕРРА ГРУПП» ВЫ ПОЛУЧАЕТЕ:</h1>
-  <div class="fix-plates">
+  <div class="plates--wrapper">
     <ul>
-      <li><div class="plate-1"></div></li>
-      <li><div class="plate-2"></div></li>
-      <li><div class="plate-3"></div></li>
-      <li><div class="plate-4"></div></li>
-      <li><div class="plate-5"></div></li>
+      <li><div class="plate-1"><div class="plate--text">Sample text</div></div></li>
+      <li><div class="plate-2"><div class="plate--text">Sample text</div></div></li>
+      <li><div class="plate-3"><div class="plate--text">Sample text</div></div></li>
+      <li><div class="plate-4"><div class="plate--text">Sample text</div></div></li>
+      <li><div class="plate-5"><div class="plate--text">Sample text</div></div></li>
     </ul>
   </div>
   <h2>ОБРАЩАЙТЕСЬ К НАМ ПРЯМО СЕЙЧАС, И МЫ ПОСТРОИМ РОДОВОЕ ГНЕЗДО ДЛЯ  ВАШЕЙ СЕМЬИ! </h2>

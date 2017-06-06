@@ -31,7 +31,7 @@ if (!empty($arResult['ITEMS']))
 
     $file = CFile::ResizeImageGet($arItem["PREVIEW_PICTURE"]['ID'], array('width'=>288, 'height'=>288), BX_RESIZE_IMAGE_EXACT , true);
 
-    if ($num == 0) echo '<div class="row product-arrows">';
+    if ($num == 0) echo '<div class="row card-slider is-slider-has-arrows">';
     ?>
 
     <div class="product-card" id="<? echo $strMainID; ?>">

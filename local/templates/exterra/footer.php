@@ -328,7 +328,7 @@ $(document).ready(function(){
 </script>
 <script>
 $('.hero--slick').slick();
-$('.product-arrows').slick({
+$('.card-slider').slick({
 slidesToShow: 4,
 })
 

@@ -788,23 +788,7 @@ $wrapper-margin: 15px;
   margin-bottom: 40px;
 }
 
-button.slick-prev {
-  background: url(/images/slider-arrow-left.png) !important;
-  height: 40px;
-  width: 20px;
-  &:before {
-    content: "";
-  }
-}
 
-button.slick-next {
-  background: url(/images/slider-arrow-right.png) !important;
-  height: 40px;
-  width: 20px;
-  &:before {
-    content: "";
-  }
-}
 
 .slider-nav {
   padding-top: 20px;
