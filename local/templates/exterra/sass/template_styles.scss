@@ -164,84 +164,7 @@ footer {
 
 /* NEWS */
 
-.wall-texture {
-  background:
-    url('/images/triangle.png') 50% -1px no-repeat,
-    url('/images/texture.png') 0 0 repeat-y ;
-}
 
-.sell {
-  margin-top: 70px;
-  padding-bottom: 15px;
-  .sell-wrapper {
-    .about-wrapper {
-      h1 {
-        line-height: 36px;
-        position: relative;
-        margin-top: 70px;
-        margin-bottom: 40px;
-        // &:after {
-        //   content: '';
-        //   width: 180px;
-        //   border-bottom: 1px solid #4e4e4e;
-        //   position: absolute;
-        //   left: calc(50% - 90px);
-        //   bottom: -36px;
-        // }
-      }
-      p {
-        color: #4e4e4e;
-        opacity: 0.7;
-        color: #000000;
-        font-family: Lato;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 28px;
-      }
-    }
-    .news-wrapper {
-      .news-list {
-        display: flex;
-        .news-item {
-          padding: 15px;
-          border: 1px solid #b7b7b7;
-          margin-right: 15px;
-          flex-basis: 25%;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          &:hover {
-            border: 1px solid #a31a18;
-          }
-          &:last-child {
-            margin-right: 0;
-          }
-          .custom-preview {
-            color: #4e4e4e;
-            font-family: Lato;
-            font-size: 16px;
-            font-weight: 300;
-          }
-          .custom-news-button {
-            border: 1px solid #a31a18;
-            margin-bottom: 16px;
-            margin-top: 30px;
-            &:hover {
-              background-color: #a31a18;
-              a {
-                color: white;
-              }
-            }
-            a {
-              color: #a31a18;
-              padding: 8px;
-            }
-          }
-        }
-      }
-    }
-  }
-}
 
 /* END NEWS */
 
@@ -961,24 +884,6 @@ div.tab button.active {
 }
 
 
-.product-button {
-  color: #a31a18;
-  font-family: Lato;
-  font-size: 16px;
-  font-weight: 300;
-  background-color: white;
-  border: 1px solid #a31a18;
-  text-align: center;
-  display: inline-block;
-  @include fontSize(14px);
-  padding: 3px 9px;
-  border: 1px solid #a31a18;
-  &:hover, &:active {
-    background-color: #a31a18;
-    text-decoration: none;
-    color: white;
-  }
-}
 
 .img-wrapper {
   position: relative;

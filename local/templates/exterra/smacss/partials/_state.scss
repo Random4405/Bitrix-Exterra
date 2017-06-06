@@ -26,3 +26,9 @@
     }
   }
 }
+
+.is-textured {
+  background:
+    url('/images/triangle.png') 50% -1px no-repeat,
+    url('/images/texture.png') 0 0 repeat-y ;
+}

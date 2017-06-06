@@ -54,7 +54,7 @@ if (!empty($arResult['ITEMS']))
           <?endif;?>
         </div>
         <div class="l-right props--button">
-          <a class="product-button" href="#" onclick="event.preventDefault();buyForm('<?=$arItem['NAME']?>');">Купить сейчас</a>
+          <a class="button-default" href="#" onclick="event.preventDefault();buyForm('<?=$arItem['NAME']?>');">Купить сейчас</a>
         </div>
       </div>
     </div>

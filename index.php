@@ -151,11 +151,10 @@ $APPLICATION->SetTitle("Экстерра Групп | Продажа строи�
 </section>
 
 
-<div class="sell wall-texture">
+<section class="sell is-textured">
   <div class="container">
     <div class="row">
-        <div class="sell-wrapper">
-          <div class="about-wrapper">
+          <div class="sell--about">
 <?$APPLICATION->IncludeComponent(
   "bitrix:main.include",
   "",
@@ -166,7 +165,7 @@ $APPLICATION->SetTitle("Экстерра Групп | Продажа строи�
   )
 );?>
           </div>
-          <div class="news-wrapper no-white-fix">
+          <div class="sell--news no-white-fix">
 <?$APPLICATION->IncludeComponent(
   "bitrix:news",
   "main-news-infoblock",
@@ -262,10 +261,9 @@ $APPLICATION->SetTitle("Экстерра Групп | Продажа строи�
   false
 );?>
           </div>
-      </div>
     </div>
   </div>
-</div>
+</section>
 
 <div class="container">
     <div class="row">
