@@ -2,6 +2,11 @@ $color-primary: #a31a18;
 $color-accent: #bfca04;
 $color-background: #f4f4f4;
 $color-text: #4a4a4a;
+$color-white: white;
+$color-grey: #f2f2f2;
+$color-dark: #282828;
+$color-light-grey: #b7b7b7;
+$color-middle-grey: #4e4e4e;
 
 html {
   color: $color-text;
@@ -19,12 +24,12 @@ a {
 }
 
 .header--contacts {
-  background-color: #bfca04;
-  color: white;
+  background-color: $color-accent;
+  color: $color-white;
 }
 
 .header-main {
-  color: #4a4a4a;
+  color: $color-text;
 }
 
 .hero:after {
@@ -36,14 +41,14 @@ a {
     background-color: $color-primary;
     border-color: $color-primary;
     a {
-      color: white;
+      color: $color-white;
     }
   }
 
   &--caption {
-    border-color: white;
+    border-color: $color-white;
     p {
-      color: white;
+      color: $color-white;
     }
   }
 }
@@ -59,7 +64,7 @@ a {
           .plate--text {
             background-color: $color-primary;
             border-color: $color-primary;
-            color: white;
+            color: $color-white;
           }
         }
       }
@@ -69,5 +74,102 @@ a {
     color: $color-primary;
     border-color: $color-primary;
   }
+}
 
+.slick-dots {
+  li {
+    &.slick-active {
+      button:before {
+        color: $color-white;
+        opacity: .5;
+      }
+    }
+    button {
+      &:hover {
+        &:before {
+          color: $color-primary;
+          opacity: 1;
+        }
+      }
+      &:before {
+        opacity: .25;
+        color: $color-white;
+      }
+    }
+  }
+}
+
+.product-card {
+  border-color: $color-grey;
+  &:hover {
+    border-color: $color-primary;
+  }
+  background-color: $color-white;
+
+  &--green-badge {
+    background-color: $color-accent;
+    color: $color-white !important;
+  }
+
+  > h3 {
+    a {
+      color: $color-dark;
+      &:hover, &:focus {
+        color: $color-primary;
+      }
+    }
+  }
+}
+
+.props {
+  &--cost {
+    border-color: $color-accent;
+  }
+}
+
+.sell {
+  &--about {
+    p {
+      color: $color-dark;
+      opacity: .7;
+    }
+  }
+  &--news {
+    .news-list {
+      .news-item {
+        border-color: $color-light-grey;
+        &:hover {
+          border-color: #a31a18;
+        }
+        &:last-child {
+          margin-right: 0;
+        }
+        .custom-preview {
+          color: $color-middle-grey;
+        }
+        .custom-news-button {
+          border-color: $color-primary;
+          &:hover {
+            background-color: $color-primary;
+            a {
+              color: $color-white;
+            }
+          }
+          a {
+            color: $color-primary;
+          }
+        }
+      }
+    }
+  }
+}
+
+.button-default {
+  color: $color-primary;
+  background-color: $color-white;
+  border-color: $color-primary;
+  &:hover, &:active {
+    background-color: $color-primary;
+    color: $color-white;
+  }
 }

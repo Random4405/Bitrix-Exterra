@@ -108,15 +108,6 @@ footer {
     background-color: rgba(0, 0, 0, 0.7);
 }
 
-.form-wrapper {
-  background: url('/images/bg-feedback.png') no-repeat;
-  background-color: rgba(0, 0, 0, .81);
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-blend-mode: darken;
-}
 
 .mfeedback {
   margin-bottom: 120px;
@@ -238,25 +229,6 @@ footer {
   background: #a31a18 !important;
   position: static;
   // width: 114px;
-}
-
-.slick {
-  overflow: hidden;
-  max-width: 100%;
-  min-height: 220px;
-  margin-bottom: 70px;
-  img {
-    opacity: 0.5;
-    transition: all 300ms ease;
-    padding: 2%;
-    max-width: 620px;
-  }
-  .slick-center {
-    img {
-      opacity: 1 !important;
-      transform: scale(1.08);
-    }
-  }
 }
 
 .bx-breadcrumb {
@@ -884,7 +856,7 @@ div.tab button.active {
 }
 
 
-
+1241
 .img-wrapper {
   position: relative;
   display: inline-block;
@@ -1229,19 +1201,4 @@ $sidebar-width: 288px;
   //   top: calc(50% - 20px);
   //   right: -20px - ($margin-arrows);
   // }
-}
-
-.slick-main-arrows button {
-  position: absolute;
-  z-index: 9;
-  $center-img-width: 620px;
-  $margin-with-center: 40px; /* DONT CHANGE */
-  $margin-with-center: $margin-with-center + 40px;
-  $margin-arrows: calc((100vw - #{$center-img-width})/2 - #{$margin-with-center});
-  &.slick-prev {
-    left: $margin-arrows;
-  }
-  &.slick-next {
-    right: $margin-arrows;
-  }
 }
