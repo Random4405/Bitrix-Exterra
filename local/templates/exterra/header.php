@@ -28,6 +28,7 @@ if ($USER->IsAdmin()):
 <?$APPLICATION->AddHeadScript("/local/templates/exterra/js/clamp.min.js");?>
 <?$APPLICATION->AddHeadScript("/local/templates/exterra/js/script.js");?>
 <?$APPLICATION->AddHeadScript("/local/templates/exterra/js/lightbox.js");?>
+<link href="<?=SITE_TEMPLATE_PATH?>/style.css" type="text/css" rel="stylesheet" />
 <title><?$APPLICATION->ShowTitle()?></title>
   </head>
   <body class="<? if ($_SERVER['REQUEST_URI'] == '/contacts/') echo "no-white-fix"?>">
