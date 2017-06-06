@@ -240,3 +240,11 @@ footer {
     background: url(/images/breadcrumb-arrow.png);
   }
 }
+
+.bx-filter-parameters-box-title span:hover {
+  color: $color-primary;
+}
+
+.slick-next:before, .slick-prev:before {
+    content: '';
+}
