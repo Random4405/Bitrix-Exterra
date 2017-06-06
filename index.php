@@ -15,16 +15,16 @@ $APPLICATION->SetTitle("Экстерра Групп | Продажа строи�
       "EDIT_TEMPLATE" => ""
     )
   );?>
-  <div class="plates-wrapper">
+  <div class="plates">
     <div class="container ">
       <div class="row">
-        <div class="plates">
+        <div class="plates--wrapper">
           <ul>
-            <li><div class="plate-1"><div class="plate-text">Прямые поставки<br>из Европы</div></div></li>
-            <li><div class="plate-2"><div class="plate-text">Прямые поставки<br>из Европы</div></div></li>
-            <li><div class="plate-3"><div class="plate-text">Прямые поставки<br>из Европы</div></div></li>
-            <li><div class="plate-4"><div class="plate-text">Прямые поставки<br>из Европы</div></div></li>
-            <li><div class="plate-5"><div class="plate-text">Прямые поставки<br>из Европы</div></div></li>
+            <li><div class="plate-1"><div class="plate--text">Прямые поставки<br>из Европы</div></div></li>
+            <li><div class="plate-2"><div class="plate--text">Прямые поставки<br>из Европы</div></div></li>
+            <li><div class="plate-3"><div class="plate--text">Прямые поставки<br>из Европы</div></div></li>
+            <li><div class="plate-4"><div class="plate--text">Прямые поставки<br>из Европы</div></div></li>
+            <li><div class="plate-5"><div class="plate--text">Прямые поставки<br>из Европы</div></div></li>
           </ul>
         </div>
       </div>
@@ -34,14 +34,14 @@ $APPLICATION->SetTitle("Экстерра Групп | Продажа строи�
     <div class="row">
       <h1>Популярные товары</h1>
     </div>
-  
-  
+
+
   <?$arrFilter = array (
 	"PROPERTY_popular"=>"138"
   );?>
   <?$APPLICATION->IncludeComponent(
-	"bitrix:catalog.section", 
-	"featured", 
+	"bitrix:catalog.section",
+	"featured",
 	array(
 		"ACTION_VARIABLE" => "action",
 		"ADD_PICT_PROP" => "-",

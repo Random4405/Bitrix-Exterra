@@ -47,3 +47,27 @@ a {
     }
   }
 }
+
+
+.plates {
+  background: url(/images/icons/bg.png);
+  &--wrapper {
+    @for $i from 1 through 5 {
+      div.plate-#{$i} {
+        background: url('/images/icons/icon-#{$i}.png') no-repeat 50% 13px;
+        &:hover {
+          .plate--text {
+            background-color: $color-primary;
+            border-color: $color-primary;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+  .plate--text {
+    color: $color-primary;
+    border-color: $color-primary;
+  }
+
+}
