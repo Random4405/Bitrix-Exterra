@@ -41,10 +41,10 @@ if ($USER->IsAdmin()):
 
 
     <header class="js-header <? if ($_SERVER['REQUEST_URI'] != '/') echo "header-underline"?>">
-      <div class="header-contacts">
+      <div class="header--contacts">
         <div class="container">
           <div class="row">
-            <ul class="header-contacts">
+            <ul class="contacts--list">
               <li>Выбрать город</li>
               <li>Телефон: 8 (920) 474-11-11</li>
               <li><i class="fa fa-map-marker" aria-hidden="true"></i> Наш адрес</li>
@@ -54,7 +54,7 @@ if ($USER->IsAdmin()):
           </div>
         </div>
       </div>
-      <div class="header-menu">
+      <div class="header--menu">
         <div class="container">
           <div class="row">
 

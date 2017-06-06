@@ -18,7 +18,7 @@ a {
   }
 }
 
-div.header-contacts {
+.header--contacts {
   background-color: #bfca04;
   color: white;
 }
@@ -27,21 +27,23 @@ div.header-contacts {
   color: #4a4a4a;
 }
 
-.l-hero:after {
+.hero:after {
   border-color: $color-background transparent transparent transparent;
 }
 
-.hero-button {
-  background-color: $color-primary;
-  border-color: $color-primary;
-  a {
-    color: white;
+.absolute-wrapper {
+  &--button {
+    background-color: $color-primary;
+    border-color: $color-primary;
+    a {
+      color: white;
+    }
   }
-}
 
-.hero-absolute-text {
-  border-color: white;
-  p {
-    color: white;
+  &--caption {
+    border-color: white;
+    p {
+      color: white;
+    }
   }
 }

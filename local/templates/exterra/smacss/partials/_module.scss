@@ -1,10 +1,10 @@
 // Header contacts section
 
-div.header-contacts {
+.header--contacts {
   height: 33px;
 }
 
-ul.header-contacts {
+.contacts--list {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -32,7 +32,7 @@ ul.header-contacts {
 
 // Header menu
 
-.header-menu ul#horizontal-multilevel-menu {
+.header--menu ul#horizontal-multilevel-menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -71,7 +71,7 @@ ul.header-contacts {
   }
 }
 
-.header-menu ul#horizontal-multilevel-menu > li {
+.header--menu ul#horizontal-multilevel-menu > li {
   text-transform: uppercase;
   font-size: 1.12rem;
   line-height: 30px;
@@ -216,6 +216,99 @@ ul#horizontal-multilevel-menu {
 
 // Hero
 
+.hero {
+  $logo-width: 293px;
+  $triangle-margin: 54px;
+  position: relative;
+  &:after { //Triangle
+    $triangle-width: $logo-width + $triangle-margin*2;
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: 60px $triangle-width/2 0 $triangle-width/2;
+    top: 0;
+    height: 0;
+    width: 0;
+    left: calc(50% - #{$triangle-width}/2);
+    display: inline-block;
+    z-index: 1;
+  }
+
+  &--absolute-wrapper {
+    z-index: 10;
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .slick-dots {
+    bottom: 0;
+    z-index: 200;
+    li {
+      margin: 0;
+      &.slick-active {
+        button:before {
+          color: white;
+          opacity: .5;
+        }
+      }
+      button {
+        &:hover {
+          &:before {
+            color: #a31a18;
+            opacity: 1;
+          }
+        }
+        &:before {
+          font-size: 7px;
+          line-height: 20px;
+          opacity: .25;
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+.absolute-wrapper {
+  &--caption {
+    border: 6px double;
+    padding: 25px;
+    p {
+      margin-top: 40px;
+      text-align: center;
+      font-weight: 100;
+      text-transform: uppercase;
+      @include fontSize(29px);
+      line-height: 38px;
+      margin-bottom: 0;
+      &:first-line {
+        @include fontSize(34px);
+      }
+    }
+  }
+
+  &--button {
+    margin-top: 33px;
+    display: inherit;
+    border: 2px solid;
+    &:hover {
+      background: none;
+    }
+    a {
+      padding: 20px;
+      @include fontSize(18px);
+      line-height: 18px;
+      font-weight: 100;
+      text-transform: uppercase;
+    }
+  }
+}
+
 .slick-main {
   background-color: black;
   margin-bottom: 15px;
@@ -226,80 +319,5 @@ ul#horizontal-multilevel-menu {
     height: 550px;
     display: flex;
     align-items: flex-end;
-  }
-}
-
-.l-hero .slick-dots {
-  bottom: 0;
-  z-index: 200;
-  li {
-    margin: 0;
-    &.slick-active {
-      button:before {
-        color: white;
-        opacity: .5;
-      }
-    }
-    button {
-      &:hover {
-        &:before {
-          color: #a31a18;
-          opacity: 1;
-        }
-      }
-      &:before {
-        font-size: 7px;
-        line-height: 20px;
-        opacity: .25;
-        color: white;
-      }
-    }
-  }
-}
-
-.hero-absolute-wrapper {
-  z-index: 10;
-  display: flex;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-}
-
-.hero-button {
-  margin-top: 33px;
-  display: inherit;
-  border: 2px solid;
-
-  &:hover {
-    background: none;
-  }
-
-  a {
-    padding: 20px;
-    @include fontSize(18px);
-    line-height: 18px;
-    font-weight: 100;
-    text-transform: uppercase;
-  }
-}
-
-.hero-absolute-text {
-  border: 6px double;
-  padding: 25px;
-
-  p {
-    margin-top: 40px;
-    text-align: center;
-    font-weight: 100;
-    text-transform: uppercase;
-    @include fontSize(29px);
-    line-height: 38px;
-    margin-bottom: 0;
-    &:first-line {
-      @include fontSize(34px);
-    }
   }
 }
