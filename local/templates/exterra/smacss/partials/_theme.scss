@@ -5,6 +5,7 @@ $color-text: #4a4a4a;
 $color-white: white;
 $color-grey: #f2f2f2;
 $color-dark: #282828;
+$color-black: black;
 $color-light-grey: #b7b7b7;
 $color-middle-grey: #4e4e4e;
 
@@ -170,6 +171,61 @@ a {
   border-color: $color-primary;
   &:hover, &:active {
     background-color: $color-primary;
+    color: $color-white;
+  }
+}
+
+footer {
+  background-image: url('/images/texture.png');
+}
+
+
+.footer {
+  &--menu {
+    li {
+      border-right-color: $color-middle-grey;
+      a {
+        color: $color-middle-grey;
+        &:hover, &:focus {
+          color: $color-primary;
+        }
+      }
+    }
+  }
+
+  &--contacts {
+    color: $color-middle-grey;
+  }
+}
+
+.copyright {
+  background: rgba(129, 129, 129, 0.41);
+  p {
+    color: $color-middle-grey;
+  }
+}
+
+
+.mfeedback {
+  form {
+    .mf-name, .mf-email, .mf-phone, [type="submit"] {
+      input {
+        border-color: white;
+        background: rgba(255, 255, 255, 0.67);
+        color: $color-black;
+        &::-webkit-input-placeholder { color: black; };
+        &::-moz-placeholder { color: black; };
+      }
+    }
+    [type="submit"] {
+      background-color: $color-primary;
+      color: $color-white;
+      &:hover, &:focus {
+        background: $color-black;
+      }
+    }
+  }
+  h1 {
     color: $color-white;
   }
 }

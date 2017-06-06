@@ -1,5 +1,5 @@
 <?if(!defined("B_PROLOG_INCLUDED")||B_PROLOG_INCLUDED!==true)die();?>
-<div class="mfeedback">
+<div class="feedback">
 <?if(!empty($arResult["ERROR_MESSAGE"]))
 {
 	foreach($arResult["ERROR_MESSAGE"] as $v)
@@ -32,7 +32,7 @@ if(strlen($arResult["OK_MESSAGE"]) > 0)
 		</div>
 		<textarea name="MESSAGE" rows="5" cols="40"><?=$arResult["MESSAGE"]?></textarea>
 	</div>
-	<?foreach($arParams["NEW_EXT_FIELDS"] as $i => $ext_field):?>		
+	<?foreach($arParams["NEW_EXT_FIELDS"] as $i => $ext_field):?>
 		<div class="mf-name">
 			<div class="mf-text">
 				<?=$ext_field?>

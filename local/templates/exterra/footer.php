@@ -9,7 +9,7 @@ IncludeTemplateLangFile(__FILE__);
 <footer>
   <div class="container">
     <div class="row">
-      <div class="footer-menu">
+      <div class="footer--menu">
         <?$APPLICATION->IncludeComponent(
         	"bitrix:menu",
         	"bottom_menu",
@@ -30,7 +30,7 @@ IncludeTemplateLangFile(__FILE__);
         	false
         );?>
       </div>
-      <div class="footer-contacts">
+      <div class="footer--contacts">
         <p>ООО «Экстерра групп».  Адрес: 350059, г. Краснодар, ул.Уральская, д.114, помещение 3.  Е-mail: info@exterragroup.ru  Телефон: 8 (920) 474-11-11</p>
       </div>
     </div>
