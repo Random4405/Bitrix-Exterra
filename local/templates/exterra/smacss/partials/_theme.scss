@@ -1,0 +1,31 @@
+$color-primary: #a31a18;
+$color-accent: #bfca04;
+$color-background: #f4f4f4;
+$color-text: #4a4a4a;
+
+html {
+  color: $color-text;
+}
+
+body {
+  background-color: $color-background;
+}
+
+a {
+  color: $color-text;
+  &:hover, &:focus {
+    color: $color-primary;
+  }
+}
+
+div.header-contacts {
+  background-color: #bfca04;
+  color: white;
+}
+
+.header-main {
+  color: #4a4a4a;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 300;
+}

@@ -44,7 +44,7 @@ if ($USER->IsAdmin()):
       <div class="header-contacts">
         <div class="container">
           <div class="row">
-            <ul class="clearfix">
+            <ul class="header-contacts">
               <li>Выбрать город</li>
               <li>Телефон: 8 (920) 474-11-11</li>
               <li><i class="fa fa-map-marker" aria-hidden="true"></i> Наш адрес</li>
@@ -54,7 +54,7 @@ if ($USER->IsAdmin()):
           </div>
         </div>
       </div>
-      <div class="header-main">
+      <div class="header-menu">
         <div class="container">
           <div class="row">
 
