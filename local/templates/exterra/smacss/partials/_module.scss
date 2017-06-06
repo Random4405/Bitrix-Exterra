@@ -272,6 +272,18 @@ ul#horizontal-multilevel-menu {
       }
     }
   }
+  &--slick {
+    background-color: black;
+    margin-bottom: 15px;
+    & > div {
+      opacity: .5;
+    }
+    .hero-slide {
+      height: 550px;
+      display: flex;
+      align-items: flex-end;
+    }
+  }
 }
 
 .absolute-wrapper {
@@ -306,18 +318,5 @@ ul#horizontal-multilevel-menu {
       font-weight: 100;
       text-transform: uppercase;
     }
-  }
-}
-
-.slick-main {
-  background-color: black;
-  margin-bottom: 15px;
-  & > div {
-    opacity: .5;
-  }
-  .hero-slide {
-    height: 550px;
-    display: flex;
-    align-items: flex-end;
   }
 }

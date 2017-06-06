@@ -7,7 +7,7 @@
     <div class="absolute-wrapper--button"><a href="">Узнать больше</a></div>
   </div>
 
-  <div class="slick-main" data-slick='{"infinite": true, "arrows": false, "autoplay": false, "autoplaySpeed": 2000, "dots": true}'>
+  <div class="hero--slick" data-slick='{"infinite": true, "arrows": false, "autoplay": false, "autoplaySpeed": 2000, "dots": true}'>
     <div class="hero-slide"><img src="/images/sf1.png" class="img-responsive" alt="" /></div>
     <div class="hero-slide"><img src="/images/Slaid5.jpg" class="img-responsive" alt="" /></div>
   </div>

@@ -327,7 +327,7 @@ $(document).ready(function(){
 });
 </script>
 <script>
-$('.slider-product').slick();
+$('.hero--slick').slick();
 $('.product-arrows').slick({
 slidesToShow: 4,
 })
