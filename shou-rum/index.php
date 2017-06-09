@@ -21,7 +21,7 @@ $APPLICATION->SetTitle("Дилерам");
 
 <div class="about-wrapper">
   <!--<div class="l-wrapper"></div>-->
-  <div class="row">
+  <div class="container">
     <div class="row">
       <div class="r-wrapper" style="width: 100%; margin-left: 0">
         <h4 style="font-family: Arial; font-weight: 400; line-height: 32px; color: #87270d; font-size: 18px; position: relative;">Компания Exterra приглашает покупателей посетить <br /> новый Профессиональный шоу-рум строительных материалов.</h4>
