@@ -21,10 +21,10 @@ $APPLICATION->SetTitle("Экстерра Групп | Продажа строи�
         <div class="plates--wrapper">
           <ul>
             <li><div class="plate-1"><div class="plate--text">Прямые поставки<br>из Европы</div></div></li>
-            <li><div class="plate-2"><div class="plate--text">Прямые поставки<br>из Европы</div></div></li>
-            <li><div class="plate-3"><div class="plate--text">Прямые поставки<br>из Европы</div></div></li>
-            <li><div class="plate-4"><div class="plate--text">Прямые поставки<br>из Европы</div></div></li>
-            <li><div class="plate-5"><div class="plate--text">Прямые поставки<br>из Европы</div></div></li>
+            <li><div class="plate-2"><div class="plate--text">сотрудничество<br>с архитекторами</div></div></li>
+            <li><div class="plate-3"><div class="plate--text">расчет материалов</div></div></li>
+            <li><div class="plate-4"><div class="plate--text"> сотрудничество<br>с дизайнерами</div></div></li>
+            <li><div class="plate-5"><div class="plate--text">Способы оплаты</div></div></li>
           </ul>
         </div>
       </div>
