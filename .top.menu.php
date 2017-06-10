@@ -29,8 +29,13 @@ $aMenuLinks = Array(
 		"" 
 	),
 	Array(
+<<<<<<< HEAD
+		"База знаний", 
+		"", 
+=======
 		"Акции", 
 		"/promotions/", 
+>>>>>>> 9e3e5f6127902890f7bac9198a2969410e7189f6
 		Array(), 
 		Array(), 
 		"" 
