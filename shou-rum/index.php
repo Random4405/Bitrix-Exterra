@@ -15,7 +15,6 @@ $APPLICATION->SetTitle("Дилерам");
 	</div>
 </div>
 <div class="about-wrapper">
-<<<<<<< HEAD
 	 <!--<div class="l-wrapper"></div>-->
 	<div class="row">
 		<div class="row">
@@ -93,7 +92,6 @@ $APPLICATION->SetTitle("Дилерам");
 			</div>
 		</div>
 	</div>
-=======
   <!--<div class="l-wrapper"></div>-->
   <div class="container">
     <div class="row">
@@ -125,6 +123,5 @@ $APPLICATION->SetTitle("Дилерам");
       </div>
     </div>
   </div>
->>>>>>> 9e3e5f6127902890f7bac9198a2969410e7189f6
 </div>
 <br><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
