@@ -29,7 +29,7 @@ $aMenuLinks = Array(
 		"" 
 	),
 	Array(
-		"База данных", 
+		"База знаний", 
 		"", 
 		Array(), 
 		Array(), 

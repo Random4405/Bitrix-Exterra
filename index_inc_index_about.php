@@ -1,3 +1,13 @@
-            <h1>Продажа строительных материалов</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur aliquid quia, et harum maiores voluptates dignissimos vero magni tempore. Eaque totam, et incidunt sit, excepturi aperiam ipsam repellat ad dolores nulla quae placeat iusto consectetur magni repellendus, eos id exercitationem ipsum tempora consequatur quas? Aspernatur harum maxime distinctio recusandae quasi?</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur aliquid quia, et harum maiores voluptates dignissimos vero magni tempore. Eaque totam, et incidunt sit, excepturi aperiam ipsam repellat ad dolores nulla quae placeat iusto consectetur magni repellendus, eos id exercitationem ipsum tempora consequatur quas? Aspernatur harum maxime distinctio recusandae quasi?</p>
+<h1>Продажа строительных материалов</h1>
+            <p>Каждый потребитель, независимо от уровня финансового достатка, хочет совершить покупку по самому оптимальному критерию “цена-качество”. Экстерра Групп – продажа строительных материалов наивысшего качества по самым лояльным ценам. Водостоки и дренажи, кирпич и тротуарная брусчатка, фасадная плитка и черепица – это лишь малый перечень строительной продукции, предлагаемый нами к реализации.</p>
+<h2>Почему купить строительные материалы выгодно именно в Экстерра Групп</h2>
+            <p>Мы выгодно отличаемся от других компаний, осуществляющих свою деятельность по Республике Крым в смежной сфере услуг: 
+<p>- работа организована напрямую с первым производителем, благодаря чему стоимость реализуемых нами строительных материалов заметно ниже, чем у наших прямых конкурентов;
+<p>- гарантия качества реализуемой строительной продукции подтверждается именитыми торговыми брэндами; 
+<p>- мы производим непрерывный мониторинг и изучение потребительского спроса на рынке строительных материалов, благодаря чему в ассортименте реализуемой нами продукции представлены только востребованные и инновационные стройматериалы;  
+<p>- наличие актуального интернет-каталога exterragroup.ru позволяет любому пользователю сформировать заказ на приобретение продукции в режиме “онлайн”; 
+<p>- реализован индивидуальный подход к каждому клиенту (персонально обсуждаются объемы партии, стоимость и условия доставки);
+<p>- имеются различные способы и системы оплаты (наличный и безналичный расчет банковскими картами Visa и MasterCard).
+<p>- для постоянных клиентов предусмотрена система скидок.
+<p>Чтобы купить по настоящему качественные строительные материалы в Республике Крым по доступным ценам, обращайтесь exterragroup.ru. Мы приложим максимум усилий, чтобы вы остались удовлетворены сервисом нашего обслуживания.
+</p>

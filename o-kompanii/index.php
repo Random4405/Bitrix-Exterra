@@ -77,10 +77,10 @@ $APPLICATION->SetTitle("О компании");
   <h1>В ЛИЦЕ КОМПАНИИ « ЭКСТЕРРА ГРУПП» ВЫ ПОЛУЧАЕТЕ:</h1>
   <div class="plates--wrapper">
     <ul>
-      <li><div class="plate-1"><div class="plate--text">Sample text</div></div></li>
-      <li><div class="plate-2"><div class="plate--text">Sample text</div></div></li>
-      <li><div class="plate-3"><div class="plate--text">Sample text</div></div></li>
-      <li><div class="plate-4"><div class="plate--text">Sample text</div></div></li>
+      <li><div class="plate-1"><div class="plate--text">Расчёт стройматериалов<br>для вашего объекта</div></div></li>
+      <li><div class="plate-2"><div class="plate--text">Консультация в вопросах выбора<br>оптимальных для вас<br>товара или услуги</div></div></li>
+      <li><div class="plate-3"><div class="plate--text">ТОЛЬКО КАЧЕСТВЕННЫЕ<br>СТРОИТЕЛЬНЫЕ МАТЕРИАЛЫ</div></div></li>
+      <li><div class="plate-4"><div class="plate--text">НАДЕЖНОГО И ДОЛГОВРЕМЕННОГО<br>ПАРТНЕРА</div></div></li>
       <li><div class="plate-5"><div class="plate--text">Sample text</div></div></li>
     </ul>
   </div>
