@@ -22,8 +22,20 @@ $aMenuLinks = Array(
 		"" 
 	),
 	Array(
+		"Дилерам", 
+		"/dillers/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+<<<<<<< HEAD
+		"База знаний", 
+		"", 
+=======
 		"Акции", 
 		"/promotions/", 
+>>>>>>> 9e3e5f6127902890f7bac9198a2969410e7189f6
 		Array(), 
 		Array(), 
 		"" 
@@ -31,13 +43,6 @@ $aMenuLinks = Array(
 	Array(
 		"База знаний", 
 		"", 
-		Array(), 
-		Array(), 
-		"" 
-	),
-	Array(
-		"Дилерам", 
-		"/dillers/", 
 		Array(), 
 		Array(), 
 		"" 
