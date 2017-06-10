@@ -45,8 +45,8 @@ if ($USER->IsAdmin()):
           <div class="row">
             <ul class="contacts--list">
               <li>Выбрать город</li>
-              <li>Телефон: 8 (920) 474-11-11</li>
-              <li><i class="fa fa-map-marker" aria-hidden="true"></i> Наш адрес</li>
+              <li><a href="tel:89204741111">Телефон: 8 (920) 474-11-11</a></li>
+              <li><a href="/contacts"><i class="fa fa-map-marker" aria-hidden="true"></i> Наш адрес</a></li>
               <li onclick="callFormShow()"><i class="fa fa-mobile" aria-hidden="true"></i> Обратный звонок</li>
               <li><i class="fa fa-search" aria-hidden="true"></i></li>
             </ul>

@@ -15,16 +15,19 @@
     padding: 0 15px;
     color: white;
     border-right: 1px solid white;
-    &:hover {
+    a {
+      color: white;
+    }
+    &:hover, a:hover {
       color: #a41310;
       cursor: pointer;
     }
     &:first-child {
-      padding-right: 25px;
+      padding-right: 33px;
       border-left: 1px solid white;
-      background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAHCAYAAADXhRcnAAAApElEQVQoU2P8////HAYGhmAgBoH7jIyMRlA2CgVUJw8UOA7EnFCJDEYQAyhxG0ipQAW/A2lNoCEPYbqB8uFA9nwkjXOB8ilgzVAD1gPpACQD3IAKjkA1LgeKw9SCNYLUwTVDDQB5IRlmHpA+BMR2UHX/gXQnUGMlzEIUzVgMgDsMyIgEalwJE8CwGckLIBckIdmIoRGnZqgLQIG0BIhj0G2EWQIAiSc4XKhM6YUAAAAASUVORK5CYII=') no-repeat calc(100% - 5px) center;
+      background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAHCAYAAADXhRcnAAAApElEQVQoU2P8////HAYGhmAgBoH7jIyMRlA2CgVUJw8UOA7EnFCJDEYQAyhxG0ipQAW/A2lNoCEPYbqB8uFA9nwkjXOB8ilgzVAD1gPpACQD3IAKjkA1LgeKw9SCNYLUwTVDDQB5IRlmHpA+BMR2UHX/gXQnUGMlzEIUzVgMgDsMyIgEalwJE8CwGckLIBckIdmIoRGnZqgLQIG0BIhj0G2EWQIAiSc4XKhM6YUAAAAASUVORK5CYII=') no-repeat calc(100% - 15px) center;
       &:hover {
-        background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAHCAYAAADXhRcnAAAA4klEQVQoU2O8vXjRHCEd3WAGIPj2/Nl9WS9vIxAbHZxraZGXdnI8zsLJxQmSe3nsSAYjiPF0397bUo5OKiD2x1u3vt9bvVrTqKbmIcyAa1Mnh0u5uM3nV1MDa7yzZPFc1di4FLBmELi7csV6pbDwAJgBTzdvdtMuKTkC0qgSE7uclY8frBamEcSGawZxQF4AKkwGsX9/+vj/2YH9h6QcHO1AGkH8++vWdqonJlfCLETRjG4ATBFII9DGSK3s3JXIYYGhGWaAvJ9fEsxGbBoxnI1sKsiv8gGBSx5uWB+DbiNMHQCxG2pdDh2RSwAAAABJRU5ErkJggg==') no-repeat calc(100% - 5px) center;
+        background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAHCAYAAADXhRcnAAAA4klEQVQoU2O8vXjRHCEd3WAGIPj2/Nl9WS9vIxAbHZxraZGXdnI8zsLJxQmSe3nsSAYjiPF0397bUo5OKiD2x1u3vt9bvVrTqKbmIcyAa1Mnh0u5uM3nV1MDa7yzZPFc1di4FLBmELi7csV6pbDwAJgBTzdvdtMuKTkC0qgSE7uclY8frBamEcSGawZxQF4AKkwGsX9/+vj/2YH9h6QcHO1AGkH8++vWdqonJlfCLETRjG4ATBFII9DGSK3s3JXIYYGhGWaAvJ9fEsxGbBoxnI1sKsiv8gGBSx5uWB+DbiNMHQCxG2pdDh2RSwAAAABJRU5ErkJggg==') no-repeat calc(100% - 15px) center;
       }
     }
   }
@@ -726,4 +729,109 @@ ul#horizontal-multilevel-menu {
   display: flex;
   justify-content: space-between;
   // margin-bottom: 32px;
+}
+
+
+.popup-form, .popup-form-call {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  z-index: 9999;
+  .popup-form-wrapper {
+    width: 30%;
+    position: relative;
+    background: #f3f3f3;
+    z-index: 1001;
+    border: 4px solid #bbbbbb;
+    .fa-close {
+      position: absolute;
+      right: 0;
+      top: 0;
+      margin-top: 5px;
+      margin-right: 10px;
+    }
+    form {
+      legend {
+        text-align: center;
+      }
+      fieldset {
+        #col {
+          width: 50%;
+        }
+        // display: flex;
+        // flex-direction: column;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        input, textarea {
+          border: none;
+          $width: 82%;
+          width: $width;
+          margin-left: (100% - $width)/2;
+          height: 46px;
+          padding-left: 15px;
+          &:focus {
+            outline: none;
+          }
+          input:valid {
+            border-color: green;
+          }
+          input:invalid {
+            border-color: red;
+          }
+        }
+        input {
+          margin-bottom: 16px;
+          &.required:after {
+            color: red;
+            content: " *";
+          }
+        }
+        textarea {
+          height: 92px;
+          padding-top: 10px;
+          margin-bottom: 32px;
+        }
+        input.submit {
+          color: #ffffff;
+          background: #882204;
+          $width: 40%;
+          width: $width;
+          margin-left: (100% - $width)/2;
+          font-family: Arial;
+          font-size: 18px;
+          font-weight: 700;
+          text-transform: uppercase;
+          &:hover {
+            background: black;
+          }
+        }
+      }
+    }
+  }
+  .popup-background {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+    background: white;
+    opacity: 0.8;
+  }
+}
+
+#results {
+  position: fixed;
+  display: none;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
 }
