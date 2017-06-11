@@ -30,7 +30,7 @@ if ($USER->IsAdmin()):
 <?$APPLICATION->AddHeadScript("/local/templates/exterra/js/lightbox.js");?>
 <title><?$APPLICATION->ShowTitle()?></title>
   </head>
-  <body class="<? if ($_SERVER['REQUEST_URI'] == '/contacts/') echo "no-white-fix"?>">
+  <body>
     <div id="panel"><?$APPLICATION->ShowPanel();?></div>
 
     <div id="results" class="alert alert-success alert-dismissable">

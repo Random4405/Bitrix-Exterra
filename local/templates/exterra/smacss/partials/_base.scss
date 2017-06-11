@@ -293,6 +293,15 @@ h1 {
   margin: 36px auto;
 }
 
+h3 {
+  color: #a31a18;
+  font-family: Lato;
+  @include fontSize(24px);
+  font-weight: 300;
+  line-height: 16px;
+}
+
+
 h4 {
   color: #4e4e4e;
   font-family: Lato;
