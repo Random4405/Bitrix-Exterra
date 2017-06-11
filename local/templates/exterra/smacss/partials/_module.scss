@@ -308,7 +308,7 @@ ul#horizontal-multilevel-menu {
     }
     .hero-slide {
       height: 550px;
-      display: flex;
+      display: flex !important;
       align-items: flex-end;
     }
   }
