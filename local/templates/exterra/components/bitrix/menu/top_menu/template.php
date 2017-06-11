@@ -20,13 +20,15 @@ foreach($arResult as $arItem):?>
     <li<?if ($arItem["SELECTED"]):?> class="item-selected"<?endif?>><a href="<?=$arItem["LINK"]?>" class="parent"><?=$arItem["TEXT"]?></a>
 				<ul>
           <div class="img-wrapper header_menu_image">
-            <span class="texture-name"><?=$arItem["TEXT"]?></span>
-            <img class="wtf" src="<?=$arItem["PICTURE"]?>">
-          </div>
-          <div class="links">
-            <a href="#"><i class="fa fa-file-text-o" aria-hidden="true"></i> PDF-каталоги</a>
-            <a href="#"><i class="fa fa-certificate" aria-hidden="true"></i> Сертификаты качества</a>
-            <a href="#"><i class="fa fa-video-camera" aria-hidden="true"></i> Видеоматериалы</a>
+						<div class="header-menu__image-wrapper">
+							<span class="texture-name"><?=$arItem["TEXT"]?></span>
+							<img class="wtf" src="<?=$arItem["PICTURE"]?>">
+						</div>
+					<div class="links">
+						<a href="#"><i class="icon icon-pdf" aria-hidden="true"></i>PDF-каталоги</a>
+						<a href="#"><i class="icon icon-sert" aria-hidden="true"></i>Сертификаты качества</a>
+						<a href="#"><i class="icon icon-gallery" aria-hidden="true"></i>Фотогалерея</a>
+					</div>
           </div>
 		<?endif?>
 

@@ -77,6 +77,15 @@ a {
   }
 }
 
+
+.plates-second {
+  @for $i from 1 through 5 {
+    div.plate-#{$i} {
+      background-image: url('/images/icons/icon-#{$i}-second.png');
+    }
+  }
+}
+
 .slick-dots {
   li {
     &.slick-active {
