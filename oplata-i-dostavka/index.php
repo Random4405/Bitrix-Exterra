@@ -19,10 +19,10 @@ $APPLICATION->SetTitle("Дилерам");
   </div>
 
 
-<h1 class="is-no-top-margin">Оплата и доставка</h1>
 
 <div class="container">
   <div class="row">
+<h1 class="is-no-top-margin">Оплата и доставка</h1>
             <div class="paragraph">
               <h4 class="paragraph__title l-centered is-framed">СРОКИ ПОСТАВКИ</h4>
               <p>Сроки поставки заказанного товара: 30 (шестьдесят) рабочих дней.</p>

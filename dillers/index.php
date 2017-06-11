@@ -21,10 +21,10 @@ $APPLICATION->SetTitle("Дилерам");
 </div>
 
 
-<h1 class="is-no-top-margin">Дилерам</h1>
 
 <div class="container">
   <div class="row">
+            <h1 class="is-no-top-margin">Дилерам</h1>
             <div class="paragraph">
               <h4 class="paragraph__title l-centered is-framed">Информация</h4>
               <h5 class="paragraph__subtitle">Качественное визуальное сопровождение товара.</h5>

@@ -17,10 +17,10 @@ $APPLICATION->SetTitle("О компании");
 </div>
 </div>
 
-<h1 class="is-no-top-margin">О компании</h1>
 
 <div class="container">
   <div class="row">
+            <h1 class="is-no-top-margin">О компании</h1>
             <div class="paragraph">
               <h4 class="paragraph__title l-centered is-framed">Забота</h4>
               <h5 class="paragraph__subtitle">Почему мы? Потому что мы заботимся о Вас, своих клиентах.</h5>
