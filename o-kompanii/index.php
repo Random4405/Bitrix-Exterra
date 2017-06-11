@@ -69,6 +69,6 @@ $APPLICATION->SetTitle("О компании");
     </ul>
   </div>
 </div>
-  <h4 class="l-margins-20 is-colored">ОБРАЩАЙТЕСЬ К НАМ ПРЯМО СЕЙЧАС, И МЫ ПОСТРОИМ РОДОВОЕ ГНЕЗДО ДЛЯ  ВАШЕЙ СЕМЬИ! </h2>
+  <h4 class="l-margins-20 is-colored">ОБРАЩАЙТЕСЬ К НАМ ПРЯМО СЕЙЧАС, И МЫ ПОСТРОИМ РОДОВОЕ ГНЕЗДО ДЛЯ  ВАШЕЙ СЕМЬИ! </h4>
 
 <?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
