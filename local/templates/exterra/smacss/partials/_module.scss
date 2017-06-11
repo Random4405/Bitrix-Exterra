@@ -319,6 +319,10 @@ ul#horizontal-multilevel-menu {
 }
 
 .plates {
+  overflow: hidden;
+  h4 {
+    margin-top: 26px;
+  }
   &--wrapper {
     ul {
       display: flex;
@@ -350,6 +354,28 @@ ul#horizontal-multilevel-menu {
               display: flex;
               justify-content: center;
               align-items: center;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.plates {
+  &--wrapper {
+    ul {
+      li {
+        list-style-type: none;
+        @for $i from 1 through 4 {
+          div.plate-#{$i} {
+            width: 310px;
+            height: 215px;
+            .plate--text {
+              width: 290px;
+              bottom: 10px;
+              height: 80px;
             }
           }
         }
@@ -910,4 +936,18 @@ input[type="submit"] {
   width: 100%;
   max-width: 100%;
   margin-bottom: 49px;
+}
+
+.paragraph {
+  margin-bottom: 24px;
+  &__title {
+    @include fontSize(18px);
+    font-weight: 300;
+    text-transform: uppercase;
+    width: 190px;
+  }
+  &-bold {
+    font-weight: 800;
+    color: #484a50;
+  }
 }

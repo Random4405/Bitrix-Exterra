@@ -248,3 +248,21 @@ footer {
 .slick-next:before, .slick-prev:before {
     content: '';
 }
+
+.is-framed {
+  border-color: $color-primary;
+}
+
+.paragraph {
+  &__title {
+    color: $color-primary;
+  }
+}
+
+.paragraph__subtitle {
+  color: $color-primary;
+}
+
+.is-colored {
+  color: $color-primary;
+}
