@@ -14,9 +14,7 @@ $APPLICATION->SetTitle("Контакты");
         "SITE_ID" => "s1",
         "START_FROM" => "0"
         )
-      );?>
-    </div>
-  </div>
+      );?> </div> </div>
 
   <div class="container">
     <div class="row">
@@ -59,7 +57,7 @@ $APPLICATION->SetTitle("Контакты");
       </div>
     </div>
   </div>
-  <div class="fullwidth-wrapper"><img src="/images/map-placeholder.png" alt=""></div>
+  <div class="fullwidth-wrapper"><script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A4d2a404448fb4e06a091d07f272cb27e1eee102051d1ae1339e80007bda67f1a&amp;width=100%25&amp;height=500&amp;lang=ru_RU&amp;scroll=true"></script></div>
   <div class="fullwidth-wrapper hero--slick hero--slick--nofilter"><img src="/images/contacts-build.png" alt=""></div>
 
   <?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
