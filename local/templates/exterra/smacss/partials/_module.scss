@@ -1018,12 +1018,16 @@ input[type="submit"] {
 }
 
 .select-category-wrapper {
+  padding: 10px;
   background-color: #fff;
   margin-right: 15px;
   overflow: hidden;
   padding-top: 10px;
   .subcategory_name {
     margin-left: 10px;
+  }
+  h2 {
+    margin-bottom: 20px;
   }
   h5 {
     color: #a31a18;
@@ -1050,5 +1054,15 @@ input[type="submit"] {
         color: #a31a18;
       }
     }
+  }
+}
+
+.category-pager {
+  background-color: #fff;
+  padding: 40px;
+  text-align: center;
+  margin-bottom: 32px;
+  font, a {
+    font-size: 16px !important;
   }
 }
