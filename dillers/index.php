@@ -22,7 +22,6 @@ $APPLICATION->SetTitle("Дилерам");
 
 
 
-<div class="container">
   <div class="row">
             <h1 class="is-no-top-margin">Дилерам</h1>
             <div class="paragraph">
@@ -53,5 +52,4 @@ $APPLICATION->SetTitle("Дилерам");
               <div class="l-margins-80 paragraph-bold">      Мы станем Вашим надёжным партнёром на рынке качественных строительных материалов.</div>
   </div>
 </div>
-<?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
 <?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
