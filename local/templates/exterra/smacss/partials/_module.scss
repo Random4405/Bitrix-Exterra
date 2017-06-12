@@ -254,19 +254,19 @@ ul#horizontal-multilevel-menu {
   $logo-width: 293px;
   $triangle-margin: 54px;
   position: relative;
-  &:after { //Triangle
-    $triangle-width: $logo-width + $triangle-margin*2;
-    content: '';
-    position: absolute;
-    border-style: solid;
-    border-width: 60px $triangle-width/2 0 $triangle-width/2;
-    top: 0;
-    height: 0;
-    width: 0;
-    left: calc(50% - #{$triangle-width}/2);
-    display: inline-block;
-    z-index: 1;
-  }
+  // &:after { //Triangle
+  //   $triangle-width: $logo-width + $triangle-margin*2;
+  //   content: '';
+  //   position: absolute;
+  //   border-style: solid;
+  //   border-width: 60px $triangle-width/2 0 $triangle-width/2;
+  //   top: 0;
+  //   height: 0;
+  //   width: 0;
+  //   left: calc(50% - #{$triangle-width}/2);
+  //   display: inline-block;
+  //   z-index: 1;
+  // }
 
   &--absolute-wrapper {
     z-index: 10;
