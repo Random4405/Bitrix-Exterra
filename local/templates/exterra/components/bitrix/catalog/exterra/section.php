@@ -42,14 +42,15 @@ if($ar_section = $res->GetNext()){
   )
 );?>
   </div>
-  <div class="content-sidebar">
+<div class="row">
     <div class="select-category-wrapper">
 <?
 $res = CIBlockSection::GetByID($arResult['VARIABLES']['SECTION_ID']);
 if($ar_res = $res->GetNext())
   $arSect = $ar_res;
 ?>
-<span class="subcategory_name"><?=$arSect['NAME']?></span>
+<h2 class="subcategory_name"><?=$arSect['NAME']?></h2>
+<span class="subcategory_name">Выберите подкатегорию:</span>
 <ul>
 <?
 $arFilter = Array('IBLOCK_ID'=>6, 'GLOBAL_ACTIVE'=>'Y', 'SECTION_ID' => $arSect['IBLOCK_SECTION_ID']);
@@ -61,6 +62,9 @@ while($ar_result = $db_list->GetNext())
 ?>
 </ul>
     </div>
+</div>
+  <div class="row">
+    <div class="content-sidebar">
 <?
 
 if ($arParams['USE_FILTER'] == 'Y')
@@ -149,8 +153,8 @@ if ($arParams['USE_FILTER'] == 'Y')
 ?>
 
 
-  </div>
-  <div class="content-main">
+    </div>
+    <div class="content-main">
 
 <?
 if (isset($arParams['USE_COMMON_SETTINGS_BASKET_POPUP']) && $arParams['USE_COMMON_SETTINGS_BASKET_POPUP'] == 'Y')
@@ -403,6 +407,7 @@ if (ModuleManager::isModuleInstalled("sale"))
 
 
 
+  </div>
   </div>
   <div class="row">
     <p class="desc">
