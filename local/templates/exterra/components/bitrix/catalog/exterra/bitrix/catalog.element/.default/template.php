@@ -119,7 +119,7 @@ $arFirstPhoto = current($arResult['MORE_PHOTO']);
 		<tr><td><? echo $arOneProp['NAME'];?></td><td><?
 			echo (
 				is_array($arOneProp['DISPLAY_VALUE'])
-				? implode(' / ', $arOneProp['DISPLAY_VALUE'])
+				? implode(' <br> ', $arOneProp['DISPLAY_VALUE'])
 				: $arOneProp['DISPLAY_VALUE']
 			); ?></td></tr><?
 		}
