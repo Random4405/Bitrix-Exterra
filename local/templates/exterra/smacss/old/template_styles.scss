@@ -327,7 +327,8 @@ $wrapper-margin: 15px;
     }
     td {
       &:first-child {
-        padding-right: 10px;
+        padding-right: 0;
+        width: 50%;
       }
         color: #4e4e4e;
         font-family: Lato;
