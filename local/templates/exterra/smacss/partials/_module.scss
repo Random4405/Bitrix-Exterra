@@ -1003,7 +1003,7 @@ input[type="submit"] {
 }
 
 .desc {
-  margin-top: 135px;
+  margin-top: 73px;
   margin-bottom: 36px;
   font-family: Lato;
   font-size: 16px;
@@ -1012,4 +1012,7 @@ input[type="submit"] {
   color: #000000;
   font-family: Lato;
   line-height: 24px;
+  h2 {
+    margin-bottom: 40px;
+  }
 }
