@@ -4,7 +4,7 @@
       <img src="/images/text-logo.png" alt="">
       <p>только качественные<br>строительные материалы</p>
     </div>
-    <div class="absolute-wrapper--button"><a href="">Узнать больше</a></div>
+    <div class="absolute-wrapper--button"><a href="http://exterragroup.ru/o-kompanii/">Узнать больше</a></div>
   </div>
 
   <div class="hero--slick" data-slick='{"infinite": true, "arrows": false, "autoplay": false, "autoplaySpeed": 2000, "dots": true}'>
