@@ -12,12 +12,12 @@
 /** @var CBitrixComponent $component */
 $this->setFrameMode(true);
 ?>
-<div class="category-pager"><?
+<!--<div class="category-pager"><?
 	if ($arParams["DISPLAY_TOP_PAGER"])
 	{
 		echo $arResult["NAV_STRING"];
 	}
-?></div>
+?></div>-->
 <?
 if (!empty($arResult['ITEMS']))
 {

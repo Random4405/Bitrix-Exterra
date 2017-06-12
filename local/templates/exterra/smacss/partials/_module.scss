@@ -1016,3 +1016,39 @@ input[type="submit"] {
     text-align: center;
   }
 }
+
+.select-category-wrapper {
+  background-color: #fff;
+  margin-right: 15px;
+  overflow: hidden;
+  padding-top: 10px;
+  .subcategory_name {
+    margin-left: 10px;
+  }
+  h5 {
+    color: #a31a18;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: Lato;
+    font-size: 18px;
+    @include fontSize(18px);
+    font-weight: 700;
+  }
+  ul {
+    margin-left: 20px;
+    li {
+      font-family: Lato;
+      list-style-position: inside;
+      list-style-image: url(/images/li-black-marker.png);
+      @include fontSize(16px);
+      font-weight: 400;
+      color: #4e4e4e;
+      &:hover, &:active {
+        list-style-image: url(/images/li-terra-marker.png);
+      }
+      &.marked {
+        color: #a31a18;
+      }
+    }
+  }
+}
