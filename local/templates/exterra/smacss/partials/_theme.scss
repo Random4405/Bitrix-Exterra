@@ -255,7 +255,7 @@ footer {
 }
 
 .slick-next:before, .slick-prev:before {
-    content: '';
+    content: '' !important;
 }
 
 .is-framed {
