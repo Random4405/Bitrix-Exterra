@@ -6,26 +6,32 @@
 
 .contacts--list {
   display: flex;
-  justify-content: center;
   align-items: center;
-  margin-bottom: 0;
+  justify-content: center;
   height: 33px;
+  margin-bottom: 0;
+
   li {
-    list-style-type: none;
     padding: 0 15px;
-    color: white;
     border-right: 1px solid white;
+    color: white;
+    list-style-type: none;
+
     a {
       color: white;
     }
-    &:hover, a:hover {
+
+    &:hover,
+    a:hover {
       color: #a41310;
       cursor: pointer;
     }
+
     &:first-child {
       padding-right: 33px;
       border-left: 1px solid white;
       background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAHCAYAAADXhRcnAAAApElEQVQoU2P8////HAYGhmAgBoH7jIyMRlA2CgVUJw8UOA7EnFCJDEYQAyhxG0ipQAW/A2lNoCEPYbqB8uFA9nwkjXOB8ilgzVAD1gPpACQD3IAKjkA1LgeKw9SCNYLUwTVDDQB5IRlmHpA+BMR2UHX/gXQnUGMlzEIUzVgMgDsMyIgEalwJE8CwGckLIBckIdmIoRGnZqgLQIG0BIhj0G2EWQIAiSc4XKhM6YUAAAAASUVORK5CYII=') no-repeat calc(100% - 15px) center;
+
       &:hover {
         background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAHCAYAAADXhRcnAAAA4klEQVQoU2O8vXjRHCEd3WAGIPj2/Nl9WS9vIxAbHZxraZGXdnI8zsLJxQmSe3nsSAYjiPF0397bUo5OKiD2x1u3vt9bvVrTqKbmIcyAa1Mnh0u5uM3nV1MDa7yzZPFc1di4FLBmELi7csV6pbDwAJgBTzdvdtMuKTkC0qgSE7uclY8frBamEcSGawZxQF4AKkwGsX9/+vj/2YH9h6QcHO1AGkH8++vWdqonJlfCLETRjG4ATBFII9DGSK3s3JXIYYGhGWaAvJ9fEsxGbBoxnI1sKsiv8gGBSx5uWB+DbiNMHQCxG2pdDh2RSwAAAABJRU5ErkJggg==') no-repeat calc(100% - 15px) center;
       }
@@ -37,52 +43,63 @@
 
 .header--menu {
   position: relative;
-  &:after {
-    content: '';
+
+  &::after {
     position: absolute;
-    box-shadow: inset 0px 7px 8px 0px rgba(49, 49, 49, 0.11);
-    bottom: -15px;
-    height: 15px;
-    left: 0;
     right: 0;
+    bottom: -15px;
+    left: 0;
+    height: 15px;
+    box-shadow: inset 0 7px 8px 0 rgba(49, 49, 49, 0.11);
+    content: '';
     z-index: 9990;
   }
 }
 
 .header--menu ul#horizontal-multilevel-menu {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   height: 88px;
+
   > li {
-    list-style-type: none;
-    z-index: 950;
     padding: 0 30px;
+    list-style-type: none;
     text-transform: uppercase;
+    z-index: 950;
+
     > a {
       @include fontSize(16px);
+
       font-weight: 300;
     }
+
     &:last-child {
       padding-right: 0;
     }
+
     &:nth-child(2) {
       padding-left: 0;
     }
+
     &:first-child {
       order: 1;
       padding: 0;
+
       a {
-        font-size: 0;
         display: block;
-        background: url(/images/logo.png);
         width: 293px;
         height: 81px;
-        &:hover, &:focus {
+        background: url(/images/logo.png);
+        font-size: 0;
+
+        &:hover,
+        &:focus {
           border-bottom: none;
         }
       }
     }
+
     &:nth-of-type(n+5) {
       order: 2;
     }
