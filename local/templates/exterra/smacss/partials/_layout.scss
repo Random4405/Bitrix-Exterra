@@ -15,8 +15,8 @@ header > * {
 }
 
 footer {
-  background: transparent left top repeat-x repeat-y;
   padding-top: 70px;
+  background: transparent left top repeat-x repeat-y;
   overflow: hidden;
 }
 
@@ -25,16 +25,20 @@ footer {
 }
 
 .l-double-row {
-  display: flex;
-  margin-bottom: 26px;
   $double-row--margin: 15px;
+
+  display: flex;
   justify-content: center;
+  margin-bottom: 26px;
+
   > * {
-    margin-left: $double-row--margin/2;
     margin-right: $double-row--margin/2;
+    margin-left: $double-row--margin/2;
+
     &:first-child {
       margin-left: 0;
     }
+
     &:last-child {
       margin-right: 0;
     }

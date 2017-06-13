@@ -1,58 +1,15 @@
-// Reset.css
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-  line-height: 22px;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
 //Functions and mixins
 
 @function calculateRem($size) {
   $remSize: $size / 16px;
+
   @return #{$remSize}rem;
 }
 
 @mixin fontSize($size) {
   font-size: $size; //Fallback in px
+
+  // stylelint-disable-next-line
   font-size: calculateRem($size);
 }
 
@@ -60,19 +17,19 @@ table {
   @if $class == xs {
     @media (max-width: 767px) { @content; }
   }
- 
+
   @else if $class == sm {
     @media (min-width: 768px) { @content; }
   }
- 
+
   @else if $class == md {
     @media (min-width: 992px) { @content; }
   }
- 
+
   @else if $class == lg {
     @media (min-width: 1200px) { @content; }
   }
- 
+
   @else {
     @warn "Breakpoint mixin supports: xs, sm, md, lg";
   }
@@ -80,7 +37,7 @@ table {
 
 //Typography
 
-@font-face {
+@font-face { //stylelint-disable
   font-family: 'Lato';
   src: url('/local/templates/exterra/fonts/Lato-Thin.eot');
   src: local('Lato Thin'), local('Lato-Thin'),
@@ -294,13 +251,13 @@ table {
   url('/local/templates/exterra/fonts/Lato-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
-}
+} //stylelint-enable
 
 // Base styles
 
 html {
-  font-size: 100%;
   font-family: Lato;
+  font-size: 100%;
 }
 
 body {
@@ -309,33 +266,36 @@ body {
 
 h1 {
   @include fontSize(24px);
+
+  margin: 36px auto;
   font-weight: 300;
   text-align: center;
   text-transform: uppercase;
-  margin: 36px auto;
 }
 
 h2 {
+  @include fontSize(24px);
+
   color: #a31a18;
   font-family: Lato;
-  @include fontSize(24px);
   font-weight: 300;
   line-height: 16px;
 }
 
 h3 {
+  @include fontSize(20px);
+
   color: #a31a18;
   font-family: Lato;
-  @include fontSize(20px);
   font-weight: 300;
   line-height: 16px;
 }
 
-
 h4 {
+  @include fontSize(18px);
+
   color: #4e4e4e;
   font-family: Lato;
-  @include fontSize(18px);
   font-weight: 400;
   line-height: 32px;
   text-align: center;
@@ -347,8 +307,11 @@ h5 {
 
 a {
   @include fontSize(16px);
+
   text-decoration: none;
-  &:hover, &:focus {
+
+  &:hover,
+  &:focus {
     text-decoration: none;
   }
 }
