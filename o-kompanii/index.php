@@ -1,18 +1,16 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("О компании");
-?>
-
-<div class="container">
+?><div class="container">
   <div class="row">
 <?$APPLICATION->IncludeComponent(
-  "bitrix:breadcrumb",
-  "",
-  Array(
-    "PATH" => "",
-    "SITE_ID" => "s1",
-    "START_FROM" => "0"
-  )
+	"bitrix:breadcrumb",
+	"",
+	Array(
+		"PATH" => "",
+		"SITE_ID" => "s1",
+		"START_FROM" => "0"
+	)
 );?>
 </div>
 </div>
@@ -22,6 +20,10 @@ $APPLICATION->SetTitle("О компании");
   <div class="row">
             <h1 class="is-no-top-margin">О компании</h1>
             <div class="paragraph">
+              <h5 class="paragraph__subtitle">Строительные материалы из сердца Европы.</h5>
+              <p>"Экстерра Групп" - компания, чётко ориентированная на продажу потребителям только качественных строительных материалов.</p>
+            </div>            
+<div class="paragraph">
               <h4 class="paragraph__title l-centered is-framed">Забота</h4>
               <h5 class="paragraph__subtitle">Почему мы? Потому что мы заботимся о Вас, своих клиентах.</h5>
               <p>С каждым годом потребители становятся все более требовательными к качеству 
@@ -59,7 +61,7 @@ $APPLICATION->SetTitle("О компании");
   </div>
 </div>
 <div class="plates plates-second">
-  <h4>В ЛИЦЕ КОМПАНИИ « ЭКСТЕРРА ГРУПП» ВЫ ПОЛУЧАЕТЕ:</h1>
+  <h4>В ЛИЦЕ КОМПАНИИ « ЭКСТЕРРА ГРУПП» ВЫ ПОЛУЧАЕТЕ:</h4>
   <div class="plates--wrapper">
     <ul>
       <li><div class="plate-1"><div class="plate--text">Расчёт стройматериалов<br>для вашего объекта</div></div></li>
@@ -69,6 +71,4 @@ $APPLICATION->SetTitle("О компании");
     </ul>
   </div>
 </div>
-  <h4 class="l-margins-20 is-colored">ОБРАЩАЙТЕСЬ К НАМ ПРЯМО СЕЙЧАС, И МЫ ПОСТРОИМ РОДОВОЕ ГНЕЗДО ДЛЯ  ВАШЕЙ СЕМЬИ! </h4>
-
-<?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
+  <h4 class="l-margins-20 is-colored">ОБРАЩАЙТЕСЬ К НАМ ПРЯМО СЕЙЧАС, И МЫ ПОСТРОИМ РОДОВОЕ ГНЕЗДО ДЛЯ  ВАШЕЙ СЕМЬИ! </h4><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
