@@ -379,31 +379,29 @@ ul#horizontal-multilevel-menu {
       margin-bottom: 0;
       li {
         list-style-type: none;
-        @for $i from 1 through 5 {
-          div.plate-#{$i} {
-            position: relative;
-            width: 240px;
-            height: 180px;
-            max-height: 100%;
-            z-index: 1;
-            .plate--text {
-              line-height: 20px;
-              position: absolute;
-              font-family: Lato;
-              @include fontSize(14px);
-              font-weight: 400;
-              text-transform: uppercase;
-              border: 1px solid;
-              text-align: center;
-              width: 220px;
-              margin-left: 10px;
-              margin-right: 10px;
-              bottom: 10px;
-              height: 40px;
-              display: flex;
-              justify-content: center;
-              align-items: center;
-            }
+        > div {
+          position: relative;
+          width: 240px;
+          height: 180px;
+          max-height: 100%;
+          z-index: 1;
+          .plate--text {
+            line-height: 20px;
+            position: absolute;
+            font-family: Lato;
+            @include fontSize(14px);
+            font-weight: 600;
+            text-transform: uppercase;
+            border: 1px solid;
+            text-align: center;
+            width: 220px;
+            margin-left: 10px;
+            margin-right: 10px;
+            bottom: 10px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
           }
         }
       }
