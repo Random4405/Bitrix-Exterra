@@ -18,7 +18,7 @@ foreach($arResult as $arItem):?>
 				<ul>
 		<?else:?>
     <li<?if ($arItem["SELECTED"]):?> class="item-selected"<?endif?>><a href="<?=$arItem["LINK"]?>" class="parent"><?=$arItem["TEXT"]?></a>
-				<ul>
+				<ul class="submenu">
           <div class="img-wrapper header_menu_image">
 						<div class="header-menu__image-wrapper">
 							<span class="texture-name"><?=$arItem["TEXT"]?></span>

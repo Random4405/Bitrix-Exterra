@@ -42,8 +42,10 @@ jQuery( document ).ready(function( $ ) {
     return false;
   });
 
+  $('body').click(function () {
+    $("#horizontal-multilevel-menu").toggleClass("open");
+  });
 
   // Фикс высоты текстуры на страницах 'О компании' и 'Дилерам'
   var leftWrapperHeight = $('.about-wrapper').height(); $('.l-wrapper').height(leftWrapperHeight);
 });
-
