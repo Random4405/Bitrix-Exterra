@@ -3,9 +3,9 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Акции");
 ?>
 
-<h1 class="is-no-top-margin">Акции</h1>
+<h1>Акции</h1>
 
-<div class="container">
+<div class="container gutter-bottom">
   <div class="row">
              <?$arrFilter = array (
 	"PROPERTY_na_akcii"=>"313"
@@ -106,7 +106,7 @@ $APPLICATION->SetTitle("Акции");
 		"USE_PRODUCT_QUANTITY" => "N"
 	)
 );?>
-              
+
   </div>
 </div>
 

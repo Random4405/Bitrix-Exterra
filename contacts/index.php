@@ -3,6 +3,29 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Контакты");
 ?>
 
+<script src="https://api-maps.yandex.ru/1.1/index.xml" type="text/javascript"></script>
+<script type="text/javascript">
+// Создает обработчик события window.onLoad
+YMaps.jQuery(function () {
+  // Создает экземпляр карты и привязывает его к созданному контейнеру
+  var map = new YMaps.Map(YMaps.jQuery("#YMapsID")[0]);
+
+  // Устанавливает начальные параметры отображения карты: центр карты и коэффициент масштабирования
+  map.setCenter(new YMaps.GeoPoint( 34.09968554, 44.94498676), 18);
+  var s = new YMaps.Style();
+
+  // Создает стиль значка метки
+  s.iconStyle = new YMaps.IconStyle();
+  s.iconStyle.href = "/images/map-marker.png";
+  s.iconStyle.size = new YMaps.Point(71, 94);
+  s.iconStyle.offset = new YMaps.Point(-35, -94);
+
+  var placemark = new YMaps.Placemark(new YMaps.GeoPoint( 34.09968554, 44.94498676), {style: s});
+  // Создает стиль
+  // Добавляет метку на карту
+  map.addOverlay(placemark);
+})
+</script>
 
 <div class="container">
   <div class="row">
@@ -57,7 +80,7 @@ $APPLICATION->SetTitle("Контакты");
       </div>
     </div>
   </div>
-  <div class="fullwidth-wrapper"><script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A4d2a404448fb4e06a091d07f272cb27e1eee102051d1ae1339e80007bda67f1a&amp;width=100%25&amp;height=500&amp;lang=ru_RU&amp;scroll=true"></script> </div>
+  <div class="fullwidth-wrapper" id="YMapsID" style="width: 100%; height: 500px;"></div>
   <div class="fullwidth-wrapper hero--slick hero--slick--nofilter"><img src="/images/contacts-build.png" alt=""></div>
 
   <?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
