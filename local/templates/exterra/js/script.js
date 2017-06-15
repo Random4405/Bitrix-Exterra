@@ -38,13 +38,13 @@ function openCity(evt, cityName) {
 jQuery( document ).ready(function( $ ) {
   $('button.tablinks').first().addClass('active');
   $("header #horizontal-multilevel-menu > li:nth-child(2) > a ").click(function(){
-    $("#horizontal-multilevel-menu").toggleClass("open");
+      $("#horizontal-multilevel-menu").toggleClass("open");
+    $('body').click(function () {
+      $("#horizontal-multilevel-menu").removeClass("open");
+    });
     return false;
   });
 
-  $('body').click(function () {
-    $("#horizontal-multilevel-menu").toggleClass("open");
-  });
 
   // Фикс высоты текстуры на страницах 'О компании' и 'Дилерам'
   var leftWrapperHeight = $('.about-wrapper').height(); $('.l-wrapper').height(leftWrapperHeight);
