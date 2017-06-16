@@ -1075,3 +1075,9 @@ input[type="submit"] {
     font-size: 16px !important;
   }
 }
+
+.news-item {
+  &__img-wrapper {
+    float: left;
+  }
+}

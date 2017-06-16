@@ -14,7 +14,7 @@ $APPLICATION->SetTitle("Новости");
 );?>
 	</div>
 	<div class="row">
-		<h1 class="is-no-top-margin">Новости</h1>
+		<h1 class="is-no-top-margin">Статьи</h1>
 	</div>
 </div>
  &nbsp;&nbsp;<?$APPLICATION->IncludeComponent("bitrix:news", "list_of_articles", Array(
