@@ -1,10 +1,7 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Контакты");
-?>
-
-<script src="https://api-maps.yandex.ru/1.1/index.xml" type="text/javascript"></script>
-<script type="text/javascript">
+?><script src="https://api-maps.yandex.ru/1.1/index.xml" type="text/javascript"></script> <script type="text/javascript">
 // Создает обработчик события window.onLoad
 YMaps.jQuery(function () {
   // Создает экземпляр карты и привязывает его к созданному контейнеру
@@ -26,61 +23,67 @@ YMaps.jQuery(function () {
   map.addOverlay(placemark);
 })
 </script>
-
 <div class="container">
-  <div class="row">
-    <?$APPLICATION->IncludeComponent(
-      "bitrix:breadcrumb",
-      "",
-      Array(
-        "PATH" => "",
-        "SITE_ID" => "s1",
-        "START_FROM" => "0"
-        )
-      );?> </div> </div>
-
-  <div class="container">
-    <div class="row">
-      <h1 class="is-top-margin-disabled">Контакты</h1>
-    </div>
-    <div class="row">
-      <div class="l-double-row">
-        <div class="text-wrapper text-wrapper--small">
-          <h3>ШОУ-РУМ</h3>
-          <p><span>Адрес шоу-рума:</span></p>
-          <p>Республика Крым</p>
-          <p>г. Симферополь, ул.Турецкая 29</p>
-          <p>295011</p>
-          <br>
-          <p>Тел.: +7 (920) 474-11-11</p>
-        </div>
-        <div class="text-wrapper text-wrapper--large">
-          <?$APPLICATION->IncludeComponent(
-            "custom:main.feedback",
-            "feedback_contacts",
-            array(
-              "COMPONENT_TEMPLATE" => "feedback_contacts",
-              "EMAIL_TO" => "dvsiteminsk@gmail.com",
-              "EVENT_MESSAGE_ID" => array(
-                0 => "7",
-              ),
-              "EXT_FIELDS" => array(
-                0 => "Телефон",
-                1 => "",
-              ),
-              "OK_TEXT" => "Спасибо, ваше сообщение принято.",
-              "REQUIRED_FIELDS" => array(
-                0 => "NONE",
-              ),
-              "USE_CAPTCHA" => "N"
-            ),
-            false
-          );?>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="fullwidth-wrapper" id="YMapsID" style="width: 100%; height: 500px;"></div>
-  <div class="fullwidth-wrapper hero--slick hero--slick--nofilter"><img src="/images/contacts-build.png" alt=""></div>
-
-  <?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
+	<div class="row">
+		 <?$APPLICATION->IncludeComponent(
+	"bitrix:breadcrumb",
+	"",
+	Array(
+		"PATH" => "",
+		"SITE_ID" => "s1",
+		"START_FROM" => "0"
+	)
+);?>
+	</div>
+</div>
+<div class="container">
+	<div class="row">
+		<h1 class="is-top-margin-disabled">Контакты</h1>
+	</div>
+	<div class="row">
+		<div class="l-double-row">
+			<div class="text-wrapper text-wrapper--small">
+				<h3>ШОУ-РУМ</h3>
+				<p>
+					Адрес шоу-рума:
+				</p>
+				<p>
+					Республика Крым
+				</p>
+				<p>
+					г. Симферополь, ул.Турецкая 29
+				</p>
+				<p>
+					295011
+				</p>
+ <br>
+				<p>
+					Тел.: +7 (920) 474-11-11
+				</p>
+<p>
+					Тел.: +7 (978) 111-70-73
+				</p>
+			</div>
+			<div class="text-wrapper text-wrapper--large">
+				 <?$APPLICATION->IncludeComponent(
+	"custom:main.feedback",
+	"feedback_contacts",
+	Array(
+		"COMPONENT_TEMPLATE" => "feedback_contacts",
+		"EMAIL_TO" => "dvsiteminsk@gmail.com",
+		"EVENT_MESSAGE_ID" => array(0=>"7",),
+		"EXT_FIELDS" => array(0=>"Телефон",1=>"",),
+		"OK_TEXT" => "Спасибо, ваше сообщение принято.",
+		"REQUIRED_FIELDS" => array(0=>"NONE",),
+		"USE_CAPTCHA" => "N"
+	)
+);?>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="fullwidth-wrapper" id="YMapsID" style="width: 100%; height: 500px;">
+</div>
+<div class="fullwidth-wrapper hero--slick hero--slick--nofilter">
+	<img src="/images/contacts-build.png" alt="">
+</div><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
