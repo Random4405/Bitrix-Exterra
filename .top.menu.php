@@ -37,7 +37,7 @@ $aMenuLinks = Array(
 	),
 	Array(
 		"База знаний", 
-		"", 
+		"/baza-znaniy/", 
 		Array(), 
 		Array(), 
 		"" 
