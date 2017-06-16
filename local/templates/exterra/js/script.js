@@ -1,6 +1,6 @@
 
 jQuery( document ).ready(function( $ ) {
-  $('.custom-preview').each(function(index, element) {$clamp(element, { clamp: 5, useNativeClamp: false });});
+  $('.custom-preview, .news-item__prewiew-text').each(function(index, element) {$clamp(element, { clamp: 5, useNativeClamp: false });});
   $(window).scroll(function(){
     var sticky = $('.js-header'),
     scroll = $(window).scrollTop();
