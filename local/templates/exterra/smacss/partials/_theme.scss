@@ -228,8 +228,9 @@ footer {
     [type="submit"] {
       background-color: $color-primary;
       color: $color-white;
+      border-color: $color-primary;
       &:hover, &:focus {
-        background: $color-black;
+        background: transparent;
       }
     }
   }

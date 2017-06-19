@@ -680,6 +680,7 @@ ul#horizontal-multilevel-menu {
       @include fontSize(18px);
       font-weight: 300;
       text-transform: uppercase;
+      border: 1px solid;
     }
   }
   h1 {
