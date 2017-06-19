@@ -175,7 +175,7 @@ a {
 
 .button-default {
   color: $color-primary;
-  background-color: $color-white;
+  background-color: transparent;
   border-color: $color-primary;
   &:hover, &:active {
     background-color: $color-primary;
