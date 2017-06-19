@@ -249,9 +249,28 @@ ul#horizontal-multilevel-menu {
       &:not(:last-child) {
         margin-right: 10px;
       }
+      &:hover {
+        .icon-pdf {background: url(/images/icon-pdf-hover.png);}
+        .icon-sert {background: url(/images/icon-sert-hover.png);}
+        .icon-gallery {background: url(/images/icon-gallery-hover.png);}
+      }
     }
   }
 
+}
+
+.icon {
+  width: 37px;
+  height: 37px;
+  &-pdf {
+    background: url(/images/icon-pdf.png);
+  }
+  &-sert {
+    background: url(/images/icon-sert.png);
+  }
+  &-gallery {
+    background: url(/images/icon-gallery.png);
+  }
 }
 
 .header_menu_image {
@@ -992,19 +1011,6 @@ input[type="submit"] {
   }
 }
 
-.icon {
-  width: 37px;
-  height: 37px;
- &-pdf {
-   background: url(/images/icon-pdf.png);
- }
- &-sert {
-   background: url(/images/icon-sert.png);
- }
- &-gallery {
-   background: url(/images/icon-gallery.png);
- }
-}
 
 .preview_picture {
   width: 258px;
