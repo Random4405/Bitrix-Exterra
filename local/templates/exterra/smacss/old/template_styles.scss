@@ -567,19 +567,21 @@ $sidebar-width: 288px;
     border: 1px solid #a31a18;
     padding: 8px;
     display: inherit;
+    text-align: center;
     margin-right: 10px;
   }
   .bx_sitemap {
+    margin-right: 10px;
     margin-top: 20px;
     ul {
-      list-style-image: url(/images/li-black-marker.png);
-      list-style-position: inside;
+      // list-style-image: url(/images/li-black-marker.png);
+      // list-style-position: inside;
       color: #4e4e4e;
-      li {
-        &:hover, &:active {
-          list-style-image: url(/images/li-terra-marker.png);
-        }
-      }
+      // li {
+        // &:hover, &:active {
+        //   list-style-image: url(/images/li-terra-marker.png);
+        // }
+      // }
     }
   }
 }
