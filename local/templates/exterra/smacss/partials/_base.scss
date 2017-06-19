@@ -262,6 +262,14 @@ html {
 
 body {
   font-size: inherit;
+
+  display: flex; //For footer
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  .container {
+    flex: 1;
+  }
 }
 
 h1 {

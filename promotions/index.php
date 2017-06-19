@@ -6,7 +6,6 @@ $APPLICATION->SetTitle("Акции");
 <h1>Акции</h1>
 
 <div class="container gutter-bottom">
-  <div class="row">
              <?$arrFilter = array (
 	"PROPERTY_na_akcii"=>"313"
   );?> <?$APPLICATION->IncludeComponent(
@@ -107,7 +106,6 @@ $APPLICATION->SetTitle("Акции");
 	)
 );?>
 
-  </div>
 </div>
 
 <?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
