@@ -45,23 +45,20 @@ YMaps.jQuery(function () {
 			<div class="text-wrapper text-wrapper--small">
 				<h3>ШОУ-РУМ</h3>
 				<p>
-					Адрес шоу-рума:
+					 Адрес шоу-рума:
 				</p>
 				<p>
-					Республика Крым
+					 Республика Крым
 				</p>
 				<p>
-					г. Симферополь, ул.Турецкая 29
+					 г. Симферополь, ул.Турецкая 29
 				</p>
 				<p>
-					295011
+					 295011
 				</p>
  <br>
 				<p>
-					Тел.: +7 (920) 474-11-11
-				</p>
-<p>
-					Тел.: +7 (978) 111-70-73
+					 Тел.: +7 (978) 111-70-73
 				</p>
 			</div>
 			<div class="text-wrapper text-wrapper--large">
@@ -85,5 +82,6 @@ YMaps.jQuery(function () {
 <div class="fullwidth-wrapper" id="YMapsID" style="width: 100%; height: 500px;">
 </div>
 <div class="fullwidth-wrapper hero--slick hero--slick--nofilter">
-	<img src="/images/contacts-build.png" alt="">
-</div><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
+ <img src="/images/contacts-build.png" alt="">
+</div>
+<br><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
