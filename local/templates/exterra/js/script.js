@@ -45,6 +45,10 @@ jQuery( document ).ready(function( $ ) {
     return false;
   });
 
+  $('.bx-filter-parameters-box-container').mouseover(function() {
+    $('#set_filter').removeAttr('disabled');
+  })
+
 
   // Фикс высоты текстуры на страницах 'О компании' и 'Дилерам'
   var leftWrapperHeight = $('.about-wrapper').height(); $('.l-wrapper').height(leftWrapperHeight);
