@@ -42,15 +42,18 @@ if($ar_section = $res->GetNext()){
   )
 );?>
   </div>
-<div class="row">
+  <div class="row">
+    <div class="content-sidebar">
     <div class="select-category-wrapper">
 <?
 $res = CIBlockSection::GetByID($arResult['VARIABLES']['SECTION_ID']);
 if($ar_res = $res->GetNext())
   $arSect = $ar_res;
 ?>
-<h2 class="subcategory_name"><?=$arSect['NAME']?></h2>
-<span class="subcategory_name">Выберите подкатегорию:</span>
+<span class="subcategory_name"><?=$arSect['NAME']?></span>
+<h5>
+  Выберите подкатегорию:
+</h5>
 <ul>
 <?
 $arFilter = Array('IBLOCK_ID'=>6, 'GLOBAL_ACTIVE'=>'Y', 'SECTION_ID' => $arSect['IBLOCK_SECTION_ID']);
@@ -62,9 +65,6 @@ while($ar_result = $db_list->GetNext())
 ?>
 </ul>
     </div>
-</div>
-  <div class="row">
-    <div class="content-sidebar">
 <?
 
 if ($arParams['USE_FILTER'] == 'Y')
