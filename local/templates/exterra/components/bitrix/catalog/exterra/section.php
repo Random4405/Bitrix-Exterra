@@ -494,7 +494,7 @@ if (ModuleManager::isModuleInstalled("sale"))
 <?if ($ar_section['DETAIL_PICTURE'] > 0):?>
 <!-- <div class="jumbo"><img src="<?=CFile::GetPath($ar_section['DETAIL_PICTURE']);?>" alt=""></div> -->
 <?endif;?>
-<div class="is-textured">
+<div class="is-textured nill-class">
   <div class="container">
     <div class="row">
       <p class="desc">
