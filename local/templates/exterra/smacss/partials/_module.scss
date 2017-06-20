@@ -832,6 +832,13 @@ ul#horizontal-multilevel-menu {
   }
 }
 
+.flex-row__images {
+  flex-wrap: wrap;
+  > * {
+    flex-basis: calc(25% - 8px);
+    margin: 4px;
+  }
+}
 
 .popup-form, .popup-form-call {
   position: fixed;
