@@ -825,6 +825,13 @@ ul#horizontal-multilevel-menu {
   // margin-bottom: 32px;
 }
 
+.flex-row__wrap {
+  flex-wrap: wrap;
+  > * {
+    flex-basis: 25%;
+  }
+}
+
 
 .popup-form, .popup-form-call {
   position: fixed;
