@@ -20,52 +20,52 @@ $APPLICATION->SetTitle("Новая страница");
 <div class="category-wrapper mb10">
   <div class="img-wrapper">
     <a href=""><span class="texture-name">Натуральный сланец</span>
-      <img src="/upload/iblock/eaa/eaa94d99b7f047c8b6b84258dce974e0.jpg" alt="">
+      <img src="/images/sand.png" alt="">
     </a>
   </div>
 </div>
 <div class="category-wrapper mb10">
   <div class="img-wrapper">
     <a href=""><span class="texture-name">Натуральный сланец</span>
-      <img src="/upload/iblock/eaa/eaa94d99b7f047c8b6b84258dce974e0.jpg" alt="">
+      <img src="/images/sand.png" alt="">
     </a>
   </div>
 </div>
 <div class="category-wrapper mb10">
   <div class="img-wrapper">
     <a href=""><span class="texture-name">Натуральный сланец</span>
-      <img src="/upload/iblock/eaa/eaa94d99b7f047c8b6b84258dce974e0.jpg" alt="">
+      <img src="/images/sand.png" alt="">
     </a>
   </div>
 </div>
 <div class="category-wrapper mb10">
   <div class="img-wrapper">
     <a href=""><span class="texture-name">Натуральный сланец</span>
-      <img src="/upload/iblock/eaa/eaa94d99b7f047c8b6b84258dce974e0.jpg" alt=""></a>
+      <img src="/images/sand.png" alt=""></a>
     </div>
 </div>
 <div class="category-wrapper mb10">
   <div class="img-wrapper">
     <a href=""><span class="texture-name">Натуральный сланец</span>
-      <img src="/upload/iblock/eaa/eaa94d99b7f047c8b6b84258dce974e0.jpg" alt=""></a>
+      <img src="/images/sand.png" alt=""></a>
     </div>
 </div>
 <div class="category-wrapper mb10">
   <div class="img-wrapper">
     <a href=""><span class="texture-name">Натуральный сланец</span>
-      <img src="/upload/iblock/eaa/eaa94d99b7f047c8b6b84258dce974e0.jpg" alt=""></a>
+      <img src="/images/sand.png" alt=""></a>
     </div>
 </div>
 <div class="category-wrapper mb10">
   <div class="img-wrapper">
     <a href=""><span class="texture-name">Натуральный сланец</span>
-      <img src="/upload/iblock/eaa/eaa94d99b7f047c8b6b84258dce974e0.jpg" alt=""></a>
+      <img src="/images/sand.png" alt=""></a>
     </div>
 </div>
 <div class="category-wrapper mb10">
   <div class="img-wrapper">
     <a href=""><span class="texture-name">Натуральный сланец</span>
-      <img src="/upload/iblock/eaa/eaa94d99b7f047c8b6b84258dce974e0.jpg" alt=""></a>
+      <img src="/images/sand.png" alt=""></a>
     </div>
 </div>
 </div>
