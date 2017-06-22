@@ -9,7 +9,7 @@ $aMenuLinks = Array(
 	),
 	Array(
 		"Галерея объектов", 
-		"", 
+		"/gallery/", 
 		Array(), 
 		Array(), 
 		"" 
@@ -29,15 +29,15 @@ $aMenuLinks = Array(
 		"" 
 	),
 	Array(
-		"Документы", 
-		"", 
+		"PDF-каталоги", 
+		"/dokumentatsiya", 
 		Array(), 
 		Array(), 
 		"" 
 	),
 	Array(
-		"Контакты", 
-		"/contacts/", 
+		"Сертификаты", 
+		"/sertifikaty/", 
 		Array(), 
 		Array(), 
 		"" 

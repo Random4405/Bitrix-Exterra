@@ -38,7 +38,7 @@ IncludeTemplateLangFile(__FILE__);
   <div class="copyright">
     <div class="container">
       <div class="row">
-        <p>2016 FenixITGroup: Разработка и продвижение сайтов.</p>
+        <p>2017 FenixITGroup: Разработка и продвижение сайтов.</p>
       </div>
     </div>
   </div>
