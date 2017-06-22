@@ -5,7 +5,7 @@ $APPLICATION->SetTitle("Каталог");
 
 <?$APPLICATION->IncludeComponent(
 	"bitrix:catalog", 
-	"exterra", 
+	"catalog_new_template", 
 	array(
 		"ACTION_VARIABLE" => "action",
 		"ADD_ELEMENT_CHAIN" => "Y",
@@ -143,7 +143,7 @@ $APPLICATION->SetTitle("Каталог");
 		"USE_PRICE_COUNT" => "N",
 		"USE_PRODUCT_QUANTITY" => "N",
 		"USE_STORE" => "N",
-		"COMPONENT_TEMPLATE" => "exterra",
+		"COMPONENT_TEMPLATE" => "catalog_new_template",
 		"DETAIL_STRICT_SECTION_CHECK" => "N",
 		"COMPATIBLE_MODE" => "Y",
 		"FILTER_NAME" => "arrFilter",

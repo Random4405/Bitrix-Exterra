@@ -1,6 +1,12 @@
 <?
 $arUrlRewrite = array(
 	array(
+		"CONDITION" => "#^/gallery/([a-zA-Z0-9\\.\\-_]+)/?.*#",
+		"RULE" => "SECTION_CODE=\$1",
+		"ID" => "",
+		"PATH" => "/gallery/detail.php",
+	),
+	array(
 		"CONDITION" => "#^/services/#",
 		"RULE" => "",
 		"ID" => "bitrix:catalog",
@@ -18,12 +24,6 @@ $arUrlRewrite = array(
 		"ID" => "bitrix:catalog",
 		"PATH" => "/catalog/index.php",
 	),
-		array(
-		"CONDITION" => "#^/gallery/([a-zA-Z0-9\\.\\-_]+)/?.*#",
-		"RULE" => "SECTION_CODE=$1",
-		"ID" => "",
-		"PATH" => "/gallery/detail.php",
-	)
 );
 
 ?>
