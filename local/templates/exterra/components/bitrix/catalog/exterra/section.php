@@ -121,7 +121,7 @@ if ($arParams['USE_FILTER'] == 'Y')
 ?>
 <?$APPLICATION->IncludeComponent(
   "bitrix:catalog.smart.filter",
-  "",
+  "visual_vertical",
   array(
     "IBLOCK_TYPE" => $arParams["IBLOCK_TYPE"],
     "IBLOCK_ID" => $arParams["IBLOCK_ID"],

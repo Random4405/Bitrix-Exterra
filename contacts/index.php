@@ -58,7 +58,9 @@ YMaps.jQuery(function () {
 				</p>
  <br>
 				<p>
-					 Тел.: +7 (978) 111-70-73
+					 Тел.: +7 (978) 111-70-73 
+                                <p>
+    					 Андрей Швырев
 				</p>
 			</div>
 			<div class="text-wrapper text-wrapper--large">

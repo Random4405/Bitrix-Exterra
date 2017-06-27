@@ -8,7 +8,10 @@ if (CModule::IncludeModule("iblock")){
 			$rsSect = CIBlockSection::GetList(array('left_margin' => 'asc'),$arFilter, false, array('UF_MENU_PICTURE'));
 			while ($arSect = $rsSect->GetNext())
 			{
-			   $arResult[$key]['PICTURE'] = CFile::GetPath($arSect['UF_MENU_PICTURE']);
+				if ($arSect['UF_MENU_PICTURE']){
+					$arResult[$key]['PICTURE'] = CFile::GetPath($arSect['UF_MENU_PICTURE']);
+			    }
+			   //echo $key.' - '.$arSect['UF_MENU_PICTURE'].' = '.CFile::GetPath($arSect['UF_MENU_PICTURE'])CFile::GetPath($arSect['UF_MENU_PICTURE'].' <br>';
 			}
 		}
 	}
