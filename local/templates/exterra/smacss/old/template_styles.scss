@@ -562,6 +562,7 @@ $sidebar-width: 288px;
 .content-sidebar {
   float: left;
   max-width: $sidebar-width;
+  width: $sidebar-width;
   span.subcategory_name {
     color: #4e4e4e;
     font-family: Lato;
