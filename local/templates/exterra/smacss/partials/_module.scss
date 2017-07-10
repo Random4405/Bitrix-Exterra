@@ -747,7 +747,7 @@ ul#horizontal-multilevel-menu {
 }
 
 .bx_filter_param_text {
-  color: #484a50;
+  color: #4e4e4e;
   font-family: Lato;
   font-size: 16px;
   font-weight: 300;
@@ -1061,6 +1061,8 @@ input[type="submit"] {
   h2 {
     margin-bottom: 40px;
     text-align: center;
+    @extend h1;
+    color: #4e4e4e !important;
   }
 }
 
@@ -1122,5 +1124,17 @@ input[type="submit"] {
   }
   &__prewiew-text {
     margin-left: 280px;
+  }
+}
+
+.news-detail {
+  h3 {
+    color: #4d4d4d;
+    font-family: Lato;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 33px;
+    text-transform: uppercase;
+    text-align: center;
   }
 }

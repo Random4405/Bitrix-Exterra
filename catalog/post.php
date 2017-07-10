@@ -1,23 +1,24 @@
 <?php
 require 'PHPMailerAutoload.php';
 
-$name=$_POST['name'];                      
-$email=$_POST['email'];                    
-$message=$_POST['message'];                
-$phone=$_POST['phone'];                    
-$product=$_POST['product'];                
-$time=$_POST['time'];                      
-$units=$_POST['units'];                    
-$col=$_POST['col'];                        
+$name=$_POST['name'];
+$email=$_POST['email'];
+$message=$_POST['message'];
+$phone=$_POST['phone'];
+$product=$_POST['product'];
+$time=$_POST['time'];
+$units=$_POST['units'];
+$col=$_POST['col'];
 
 $path = $_FILES['uploaded_file']['tmp_name']; 
 /* $path = "/upload/resize_cache/iblock/aa5/288_288_2/aa5d3a90d472e365686aeed7b60d213c.jpg"; */
 
 $mail = new PHPMailer;
+$mail->CharSet = 'UTF-8';
 
 $mail->setFrom('from@example.com', 'Mailer');
 $mail->addAddress('lazynick7@gmail.com', 'Joe User');     // Add a recipient
-$mail->addReplyTo('info@example.com', 'Information');
+$mail->addAddress('fenixitgroup@gmail.com', 'FenixIT');     // Add a recipient
 
 if (isset($_FILES['uploaded_file']) &&
     $_FILES['uploaded_file']['error'] == UPLOAD_ERR_OK) {

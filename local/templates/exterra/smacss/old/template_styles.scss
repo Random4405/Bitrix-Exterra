@@ -502,6 +502,10 @@ div.tab button.active {
   margin-bottom: 50px;
   p {
     text-align: justify;
+    color: #4e4e4e;
+    font-family: Lato;
+    @include fontSize(16px);
+    font-weight: 300;
   }
 }
 
