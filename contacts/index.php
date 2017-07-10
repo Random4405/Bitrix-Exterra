@@ -84,6 +84,6 @@ YMaps.jQuery(function () {
 <div class="fullwidth-wrapper" id="YMapsID" style="width: 100%; height: 500px;">
 </div>
 <div class="fullwidth-wrapper hero--slick hero--slick--nofilter">
- <img src="/images/contacts-build.png" alt="">
+ <img src="/images/contacts-build.jpg" alt="">
 </div>
 <br><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

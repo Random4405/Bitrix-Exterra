@@ -1,7 +1,19 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Акции");
-?>
+?><div class="container">
+  <div class="row">
+<?$APPLICATION->IncludeComponent(
+	"bitrix:breadcrumb",
+	"",
+	Array(
+		"PATH" => "",
+		"SITE_ID" => "s1",
+		"START_FROM" => "0"
+	)
+);?>
+</div>
+</div>
 
 <h1>Акции</h1>
 
