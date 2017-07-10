@@ -190,7 +190,10 @@ ul#horizontal-multilevel-menu {
     width: calc(100% - #{ $menu-width });
     margin-left: $menu-width;
     height: 100%;
-    display: none;
+    display: block;
+    opacity: 0; /* По умолчанию скрываем подменю */
+    visibility: hidden;
+    transition: all .3s ease .15s;
     li {
       list-style-image: url(/images/li-black2-marker.png);
       a {
@@ -223,7 +226,9 @@ ul#horizontal-multilevel-menu {
   > li > ul > li {
     &:hover {
       a.parent + ul {
-        display: block;
+        // display: block;
+        opacity: 1; /* Показываем подменю при ховере */
+        visibility: visible;
       }
     }
   }
@@ -1136,5 +1141,11 @@ input[type="submit"] {
     line-height: 33px;
     text-transform: uppercase;
     text-align: center;
+  }
+}
+
+.sell--about {
+  h2 {
+    
   }
 }
