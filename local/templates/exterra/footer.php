@@ -58,6 +58,7 @@ IncludeTemplateLangFile(__FILE__);
         <input name="name" id="name_call" required type="text" placeholder="Имя:*">
         <input name="phone" id="phone_call" required type="text" placeholder="Телефон:*">
         <input name="time" type="text" placeholder="Время:">
+        <p class="confirm-text">Нажимая на кнопку, вы даете согласие на обработку своих персональных данных<br></p>
         <input id="confirm_call" onclick="SendResult('call'); callFormClose();" class="submit" type="submit" value="ОТПРАВИТЬ">
       </fieldset>
     </form>
@@ -88,6 +89,7 @@ IncludeTemplateLangFile(__FILE__);
       </select>
       <input type="file" name="uploaded_file" id="uploaded_file" />
       <textarea name="message" placeholder="Комментарий:"></textarea>
+        <p class="confirm-text">Нажимая на кнопку, вы даете согласие на обработку своих персональных данных<br></p>
       <input id="confirm" onclick="SendResult('product'); buyFormClose();" class="submit" type="submit" value="ОТПРАВИТЬ">
     </fieldset>
   </form>
