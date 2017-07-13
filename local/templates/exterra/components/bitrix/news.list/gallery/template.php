@@ -26,4 +26,9 @@ $this->setFrameMode(true);
 <?if($arParams["DISPLAY_BOTTOM_PAGER"]):?>
 	<br /><?=$arResult["NAV_STRING"]?>
 <?endif;?>
+
+<div class="gallery-description">
+<?print_r ($arResult['SECTION']['PATH'][0]['DESCRIPTION']);?>
+</div>	
+
 </div>

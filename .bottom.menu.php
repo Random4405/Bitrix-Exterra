@@ -15,13 +15,6 @@ $aMenuLinks = Array(
 		"" 
 	),
 	Array(
-		"Шоу-рум", 
-		"/shou-rum/", 
-		Array(), 
-		Array(), 
-		"" 
-	),
-	Array(
 		"Статьи", 
 		"/articles/", 
 		Array(), 
@@ -38,6 +31,13 @@ $aMenuLinks = Array(
 	Array(
 		"Сертификаты", 
 		"/sertifikaty/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Обратная связь", 
+		"/obratnaya-svyaz/", 
 		Array(), 
 		Array(), 
 		"" 

@@ -101,8 +101,8 @@ $arFirstPhoto = current($arResult['MORE_PHOTO']);
           Цена:
         </div>
         <div class="right-wrapper">
-            <span class="cost-green"><?=$arResult['DISPLAY_PROPERTIES']['price_sht']['VALUE']?></span><br>
-            <span class="cost-green"><?=$arResult['DISPLAY_PROPERTIES']['price_kvm']['VALUE']?>
+            <span class="cost-green price-detail"><?=$arResult['DISPLAY_PROPERTIES']['price_sht']['VALUE']?></span><br>
+            <span class="cost-green price-detail"><?=$arResult['DISPLAY_PROPERTIES']['price_kvm']['VALUE']?>
         </div>
           </div>
           <?if ($arResult['DISPLAY_PROPERTIES']['new']['VALUE']):?>

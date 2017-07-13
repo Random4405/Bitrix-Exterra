@@ -48,12 +48,12 @@ foreach ($arResult['ITEMS'] as $key => $arItem)
           <div class="l-left props--cost">
 			<?if ($arItem['DISPLAY_PROPERTIES']['price_sht']['VALUE']):?>
             <div class="cost--wrapper">
-              <p><?=$arItem['DISPLAY_PROPERTIES']['price_sht']['VALUE']?></p>
+              <p class="price-featured"><?=$arItem['DISPLAY_PROPERTIES']['price_sht']['VALUE']?></p>
             </div>
 			<?endif;?>
       <?if ($arItem['DISPLAY_PROPERTIES']['price_kvm']['VALUE']):?>
             <div class="cost--wrapper">
-              <p><?=$arItem['DISPLAY_PROPERTIES']['price_kvm']['VALUE']?></p>
+              <p class="price-featured"><?=$arItem['DISPLAY_PROPERTIES']['price_kvm']['VALUE']?></p>
             </div>
       <?endif;?>
           </div>
