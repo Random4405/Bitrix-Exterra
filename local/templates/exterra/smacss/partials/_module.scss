@@ -404,7 +404,7 @@ ul#horizontal-multilevel-menu {
           height: 180px;
           max-height: 100%;
           z-index: 1;
-          .plate--text {
+          .plate--text a {
             line-height: 20px;
             position: absolute;
             font-family: Lato;
@@ -437,7 +437,7 @@ ul#horizontal-multilevel-menu {
           div.plate-#{$i} {
             width: 310px;
             height: 215px;
-            .plate--text {
+            .plate--text a {
               width: 290px;
               bottom: 10px;
               height: 80px;
