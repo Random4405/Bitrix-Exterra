@@ -62,7 +62,7 @@ a {
       div.plate-#{$i} {
         background: url('/images/icons/icon-#{$i}.png') no-repeat 50% 13px;
         &:hover {
-          .plate--text {
+          .plate--text a {
             background-color: $color-primary;
             border-color: $color-primary;
             color: $color-white;
@@ -71,7 +71,7 @@ a {
       }
     }
   }
-  .plate--text {
+  .plate--text a {
     color: $color-primary;
     border-color: $color-primary;
   }
