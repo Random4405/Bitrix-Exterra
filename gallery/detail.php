@@ -17,7 +17,7 @@ $APPLICATION->SetTitle("Новая страница");
 );?>
 </div>
 
-
+<div class="row flex-row flex-row__images">
 <?$APPLICATION->IncludeComponent(
 	"bitrix:news.list", 
 	"gallery", 
@@ -86,6 +86,7 @@ $APPLICATION->SetTitle("Новая страница");
 	),
 	false
 );?>
+</div>
 </div>
 
 <div class="mb70"></div>
