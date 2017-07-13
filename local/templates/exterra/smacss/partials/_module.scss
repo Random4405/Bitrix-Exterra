@@ -858,6 +858,11 @@ ul#horizontal-multilevel-menu {
   > * {
     flex-basis: calc(25% - 8px);
     margin: 4px;
+    > img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
   }
 }
 
