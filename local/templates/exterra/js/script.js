@@ -37,10 +37,10 @@ function openCity(evt, cityName) {
 
 jQuery( document ).ready(function( $ ) {
   $('button.tablinks').first().addClass('active');
-  $("header #horizontal-multilevel-menu > li:nth-child(2) > a ").click(function(){
-      $("#horizontal-multilevel-menu").toggleClass("open");
+  $("header #horizontal-multilevel-menu > li:nth-child(n+2):nth-child(-n+3) > a ").click(function(e){
+    $(this).toggleClass("open");
     $('body').click(function () {
-      $("#horizontal-multilevel-menu").removeClass("open");
+      $("header #horizontal-multilevel-menu > li:nth-child(n+2):nth-child(-n+3) > a ").removeClass("open");
     });
     return false;
   });

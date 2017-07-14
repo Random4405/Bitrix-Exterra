@@ -213,8 +213,8 @@ ul#horizontal-multilevel-menu {
   }
 
 
-  &.open {
-    > li > ul {
+  & {
+    > li > a.open + ul {
       display: block;
       li:nth-child(1) > a.parent + ul {
         display: block;
