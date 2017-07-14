@@ -103,4 +103,53 @@ false
   );?><br>
   </div>
 </div>
+
+<!--Similar section-->
+<div class="container">
+  <div class="row">
+    <h5>Похожие статьи:</h5>
+  </div>
+  <div class="row">
+    <div class="flex-row">
+      <div class="similar-article">
+        <a href='#'>
+          <div class="similar-article--image-wrapper">
+            <img src="/images/similar-article.png" class="similar-article--image img-responsive">
+          </div>
+          <div class="similar-article--title">Заголовок статьи</div>
+          <div class="similar-article--date">11.04.2017</div>
+        </a>
+      </div>
+      <div class="similar-article">
+        <a href='#'>
+          <div class="similar-article--image-wrapper">
+            <img src="/images/similar-article.png" class="similar-article--image img-responsive">
+          </div>
+          <div class="similar-article--title">Заголовок статьи</div>
+          <div class="similar-article--date">11.04.2017</div>
+        </a>
+      </div>
+      <div class="similar-article">
+        <a href='#'>
+          <div class="similar-article--image-wrapper">
+            <img src="/images/similar-article.png" class="similar-article--image img-responsive">
+          </div>
+          <div class="similar-article--title">Заголовок статьи</div>
+          <div class="similar-article--date">11.04.2017</div>
+        </a>
+      </div>
+      <div class="similar-article">
+        <a href='#'>
+          <div class="similar-article--image-wrapper">
+            <img src="/images/similar-article.png" class="similar-article--image img-responsive">
+          </div>
+          <div class="similar-article--title">Заголовок статьи</div>
+          <div class="similar-article--date">11.04.2017</div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Similar section-->
+
 <?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

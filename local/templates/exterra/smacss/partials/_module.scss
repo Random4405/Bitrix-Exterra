@@ -1173,3 +1173,26 @@ input[type="submit"] {
   text-align: center;
   margin-bottom: 15px;
 }
+
+.similar-article {
+  border: 1px solid transparent;
+  margin-bottom: 10px;
+  &:hover {
+    border: 1px solid #b30000;
+  }
+  &--title, &--date {
+    color: #4d4d4d;
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 21px;
+    text-transform: uppercase;
+    margin-left: 6px;
+  }
+  &--title {
+    margin-top: 20px;
+  }
+  &--date {
+    margin-bottom: 20px;
+  }
+}

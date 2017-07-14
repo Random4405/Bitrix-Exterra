@@ -311,6 +311,12 @@ h4 {
 
 h5 {
   display: inline-block;
+  color: #4d4d4d;
+  font-family: Lato;
+  @include fontSize(16px);
+  font-weight: 300;
+  line-height: 21px;
+  text-transform: uppercase;
 }
 
 a {
