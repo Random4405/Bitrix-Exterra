@@ -1,6 +1,6 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-$APPLICATION->SetTitle("Title");
+$APPLICATION->SetTitle("ООО 'Экстерра Групп' | ПРАВОВАЯ ИНФОРМАЦИЯ");
 ?>
 
 <div class="container">
@@ -15,9 +15,9 @@ $APPLICATION->SetTitle("Title");
   )
 );?>
 </div>
+</div>
 
-
-
+<div class="container">
   <div class="row">
 <h1 class="is-no-top-margin">Правовая информация</h1>
 <p>ООО "Экстерра Групп" приветствует Вас на нашем сайте exterragroup.ru и просит ознакомиться с условиями и правилами, относящимися к использованию размещенной на нем информации.</p>
@@ -50,6 +50,8 @@ $APPLICATION->SetTitle("Title");
 	<li>должностными инструкциями.</li>
 	<li>Доступ к персональным данным, обрабатываемым в ООО "Экстерра Групп", на основании и во исполнение нормативных правовых актов предоставляется органам государственной власти по их письменному запросу (требованию).</li>
 </ul>
+<br>
 	</div>
+</div>
 
 <?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
