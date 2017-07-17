@@ -203,7 +203,7 @@ ul#horizontal-multilevel-menu {
     display: block;
     opacity: 0; /* По умолчанию скрываем подменю */
     visibility: hidden;
-    transition: all .3s ease .85s;
+    transition: all .3s ease .35s;
     li {
       list-style-image: url(/images/li-black2-marker.png);
       a {
