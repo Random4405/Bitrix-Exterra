@@ -36,8 +36,8 @@ $aMenuLinks = Array(
 		"" 
 	),
 	Array(
-		"База знаний", 
-		"/baza-znaniy/", 
+		"Статьи", 
+		"/articles/", 
 		Array(), 
 		Array(), 
 		"" 

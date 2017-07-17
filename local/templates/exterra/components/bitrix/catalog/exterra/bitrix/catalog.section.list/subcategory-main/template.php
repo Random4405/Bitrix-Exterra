@@ -220,6 +220,7 @@ if (0 < $arResult["SECTIONS_COUNT"])
 				$boolFirst = false;*/
 			}
 			echo '</ul>';
+			echo '<a href="/promotions/" class="promo-link">Распродажа</a>';
 			unset($arSection);
 			while ($intCurrentDepth > 1)
 			{

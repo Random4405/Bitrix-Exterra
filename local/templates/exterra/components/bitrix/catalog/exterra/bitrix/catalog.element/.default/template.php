@@ -114,7 +114,7 @@ $arFirstPhoto = current($arResult['MORE_PHOTO']);
 		  <table>
 		  <?foreach ($arResult['DISPLAY_PROPERTIES'] as $key => &$arOneProp)
 		{
-			if ($key == 'price_sht' || $key == 'price_kvm' || $key == 'nalichie' || $key == 'new' || $key == 'additional_products') continue;
+			if ($key == 'price_sht' || $key == 'price_kvm' || $key == 'nalichie' || $key == 'new' || $key == 'additional_products' || $key == 'docs' || $key == 'catalogs') continue;
 			?>
 		<tr><td><? echo $arOneProp['NAME'];?></td><td><?
 			echo (
@@ -189,19 +189,37 @@ $arFirstPhoto = current($arResult['MORE_PHOTO']);
     </div>
 
     <div id="Tab2" class="tabcontent">
-      <p>2</p>
+      <p><?=$arResult['PROPERTIES']['docs']['~VALUE']['TEXT']?></p>
     </div>
 
     <div id="Tab3" class="tabcontent">
-      <p>3</p>
+      <p>
+	      
+	      <div class="row flex-row flex-row__images">
+		      
+		      	<?foreach ($arResult['PROPERTIES']['photo']['VALUE'] as $key => $photo2):
+					$file = CFile::ResizeImageGet($photo2, array('width'=>300, 'height'=>300), BX_RESIZE_IMAGE_EXACT , true);
+				?>	
+					<a href="<?=CFile::GetPath($photo2)?>" data-lightbox="page1" alt=""><img src="<?=$file['src']?>" alt=""></a>
+				<?endforeach;?>
+
+			</div>
+	      
+      </p>
     </div>
 
     <div id="Tab4" class="tabcontent">
-      <p>4</p>
+      <p>
+	       <div class="row flex-row flex-row__images">
+	      		<?foreach ($arResult['PROPERTIES']['photo_obj']['VALUE'] as $photo3):?>
+				    <a href="<?=CFile::GetPath($photo3)?>" data-lightbox="page1" alt=""><img src="<?=CFile::GetPath($photo3)?>" alt=""></a>
+				<?endforeach;?>
+			</div>
+	 </p>
     </div>
 
     <div id="Tab5" class="tabcontent">
-      <p>5</p>
+      <p><?=$arResult['PROPERTIES']['catalogs']['~VALUE']['TEXT']?></p>
     </div>
 
   </div>

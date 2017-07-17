@@ -13,30 +13,21 @@
 $this->setFrameMode(true);
 ?>
 
-<div class="row flex-row flex-row__images">
-
-
+ <div class="flex-row">
+     
 <?foreach($arResult["ITEMS"] as $arItem):?>
 	<?
 	$this->AddEditAction($arItem['ID'], $arItem['EDIT_LINK'], CIBlock::GetArrayByID($arItem["IBLOCK_ID"], "ELEMENT_EDIT"));
 	$this->AddDeleteAction($arItem['ID'], $arItem['DELETE_LINK'], CIBlock::GetArrayByID($arItem["IBLOCK_ID"], "ELEMENT_DELETE"), array("CONFIRM" => GetMessage('CT_BNL_ELEMENT_DELETE_CONFIRM')));
 	?>
-	
-	
-	<a id="<?=$this->GetEditAreaId($arItem['ID']);?>" href="<?=$arItem["DETAIL_PICTURE"]["SRC"]?>" data-lightbox="page1" alt=""><img src="<?=$arItem["PREVIEW_PICTURE"]["SRC"]?>" alt="<?=$arItem["NAME"]?>"></a>
-
-	
+		 <div class="similar-article" id="<?=$this->GetEditAreaId($arItem['ID']);?>">
+	        <a href='<?=$arItem["DETAIL_PAGE_URL"]?>'>
+	          <div class="similar-article--image-wrapper">
+	            <img src="<?=$arItem["PREVIEW_PICTURE"]["SRC"]?>" class="similar-article--image img-responsive">
+	          </div>
+	          <div class="similar-article--title"><?echo $arItem["NAME"]?></div>
+	          <div class="similar-article--date"><?echo $arItem["DISPLAY_ACTIVE_FROM"]?></div>
+	        </a>
+	     </div>
 <?endforeach;?>
-
 </div>
-
-
-<?if($arParams["DISPLAY_BOTTOM_PAGER"]):?>
-	<br /><?=$arResult["NAV_STRING"]?>
-<?endif;?>
-
-	<div class="gallery-description">
-	<?print_r ($arResult['SECTION']['PATH'][0]['DESCRIPTION']);?>
-	</div>	
-
-

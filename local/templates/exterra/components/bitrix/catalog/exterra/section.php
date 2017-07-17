@@ -64,6 +64,7 @@ while($ar_result = $db_list->GetNext())
 }
 ?>
 </ul>
+<a href="/promotions/" class="promo-link">Распродажа</a>
     </div>
 <?
 
@@ -494,6 +495,11 @@ if (ModuleManager::isModuleInstalled("sale"))
 <?if ($ar_section['DETAIL_PICTURE'] > 0):?>
 <!-- <div class="jumbo"><img src="<?=CFile::GetPath($ar_section['DETAIL_PICTURE']);?>" alt=""></div> -->
 <?endif;?>
+
+
+  </div>
+</div>
+
 <div class="is-textured nill-class">
   <div class="container">
     <div class="row">

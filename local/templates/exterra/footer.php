@@ -31,16 +31,16 @@ IncludeTemplateLangFile(__FILE__);
         );?>
       </div>
 		<div class="footer--contacts" style="line-height: 2.0 !important;">
-		  <p>ООО «Экстерра групп» | Республика Крым г. Симферополь, ул.Турецкая 29 | Е-mail: info@exterragroup.ru | Телефон: +7 (978) 111-70-73 </p>
+		  <p>&copy; 2017 ООО «Экстерра групп» | Республика Крым г. Симферополь, ул.Турецкая 29 | Е-mail: info@exterragroup.ru | Телефон: +7 (978) 111-70-73 </p>
 		  <p style="text-align: center;"> <a href="http://exterragroup.ru/pravovaya-informacia/">Правовая информация</a></p>
 	  </div>
-		
+
     </div>
   </div>
   <div class="copyright">
     <div class="container">
       <div class="row">
-        <p>2017 FenixITGroup: Разработка сайта.</p>
+        <p>Разработка сайта - FenixITGroup</p>
       </div>
     </div>
   </div>

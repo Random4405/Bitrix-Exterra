@@ -1,6 +1,6 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-$APPLICATION->SetTitle("Title");
+$APPLICATION->SetTitle("ООО 'Экстерра Групп' | БАЗА ЗНАНИЙ");
 ?><div class="container">
   <div class="row">
 <?$APPLICATION->IncludeComponent(
