@@ -38,9 +38,7 @@ if (isset($_FILES['uploaded_file']) &&
 $mail->isHTML(true);                                  // Set email format to HTML
 
 $mail->Subject = 'Subject';
-$mail->Body    = "Имя: $name <br>"."Телефон: $phone <br>"."Email: ".$email." <br>Сообщение: ".$message." <br>Название продукта: ".$product." <br>Время".$time." <br>Количество: ".$col.$units;
-
-"$name"."$email"."$message"."$phone"."$product"."$time"."$units"."$col";
+$mail->Body    = "$name"."$email"."$message"."$phone"."$product"."$time"."$units"."$col";
 $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
 if(!$mail->send()) {
