@@ -865,6 +865,7 @@ ul#horizontal-multilevel-menu {
 
 .flex-row__images {
   flex-wrap: wrap;
+  justify-content: flex-start;
   > * {
     flex-basis: calc(25% - 8px);
     margin: 4px;
