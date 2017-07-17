@@ -49,6 +49,10 @@ jQuery( document ).ready(function( $ ) {
     $('#horizontal-multilevel-menu > li > a').removeClass('open');
   });
 
+  $('#horizontal-multilevel-menu > li:nth-child(3)').on('mouseenter', function() {
+    $('#horizontal-multilevel-menu > li:nth-child(3) > a').addClass('open');
+  });
+
   $('.bx-filter-parameters-box-container').mouseover(function() {
     $('#set_filter').removeAttr('disabled');
   })
