@@ -49,6 +49,7 @@
 					<input type="text" name="captcha_word" size="30" maxlength="50" value="">
 				</div>
 				<?endif;?>
+      <p class="confirm-text">Нажимая на кнопку, вы даете согласие на обработку своих персональных данных<br></p>
 				<input type="submit" name="submit" value="<?=GetMessage("MFT_SUBMIT")?>">
 			</form>
 			</div>
