@@ -1,6 +1,7 @@
 <?php
 require 'PHPMailerAutoload.php';
 
+$form_name=$_POST['form_name'];
 $name=$_POST['name'];
 $email=$_POST['email'];
 $message=$_POST['message'];
@@ -19,13 +20,19 @@ if (mb_strlen($_POST['time']) == 0) {$time='';} else {$time='<br>Время: '.$
 if (mb_strlen($_POST['units']) == 0) {$units='';} else {$units='<br>Единицы: '.$_POST['units'];}
 if (mb_strlen($_POST['col']) == 0) {$col='';} else {$col='<br>Количество: '.$_POST['col'];}
 
+
 $path = $_FILES['uploaded_file']['tmp_name']; 
 /* $path = "/upload/resize_cache/iblock/aa5/288_288_2/aa5d3a90d472e365686aeed7b60d213c.jpg"; */
 
 $mail = new PHPMailer;
 $mail->CharSet = 'UTF-8';
 
-$mail->setFrom('from@example.com', 'Заказ с сайта');
+if ($form_name == 'call_form') {
+  $mail->setFrom('from@example.com', 'Заказать обратный звонок');
+} else {
+  $mail->setFrom('from@example.com', 'Заказ с сайта');
+}
+
 $mail->addAddress('lazynick7@gmail.com', 'Joe User');     // Add a recipient
 $mail->addAddress('fenixitgroup@gmail.com', 'FenixIT');     // Add a recipient
 

@@ -55,6 +55,7 @@ IncludeTemplateLangFile(__FILE__);
       <i class="fa fa-close" onclick="callFormClose();"></i>
       <legend>Заказать звонок</legend>
       <fieldset>
+      <input type="hidden" name="form_name" value="call_form">
         <input name="name" id="name_call" required type="text" placeholder="Имя:*">
         <input name="phone" id="phone_call" required type="text" placeholder="Телефон:*">
         <input name="time" type="text" placeholder="Время:">
@@ -77,6 +78,7 @@ IncludeTemplateLangFile(__FILE__);
     <i class="fa fa-close" onclick="buyFormClose();"></i>
     <legend>Заказ товара</legend>
     <fieldset>
+      <input type="hidden" name="form_name" value="product_form">
       <input id="name" name="name" required type="text" placeholder="Имя:*">
       <input id="phone" name="phone" required id="phone" type="text" placeholder="Телефон:*">
       <input name="product" id="productname" type="text" placeholder="Название товара:">
