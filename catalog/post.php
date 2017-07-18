@@ -33,8 +33,10 @@ if ($form_name == 'call_form') {
   $mail->setFrom('from@example.com', 'Заказ с сайта');
 }
 
-$mail->addAddress('lazynick7@gmail.com', 'Joe User');     // Add a recipient
-$mail->addAddress('fenixitgroup@gmail.com', 'FenixIT');     // Add a recipient
+/* $mail->addAddress('lazynick7@gmail.com', 'Joe User');     // Add a recipient */
+/* $mail->addAddress('fenixitgroup@gmail.com', 'FenixIT');     // Add a recipient */
+$mail->addAddress('info@exterragroup.ru', 'Exterra');     // Add a recipient
+$mail->addAddress('sales@exterragroup.ru', 'Exterra');     // Add a recipient
 
 if (isset($_FILES['uploaded_file']) &&
     $_FILES['uploaded_file']['error'] == UPLOAD_ERR_OK) {
