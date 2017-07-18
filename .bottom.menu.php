@@ -37,7 +37,7 @@ $aMenuLinks = Array(
 	),
 	Array(
 		"Обратная связь", 
-		"/obratnaya-svyaz/", 
+		"/contacts/", 
 		Array(), 
 		Array(), 
 		"" 

@@ -14,20 +14,19 @@ $this->setFrameMode(true);
 ?>
 
  <div class="flex-row">
-     
-<?foreach($arResult["ITEMS"] as $arItem):?>
-	<?
-	$this->AddEditAction($arItem['ID'], $arItem['EDIT_LINK'], CIBlock::GetArrayByID($arItem["IBLOCK_ID"], "ELEMENT_EDIT"));
-	$this->AddDeleteAction($arItem['ID'], $arItem['DELETE_LINK'], CIBlock::GetArrayByID($arItem["IBLOCK_ID"], "ELEMENT_DELETE"), array("CONFIRM" => GetMessage('CT_BNL_ELEMENT_DELETE_CONFIRM')));
-	?>
-		 <div class="similar-article" id="<?=$this->GetEditAreaId($arItem['ID']);?>">
-	        <a href='<?=$arItem["DETAIL_PAGE_URL"]?>'>
-	          <div class="similar-article--image-wrapper">
-	            <img src="<?=$arItem["PREVIEW_PICTURE"]["SRC"]?>" class="similar-article--image img-responsive">
-	          </div>
-	          <div class="similar-article--title"><?echo $arItem["NAME"]?></div>
-	          <div class="similar-article--date"><?echo $arItem["DISPLAY_ACTIVE_FROM"]?></div>
-	        </a>
-	     </div>
-<?endforeach;?>
+	<?foreach($arResult["ITEMS"] as $arItem):?>
+		<?
+		$this->AddEditAction($arItem['ID'], $arItem['EDIT_LINK'], CIBlock::GetArrayByID($arItem["IBLOCK_ID"], "ELEMENT_EDIT"));
+		$this->AddDeleteAction($arItem['ID'], $arItem['DELETE_LINK'], CIBlock::GetArrayByID($arItem["IBLOCK_ID"], "ELEMENT_DELETE"), array("CONFIRM" => GetMessage('CT_BNL_ELEMENT_DELETE_CONFIRM')));
+		?>
+			 <div class="similar-article" id="<?=$this->GetEditAreaId($arItem['ID']);?>">
+		        <a href='<?=$arItem["DETAIL_PAGE_URL"]?>'>
+		          <div class="similar-article--image-wrapper">
+		            <img src="<?=$arItem["DETAIL_PICTURE"]["SRC"]?>" class="similar-article--image img-responsive">
+		          </div>
+		          <div class="similar-article--title"><?echo $arItem["NAME"]?></div>
+		          <div class="similar-article--date"><?echo $arItem["DISPLAY_ACTIVE_FROM"]?></div>
+		        </a>
+		     </div>
+	<?endforeach;?>
 </div>

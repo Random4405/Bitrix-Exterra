@@ -35,6 +35,12 @@ $aMenuLinks = Array(
 		Array(), 
 		"" 
 	),
-
+	Array(
+		"Галерея объектов", 
+		"/gallery/", 
+		Array(), 
+		Array(), 
+		"" 
+	)
 );
 ?>
