@@ -10,7 +10,10 @@
     </div>
     <div class="absolute-wrapper--button"><a href="http://exterragroup.ru/o-kompanii/">Узнать больше</a></div>
   </div>
-<img src="/images/slider1.jpg" class="img-responsive" alt=""></div>
+<div class='is-shaded' style="background-color: black; opacity: .5;">
+  <img src="/images/slider1.jpg" class="img-responsive" alt="">
+</div>
+</div>
     <div class="hero-slide"><img src="/images/slider1-6.jpg" class="img-responsive" alt=""></div>
     <div class="hero-slide"><img src="/images/slider1-7.jpg" class="img-responsive" alt=""></div>
     <div class="hero-slide"><img src="/images/slider1-5.jpg" class="img-responsive" alt=""></div>
