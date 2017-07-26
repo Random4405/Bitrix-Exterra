@@ -36,6 +36,7 @@ function openCity(evt, cityName) {
 // });
 
 jQuery( document ).ready(function( $ ) {
+  $('header #horizontal-multilevel-menu > li:nth-child(3) > a ').css('line-height', '88px')
   $('button.tablinks').first().addClass('active');
   $("header #horizontal-multilevel-menu > li:nth-child(2) > a ").click(function(e){
     $(this).toggleClass("open");
