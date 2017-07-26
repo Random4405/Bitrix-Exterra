@@ -10,7 +10,7 @@
     </div>
     <div class="absolute-wrapper--button"><a href="http://exterragroup.ru/o-kompanii/">Узнать больше</a></div>
   </div>
-<div class='is-shaded' style="background-color: black; opacity: .5;">
+<div class='is-shaded' style="background-color: rgba(0,0,0,.5);">
   <img src="/images/slider1.jpg" class="img-responsive" alt="">
 </div>
 </div>
