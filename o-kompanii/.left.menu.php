@@ -16,7 +16,7 @@ $aMenuLinks = Array(
 	),
 	Array(
 		"Шоу рум", 
-		"/gallery/", 
+		"/shou-rum/", 
 		Array(), 
 		Array(), 
 		"" 
