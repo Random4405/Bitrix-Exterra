@@ -55,6 +55,10 @@ jQuery( document ).ready(function( $ ) {
     return false;
   });
 
+  $("header #horizontal-multilevel-menu > li:nth-child(3) ").on('mouseout', function(e){
+    $("header #horizontal-multilevel-menu > li:nth-child(3) > a ").removeClass("open");
+  });
+
   $('.bx-filter-parameters-box-container').mouseover(function() {
     $('#set_filter').removeAttr('disabled');
   })
