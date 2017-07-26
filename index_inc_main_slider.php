@@ -10,49 +10,42 @@
     opacity: 1 !important;
     }
     </style>
+    <div class="absolute-wrapper--button" style="z-index: 20;position: absolute;bottom: 50px;"><a href="http://exterragroup.ru/o-kompanii/">Узнать больше</a></div>
   <div class="hero--absolute-wrapper">
     <div class="absolute-wrapper--caption">
       <img src="/images/text-logo.png" alt="">
       <p>только качественные<br>строительные материалы</p>
     </div>
-    <div class="absolute-wrapper--button" style="z-index: 20;"><a href="http://exterragroup.ru/o-kompanii/">Узнать больше</a></div>
   </div>
   <img src="/images/slider1.jpg" style="filter: brightness(0.5);" class="img-responsive" alt="">
 </div>
     <div class="hero-slide">
+    <div class="absolute-wrapper--button" style="z-index: 20;position: absolute;bottom: 50px;"><a href="http://exterragroup.ru/o-kompanii/">Узнать больше</a></div>
   <div class="hero--absolute-wrapper">
     <div class="absolute-wrapper--caption">
       <img src="/images/text-logo.png" alt="">
       <p>только качественные<br>строительные материалы</p>
     </div>
-    <div class="absolute-wrapper--button" style="z-index: 20;"><a href="http://exterragroup.ru/o-kompanii/">Узнать больше</a></div>
-  </div>
-  <div class="hero--absolute-wrapper">
-    <div class="absolute-wrapper--caption">
-      <img src="/images/text-logo.png" alt="">
-      <p>только качественные<br>строительные материалы</p>
-    </div>
-    <div class="absolute-wrapper--button" style="z-index: 20;"><a href="http://exterragroup.ru/o-kompanii/">Узнать больше</a></div>
   </div>
 <img src="/images/slider1-6.jpg" style="filter: brightness(0.5);" class="img-responsive" alt="">
 </div>
     <div class="hero-slide">
+    <div class="absolute-wrapper--button" style="z-index: 20;position: absolute;bottom: 50px;"><a href="http://exterragroup.ru/o-kompanii/">Узнать больше</a></div>
   <div class="hero--absolute-wrapper">
     <div class="absolute-wrapper--caption">
       <img src="/images/text-logo.png" alt="">
       <p>только качественные<br>строительные материалы</p>
     </div>
-    <div class="absolute-wrapper--button" style="z-index: 20;"><a href="http://exterragroup.ru/o-kompanii/">Узнать больше</a></div>
   </div>
 <img src="/images/slider1-7.jpg"  style="filter: brightness(0.5);" class="img-responsive" alt="">
 </div>
     <div class="hero-slide">
+    <div class="absolute-wrapper--button" style="z-index: 20;position: absolute;bottom: 50px;"><a href="http://exterragroup.ru/o-kompanii/">Узнать больше</a></div>
   <div class="hero--absolute-wrapper">
     <div class="absolute-wrapper--caption">
       <img src="/images/text-logo.png" alt="">
       <p>только качественные<br>строительные материалы</p>
     </div>
-    <div class="absolute-wrapper--button" style="z-index: 20;"><a href="http://exterragroup.ru/o-kompanii/">Узнать больше</a></div>
   </div>
 <img src="/images/slider1-5.jpg"  style="filter: brightness(0.5);" class="img-responsive" alt="">
 </div>
