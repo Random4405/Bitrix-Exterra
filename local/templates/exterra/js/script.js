@@ -55,7 +55,7 @@ jQuery( document ).ready(function( $ ) {
     return false;
   });
 
-  $("header #horizontal-multilevel-menu > li:nth-child(3) ").on('mouseout', function(e){
+  $("header #horizontal-multilevel-menu > li:nth-child(3) ").on('mouseleave', function(e){
     $("header #horizontal-multilevel-menu > li:nth-child(3) > a ").removeClass("open");
   });
 
