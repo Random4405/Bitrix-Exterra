@@ -7,10 +7,10 @@
     <div class="absolute-wrapper--button"><a href="http://exterragroup.ru/o-kompanii/">Узнать больше</a></div>
   </div>
 
-  <div class="hero--slick" data-slick='{"infinite": true, "arrows": false, "autoplay": false, "autoplaySpeed": 2000, "dots": true}'>
-    <div class="hero-slide"><img src="/images/slider1.jpg" class="img-responsive" alt="" /></div>
-    <div class="hero-slide"><img src="/images/slider1-6.jpg" class="img-responsive" alt="" /></div>
-    <div class="hero-slide"><img src="/images/slider1-7.jpg" class="img-responsive" alt="" /></div>
-    <div class="hero-slide"><img src="/images/slider1-5.jpg" class="img-responsive" alt="" /></div>
+  <div class="hero--slick" data-slick="{&quot;infinite&quot;: true, &quot;arrows&quot;: false, &quot;autoplay&quot;: true, &quot;autoplaySpeed&quot;: 4000, &quot;dots&quot;: true}">
+    <div class="hero-slide"><img src="/images/slider1.jpg" class="img-responsive" alt=""></div>
+    <div class="hero-slide"><img src="/images/slider1-6.jpg" class="img-responsive" alt=""></div>
+    <div class="hero-slide"><img src="/images/slider1-7.jpg" class="img-responsive" alt=""></div>
+    <div class="hero-slide"><img src="/images/slider1-5.jpg" class="img-responsive" alt=""></div>
   </div>
-</div>
+</div><br>

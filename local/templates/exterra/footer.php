@@ -335,8 +335,39 @@ $(document).ready(function(){
 <script>
 $('.hero--slick, .slider-product').slick();
 $('.card-slider').slick({
-slidesToShow: 4,
+  slidesToShow: 4,
+  responsive: [
+    {
+      breakpoint: 992,
+      settings: {
+        centerMode: false,
+        centerPadding: '65px',
+        slidesToShow: 4
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        centerMode: false,
+        centerPadding: '65px',
+        slidesToShow: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        centerMode: false,
+        centerPadding: '65px',
+        slidesToShow: 1
+      }
+    }
+  ]
 })
+
+$('#menu-btn').click(function(){
+  $('.header--menu').toggle();
+})
+
 
 
   function SendResult(form_name){

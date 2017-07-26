@@ -5,6 +5,7 @@ IncludeTemplateLangFile(__FILE__);
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/x-icon" href="http://exterragroup.ru/favicon.ico" />
     <?$APPLICATION->SetAdditionalCSS("/bitrix/css/main/bootstrap.css");?>
     <?CJSCore::Init(array("jquery"));?>
@@ -19,6 +20,7 @@ if ($USER->IsAdmin()):
 }
 </style>
 <?endif;?>
+<link href="/local/templates/exterra/new_style.css" type="text/css"  data-template-style="true"  rel="stylesheet" />
 <link href="<?=SITE_TEMPLATE_PATH?>/common.css" type="text/css" rel="stylesheet" />
 <link href="<?=SITE_TEMPLATE_PATH?>/colors.css" type="text/css" rel="stylesheet" />
 <link href="<?=SITE_TEMPLATE_PATH?>/lightbox.css" type="text/css" rel="stylesheet" />
@@ -50,6 +52,10 @@ if ($USER->IsAdmin()):
               <li><a href="/search"><i class="fa fa-search" aria-hidden="true"></i></a></li>
             </ul>
           </div>
+          <div class="mob-block">
+            <a href="/"><img src="/images/logo.png" alt="" class="mob-logo"/></a>
+            <img src="/images/menu.png" alt="" id="menu-btn"/>
+          </div>          
         </div>
       </div>
       <div class="header--menu">

@@ -20,7 +20,7 @@ $APPLICATION->SetTitle("Экстерра Групп | Продажа строи�
 					<li>
 					<div class="plate-1">
 						<div class="plate--text">
-               <a href="#">
+               <a href="/pryamye-postavki">
                  Прямые поставки<br>
                  из Европы
                </a>
@@ -30,7 +30,7 @@ $APPLICATION->SetTitle("Экстерра Групп | Продажа строи�
 					<li>
 					<div class="plate-2">
 						<div class="plate--text">
-               <a href="#">
+               <a href="/sotrudnichestvo-s-arkhitektorami">
                  Сотрудничество<br>
                  с архитекторами
                </a>
@@ -40,7 +40,7 @@ $APPLICATION->SetTitle("Экстерра Групп | Продажа строи�
 					<li>
 					<div class="plate-3">
 						<div class="plate--text">
-               <a href="#">
+               <a href="/raschyet-materialov">
                  Расчёт<br>
                  материалов
                </a>
@@ -50,7 +50,7 @@ $APPLICATION->SetTitle("Экстерра Групп | Продажа строи�
 					<li>
 					<div class="plate-4">
 						<div class="plate--text">
-               <a href="#">
+               <a href="/sotrudnichestvo-s-dizaynerami">
                  Сотрудничество<br>
                  с дизайнерами
                </a>
@@ -60,7 +60,7 @@ $APPLICATION->SetTitle("Экстерра Групп | Продажа строи�
 					<li>
 					<div class="plate-5">
 						<div class="plate--text">
-               <a href="#">
+               <a href="/sposoby-oplaty">
                  Способы<br>
                  оплаты
                </a>
