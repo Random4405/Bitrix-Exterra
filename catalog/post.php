@@ -29,14 +29,17 @@ $mail->CharSet = 'UTF-8';
 
 if ($form_name == 'call_form') {
   $mail->setFrom('from@example.com', 'Заказать обратный звонок');
+  $mail->Subject = 'Заказать обратный звонок';
 } else {
   $mail->setFrom('from@example.com', 'Заказ с сайта');
+  $mail->Subject = 'Заказ с сайта';
 }
 
 /* $mail->addAddress('lazynick7@gmail.com', 'Joe User');     // Add a recipient */
 /* $mail->addAddress('fenixitgroup@gmail.com', 'FenixIT');     // Add a recipient */
 $mail->addAddress('info@exterragroup.ru', 'Exterra');     // Add a recipient
 $mail->addAddress('sales@exterragroup.ru', 'Exterra');     // Add a recipient
+$mail->addAddress('san@exterragroup.ru', 'Exterra');     // Add a recipient
 
 if (isset($_FILES['uploaded_file']) &&
     $_FILES['uploaded_file']['error'] == UPLOAD_ERR_OK) {
@@ -46,7 +49,6 @@ if (isset($_FILES['uploaded_file']) &&
 
 $mail->isHTML(true);                                  // Set email format to HTML
 
-$mail->Subject = 'Subject';
 $mail->Body    = "$name"."$email"."$message"."$phone"."$product"."$time"."$units"."$col";
 $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
